@@ -1,9 +1,9 @@
 {
   "schema_version": "1.1",
   "release": "0.0.2",
-  "runtime_connected": false,
+  "runtime_connected": true,
   "agent_tools_configured": true,
-  "private_wiki_access_verified": false,
+  "private_wiki_access_verified": true,
   "access_mode": "agent_tools",
   "on_document_unavailable": "return_unavailable_and_continue",
   "context_separate_from_identity": true,
@@ -425,6 +425,23 @@
       ]
     },
     {
+      "path": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato.md",
+      "title": "Verifica accesso wiki con token aggiornato",
+      "kind": "verification",
+      "status": "proposed",
+      "domain": "project",
+      "summary": "Verifica richiesta da Davide dopo l'aggiornamento del token GitHub. - Lettura reale del contesto [[wiki/project/context]] e del manifest tramite tool n8n: esecuzione 3159, HTTP 200 per entrambi, snapshot a6b9485ba68e4cc9e5c1c39f1e336ab4a166c867. - ID Telegram 5218311620 fornito da Davide e configura",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "wiki/project/context",
+        "wiki/implementation/wiki-access",
+        "wiki/verification/v002"
+      ]
+    },
+    {
       "path": "wiki/releases/v0.0.1.md",
       "title": "v0.0.1 — baseline conservata",
       "kind": "release",
@@ -806,7 +823,7 @@
       "path": "wiki/verification/v002.md",
       "title": "Verifiche v0.0.2",
       "kind": "verification",
-      "status": "blocked",
+      "status": "configured",
       "domain": "project",
       "summary": "17 test JavaScript superati: niente documenti obbligatori, richieste invalide e documenti mancanti restituiti senza arresto; ricerca classificata; cataloghi per ruolo; registrazione riservata, link validi, indici coerenti, titoli sicuri; autorizzazione Telegram; compatibilità sandbox n8n senza struc",
       "tags": [
@@ -889,23 +906,6 @@
         "wiki/workflows/system/inizializza-identita",
         "wiki/common/soul",
         "wiki/project/access-options"
-      ]
-    },
-    {
-      "path": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato.md",
-      "title": "Verifica accesso wiki con token aggiornato",
-      "kind": "verification",
-      "domain": "project",
-      "status": "proposed",
-      "summary": "Verifica richiesta da Davide dopo l'aggiornamento del token GitHub. - Lettura reale del contesto [[wiki/project/context]] e del manifest tramite tool n8n: esecuzione 3159, HTTP 200 per entrambi, snapshot a6b9485ba68e4cc9e5c1c39f1e336ab4a166",
-      "tags": [
-        "verification",
-        "project"
-      ],
-      "links": [
-        "wiki/project/context",
-        "wiki/implementation/wiki-access",
-        "wiki/verification/v002"
       ]
     }
   ],

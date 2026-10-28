@@ -307,6 +307,11 @@
       "relation": "references"
     },
     {
+      "from": "index",
+      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "relation": "references"
+    },
+    {
       "from": "log",
       "to": "wiki/decisions/v002-scope",
       "relation": "references"
@@ -349,6 +354,11 @@
     {
       "from": "log",
       "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "relation": "references"
     },
     {
@@ -544,6 +554,21 @@
     {
       "from": "wiki/recommendations/shared-foundation",
       "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "to": "wiki/verification/v002",
       "relation": "references"
     },
     {
@@ -935,31 +960,6 @@
       "from": "wiki/workflows/system/orchestratore",
       "to": "wiki/project/access-options",
       "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "to": "wiki/implementation/wiki-access",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "to": "wiki/verification/v002",
-      "relation": "references"
     }
   ],
   "backlinks": {
@@ -982,9 +982,9 @@
       "SCHEMA",
       "index",
       "wiki/project/memory-deferred",
+      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "wiki/sources/karpathy-llm-wiki",
-      "wiki/templates/component",
-      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
+      "wiki/templates/component"
     ],
     "wiki/skills/catalog": [
       "README",
@@ -1022,11 +1022,11 @@
       "wiki/common/soul",
       "wiki/project/access-options",
       "wiki/project/context",
+      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "wiki/releases/v0.0.2",
       "wiki/verification/v002",
       "wiki/workflows/catalog",
-      "wiki/workflows/system/orchestratore-v002",
-      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/sources/karpathy-llm-wiki": [
       "README",
@@ -1224,9 +1224,9 @@
       "log",
       "wiki/implementation/wiki-access",
       "wiki/operations/lint",
+      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "wiki/releases/v0.0.2",
-      "wiki/workflows/system/orchestratore-v002",
-      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/workflows/system/inizializza-identita": [
       "index",

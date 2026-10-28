@@ -13,6 +13,6 @@ Base condivisa dell'ecosistema di Davide nel repository privato EXP1. La v0.0.2 
 
 Consulta [[index]], [[SCHEMA]], [[wiki/project/context]], [[wiki/skills/catalog]] e [[wiki/implementation/wiki-access]] secondo il compito. Il metodo di riferimento è [[wiki/sources/karpathy-llm-wiki]].
 
-Stato: configurazioni salvate e inattive. La credenziale n8n è collegata ma GitHub restituisce 403 su EXP1: occorre abilitare il repository e Contents Read and write. Catalogo, guide incluse e skill pubbliche funzionano anche senza accesso alla wiki privata. Non sono stati eseguiti Python, chiamate ai modelli o invii Telegram durante queste verifiche.
+Stato: configurazioni salvate e inattive. Token aggiornato: lettura e registrazione nella wiki privata verificate realmente da n8n (3159,3161,3164). ID Telegram 5218311620 configurato. Restano la verifica del modello che sceglie e usa i tool e lo sviluppo dei componenti decisionali. Nessun Python, modello reale o invio Telegram eseguito nelle verifiche.
 
 Lo storico è GitHub; [[wiki/releases/v0.0.1]] resta storico e la revisione è [[wiki/releases/v0.0.2]]. La scelta della memoria resta nel contesto [[wiki/project/memory-deferred]].

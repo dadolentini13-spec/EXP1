@@ -1,6 +1,11 @@
 {
-  "status": "deployment_configured_private_access_blocked",
+  "status": "private_wiki_read_write_verified",
   "repository": "dadolentini13-spec/EXP1",
-  "base_commit": "9451083c015733dbaf32ccd0ea1b292ac6cddc07",
-  "verification": "See Git history for the published revision. Contents403 in n8n; account connector can publish docs. No live bot activation."
+  "live_record_commit": "b1128885209379dcccf66ea283fa2fee41624e4d",
+  "read_execution": "3159",
+  "write_execution": "3161",
+  "roundtrip_execution": "3164",
+  "telegram_user_id": "5218311620",
+  "active": false,
+  "model_tool_usage_verified": false
 }

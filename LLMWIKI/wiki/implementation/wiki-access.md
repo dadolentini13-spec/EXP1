@@ -30,10 +30,13 @@ Registra wiki è collegato soltanto ad Architetto. Crea esclusivamente un nuovo 
 - Registrazione: nnpZJePc10RpgNGa, 21 nodi interni al tool.
 - Diagnostica: POr7YW1yIRXYseLZ, 3 nodi, nessun modello, risultato non bloccante.
 
-## Stato e limite osservato
-Tutti salvati e inattivi nella cartella Esperimento del progetto personale corretto. Credenziale GitHub account collegata; lettura reale 3118 ha ricevuto 403 Resource not accessible by personal access token su EXP1. Servono autorizzazione a EXP1 e Contents Read and write per leggere e scrivere. Nessuna credenziale viene memorizzata nel testo dei nodi.
+## Stato attuale
+Tutti i workflow restano inattivi nella cartella Esperimento del progetto personale corretto. Il token aggiornato permette lettura e scrittura reale su EXP1: esecuzioni3159,3161,3164 riuscite. Il precedente403 è risolto. ID Telegram configurato. Restano da verificare le scelte dei tool da parte dei modelli reali.
 
 La precedente revisione automatica aveva bloccato il collegamento ai modelli; Davide ha poi approvato la revisione e l'implementazione completa. La configurazione dei modelli OpenAI è stata salvata con la nuova architettura, senza attivarla. Nessuna prova completa con modelli e Telegram è stata effettuata. Vedi [[wiki/verification/v002]], [[wiki/workflows/system/orchestratore-v002]] e [[wiki/skills/catalog]].
 
 ## Accesso Telegram
-Il mittente viene controllato prima dei modelli e dei tool. Solo chat privata e ID utente esplicitamente autorizzato; runtime/deployment.json ha una lista inizialmente vuota. Il numero ID di Davide non è disponibile nelle fonti consultate: va configurato prima di attivare il bot. Questo controllo di accesso è distinto dalla consultazione non bloccante dei documenti.
+Il mittente viene controllato prima dei modelli e dei tool. Solo chat privata e ID utente esplicitamente autorizzato; runtime/deployment.json contiene l’ID 5218311620 fornito da Davide e riportato anche nel controllo n8n. Questo controllo di accesso è distinto dalla consultazione non bloccante dei documenti.
+
+## Verifica successiva del contesto
+Esecuzione3163: le istruzioni comuni e le identità arrivano ai tre nodi Contesto; ciclo completo simulato con ID di Davide autorizzato. Questo verifica la composizione degli input, non la comprensione dei modelli né la loro scelta dei tool. Il contenuto individuale coincide con i tre soul.md della wiki. I file sono copiati nelle istruzioni al deployment: la loro modifica su GitHub non aggiorna automaticamente le istruzioni salvate in n8n.

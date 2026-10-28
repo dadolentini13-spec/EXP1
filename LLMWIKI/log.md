@@ -24,3 +24,5 @@ Preparati lettore e verifica manuale in n8n, senza attivazioni. Test locali e si
 - 28/10/2026 — Davide approva la revisione v0.0.2: tool ai_tool per Wiki e Skill, nessun documento obbligatorio, skill pertinenti per tutti i ruoli e Python senza esecuzione. Nuovo orchestratore separato dalla v0.0.1, writer solo Architetto. Credenziale presente, lettura reale EXP1 respinta da GitHub con 403. Dettagli e prove: [[wiki/implementation/wiki-access]], [[wiki/verification/v002]], [[wiki/skills/catalog]].
 
 - 2026-10-28 — Architetto, job v002-accesso-token-aggiornato: registrato [[wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato|Verifica accesso wiki con token aggiornato]] come proposed.
+
+- 28/10/2026 — Token GitHub aggiornato da Davide: lettura3159, registrazione3161 e rilettura3164 riuscite realmente su EXP1. ID Telegram5218311620 autorizzato; verifica input dei tre agenti3163 riuscita con modelli simulati. Prompt e soul.md individuali non modificati. Restano verifica dei modelli con tool e componenti decisionali.
