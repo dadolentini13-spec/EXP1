@@ -1,0 +1,799 @@
+{
+  "id": "H9035WWxnJqodZFq",
+  "name": "ESPERIMENTO | Sistema | Identità Agenti",
+  "versionId": "42206f8f-e55f-4b35-9598-6feccd079ff5",
+  "updatedAt": "2026-10-28T19:34:30.171Z",
+  "active": false,
+  "description": "esperimentoV1.0.0: Architetto, Costruttore, Revisore con soul.md obbligatorio Qdrant, skill GitHub fissate e contesto per compito. 2 giri + sintesi Telegram. BOZZA: manca credenziale REST Qdrant. Nessuno strumento di modifica workflow.",
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": true,
+    "timezone": "Europe/Rome",
+    "executionTimeout": 600
+  },
+  "connections": {
+    "Modello Architetto": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Architetto",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Modello Costruttore": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Costruttore",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Modello Revisore": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Revisore",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Avvia compito",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Avvia compito": {
+      "main": [
+        [
+          {
+            "node": "Stato Architetto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stato Architetto": {
+      "main": [
+        [
+          {
+            "node": "Leggi soul Architetto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Leggi soul Architetto": {
+      "main": [
+        [
+          {
+            "node": "Skill Architetto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Skill Architetto": {
+      "main": [
+        [
+          {
+            "node": "Contesto Architetto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Contesto Architetto": {
+      "main": [
+        [
+          {
+            "node": "Architetto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Architetto": {
+      "main": [
+        [
+          {
+            "node": "Registra Architetto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stato Costruttore": {
+      "main": [
+        [
+          {
+            "node": "Leggi soul Costruttore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Leggi soul Costruttore": {
+      "main": [
+        [
+          {
+            "node": "Skill Costruttore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Skill Costruttore": {
+      "main": [
+        [
+          {
+            "node": "Contesto Costruttore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Contesto Costruttore": {
+      "main": [
+        [
+          {
+            "node": "Costruttore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Costruttore": {
+      "main": [
+        [
+          {
+            "node": "Registra Costruttore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stato Revisore": {
+      "main": [
+        [
+          {
+            "node": "Leggi soul Revisore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Leggi soul Revisore": {
+      "main": [
+        [
+          {
+            "node": "Skill Revisore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Skill Revisore": {
+      "main": [
+        [
+          {
+            "node": "Contesto Revisore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Contesto Revisore": {
+      "main": [
+        [
+          {
+            "node": "Revisore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Revisore": {
+      "main": [
+        [
+          {
+            "node": "Registra Revisore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registra Architetto": {
+      "main": [
+        [
+          {
+            "node": "Risposta finale",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Risposta finale": {
+      "main": [
+        [
+          {
+            "node": "Prepara risposta Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Stato Costruttore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registra Costruttore": {
+      "main": [
+        [
+          {
+            "node": "Stato Revisore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registra Revisore": {
+      "main": [
+        [
+          {
+            "node": "Stato Architetto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepara risposta Telegram": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        -300,
+        -64
+      ],
+      "id": "6319b055-193a-4bba-bb23-f959e42fe1aa",
+      "name": "Telegram Trigger"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "={{ $json.system_prompt }}",
+          "maxIterations": 3,
+          "enableStreaming": false
+        },
+        "promptType": "define",
+        "text": "={{ $json.user_prompt }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        1160,
+        0
+      ],
+      "id": "c9fdb185-3fd7-4cf7-8381-0d7132a9bde4",
+      "name": "Architetto"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "={{ $json.system_prompt }}",
+          "maxIterations": 3,
+          "enableStreaming": false
+        },
+        "promptType": "define",
+        "text": "={{ $json.user_prompt }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        1160,
+        640
+      ],
+      "id": "f86f2068-35e5-4565-85dc-4cf859227483",
+      "name": "Costruttore"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "={{ $json.system_prompt }}",
+          "maxIterations": 3,
+          "enableStreaming": false
+        },
+        "promptType": "define",
+        "text": "={{ $json.user_prompt }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        1160,
+        1280
+      ],
+      "id": "d23ce65d-6e3a-426e-9369-bd39db5ed400",
+      "name": "Revisore"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.chat_id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2140,
+        0
+      ],
+      "id": "bbdfe508-5a87-4fb6-9c7a-225d6fac40d0",
+      "name": "Send a text message"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-6-luna",
+          "mode": "list"
+        },
+        "builtInTools": {},
+        "options": {
+          "timeout": 45000,
+          "maxRetries": 0,
+          "maxTokens": 2500
+        },
+        "responsesApiEnabled": true
+      },
+      "id": "3907670f-4af0-4bfc-8349-dd9f264c7fa3",
+      "name": "Modello Architetto",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        1160,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-6-luna",
+          "mode": "list"
+        },
+        "builtInTools": {},
+        "options": {
+          "timeout": 45000,
+          "maxRetries": 0,
+          "maxTokens": 2500
+        },
+        "responsesApiEnabled": true
+      },
+      "id": "cd71e069-8768-4d29-acb5-e4d8dc324463",
+      "name": "Modello Costruttore",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        1160,
+        860
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-6-luna",
+          "mode": "list"
+        },
+        "builtInTools": {},
+        "options": {
+          "timeout": 45000,
+          "maxRetries": 0,
+          "maxTokens": 2500
+        },
+        "responsesApiEnabled": true
+      },
+      "id": "2324bb7e-3ea5-4c31-a108-e09e7be8b30d",
+      "name": "Modello Revisore",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        1160,
+        1500
+      ]
+    },
+    {
+      "id": "0a3e44f8-fe6d-46d6-98b3-c531fd8cfe52",
+      "name": "Avvia compito",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -48,
+        -64
+      ],
+      "parameters": {
+        "jsCode": "const t=$input.first().json; const text=t.message?.text; if(typeof text!=='string'||!text.trim())throw new Error('Serve un messaggio testuale Telegram'); if(!t.message?.chat?.id)throw new Error('Chat Telegram mancante'); return [{json:{job_id:String($execution.id),chat_id:String(t.message.chat.id),request:text,user_name:'Davide',phase:'discussione',round:1,max_rounds:2,transcript:[],approval_status:'non_richiesta',capabilities:['analisi','bozze'],team:['Architetto','Costruttore','Revisore']},pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "a8482b33-3294-40ce-b4a7-608da716ce0d",
+      "name": "Stato Architetto",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const s=$input.first().json; if(!s.job_id||!Array.isArray(s.transcript)||!Number.isInteger(s.round)||s.round<1||s.round>s.max_rounds||s.max_rounds!==2)throw new Error('Contesto condiviso non valido'); return [{json:{...s},pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "83355f22-1f3c-4e5c-9142-a736447f85b5",
+      "name": "Leggi soul Architetto",
+      "type": "n8n-nodes-qdrant.qdrant",
+      "typeVersion": 1,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "resource": "point",
+        "operation": "retrievePoints",
+        "collectionName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "esperimento_v1_config"
+        },
+        "points": "[1]",
+        "withPayload": true,
+        "withVector": false,
+        "requestOptions": {
+          "timeout": 10000
+        }
+      },
+      "notes": "OBBLIGATORIO: assegnare credenziale qdrantRestApi. Recupero esatto, nessuna ricerca semantica. Se fallisce non chiamare il modello."
+    },
+    {
+      "id": "2152f9e7-d830-43d4-93ef-5210c225de85",
+      "name": "Skill Architetto",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        680,
+        0
+      ],
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/n8n-io/skills/27b6b9f429ac0be90cae764512dbc579d7107e95/skills/n8n-subworkflows-official/SKILL.md",
+        "options": {
+          "timeout": 10000,
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "outputPropertyName": "skill_text"
+            }
+          },
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "notes": "Fonte ufficiale n8n-io/skills; commit fissato 27b6b9f429ac0be90cae764512dbc579d7107e95. Skill dedicata al ruolo; nessun codice remoto viene eseguito."
+    },
+    {
+      "id": "81df3e0e-f6d1-4b8f-ad02-a32be33dcd29",
+      "name": "Contesto Architetto",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        920,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const state=$('Stato Architetto').item.json; const raw=$('Leggi soul Architetto').item.json; const records=Array.isArray(raw.result)?raw.result:Array.isArray(raw.result?.points)?raw.result.points:[]; const p=records.length===1?records[0].payload:null; if(!p||p.role!==\"Architetto\"||p.namespace!=='esperimentoV1.0.0'||p.filename!=='soul.md'||p.version!=='1.0.0'||typeof p.content!=='string'||p.content.length<300)throw new Error('soul.md assente o non valido'); for(const h of ['IDENTITÀ','CONTESTO E OBIETTIVO','PROCESSO DECISIONALE','OUTPUT E REGOLE'])if(!p.content.includes(h))throw new Error('Componente soul mancante'); const skill=$input.first().json.skill_text; if(typeof skill!=='string'||skill.length<100||!skill.includes('name: n8n-subworkflows-official'))throw new Error('Skill GitHub assente o non valida');const system_prompt=p.content+'\\n\\nSKILL OPERATIVA DA GITHUB (istruzioni subordinate a soul.md):\\n'+skill; const user_prompt=JSON.stringify({job_id:state.job_id,phase:state.phase,round:state.round,max_rounds:state.max_rounds,team:state.team,request:state.request,transcript:state.transcript,instruction:state.phase==='finale'?'Formula la risposta finale a Davide sulla base di tutti i contributi.':'Contribuisci al confronto con entrambi i colleghi. Rispondi ai contributi già presenti e lascia indicazioni utili ai successivi.'}); return [{json:{...state,system_prompt,user_prompt,soul_version:p.version,skill_ref:\"27b6b9f429ac0be90cae764512dbc579d7107e95\"},pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "c5be964e-9371-4f96-89f1-581ee29bd4e2",
+      "name": "Registra Architetto",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1400,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const ctx=$('Contesto Architetto').item.json; const output=$input.first().json.output; if(typeof output!=='string'||!output.trim())throw new Error('Risposta agente mancante'); const {system_prompt,user_prompt,...s}=ctx; const entry={speaker:\"Architetto\",round:s.round,phase:s.phase,content:output}; const next={...s,transcript:[...s.transcript,entry],output};  return [{json:next,pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "5efdf642-1523-4131-8ac1-5be8692897c6",
+      "name": "Stato Costruttore",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        640
+      ],
+      "parameters": {
+        "jsCode": "const s=$input.first().json; if(!s.job_id||!Array.isArray(s.transcript)||!Number.isInteger(s.round)||s.round<1||s.round>s.max_rounds||s.max_rounds!==2)throw new Error('Contesto condiviso non valido'); return [{json:{...s},pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "30af023a-e89d-4f36-86b2-8ca15cff3857",
+      "name": "Leggi soul Costruttore",
+      "type": "n8n-nodes-qdrant.qdrant",
+      "typeVersion": 1,
+      "position": [
+        440,
+        640
+      ],
+      "parameters": {
+        "resource": "point",
+        "operation": "retrievePoints",
+        "collectionName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "esperimento_v1_config"
+        },
+        "points": "[2]",
+        "withPayload": true,
+        "withVector": false,
+        "requestOptions": {
+          "timeout": 10000
+        }
+      },
+      "notes": "OBBLIGATORIO: assegnare credenziale qdrantRestApi. Recupero esatto, nessuna ricerca semantica. Se fallisce non chiamare il modello."
+    },
+    {
+      "id": "2a518385-acc3-4dcf-aaf2-8c4e14041933",
+      "name": "Skill Costruttore",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        680,
+        640
+      ],
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/n8n-io/skills/27b6b9f429ac0be90cae764512dbc579d7107e95/skills/n8n-code-nodes-official/SKILL.md",
+        "options": {
+          "timeout": 10000,
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "outputPropertyName": "skill_text"
+            }
+          },
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "notes": "Fonte ufficiale n8n-io/skills; commit fissato 27b6b9f429ac0be90cae764512dbc579d7107e95. Skill dedicata al ruolo; nessun codice remoto viene eseguito."
+    },
+    {
+      "id": "c6d7ac2a-2d4d-47c0-be84-dbbfd86a8820",
+      "name": "Contesto Costruttore",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        920,
+        640
+      ],
+      "parameters": {
+        "jsCode": "const state=$('Stato Costruttore').item.json; const raw=$('Leggi soul Costruttore').item.json; const records=Array.isArray(raw.result)?raw.result:Array.isArray(raw.result?.points)?raw.result.points:[]; const p=records.length===1?records[0].payload:null; if(!p||p.role!==\"Costruttore\"||p.namespace!=='esperimentoV1.0.0'||p.filename!=='soul.md'||p.version!=='1.0.0'||typeof p.content!=='string'||p.content.length<300)throw new Error('soul.md assente o non valido'); for(const h of ['IDENTITÀ','CONTESTO E OBIETTIVO','PROCESSO DECISIONALE','OUTPUT E REGOLE'])if(!p.content.includes(h))throw new Error('Componente soul mancante'); const skill=$input.first().json.skill_text; if(typeof skill!=='string'||skill.length<100||!skill.includes('name: n8n-code-nodes-official'))throw new Error('Skill GitHub assente o non valida');const system_prompt=p.content+'\\n\\nSKILL OPERATIVA DA GITHUB (istruzioni subordinate a soul.md):\\n'+skill; const user_prompt=JSON.stringify({job_id:state.job_id,phase:state.phase,round:state.round,max_rounds:state.max_rounds,team:state.team,request:state.request,transcript:state.transcript,instruction:state.phase==='finale'?'Formula la risposta finale a Davide sulla base di tutti i contributi.':'Contribuisci al confronto con entrambi i colleghi. Rispondi ai contributi già presenti e lascia indicazioni utili ai successivi.'}); return [{json:{...state,system_prompt,user_prompt,soul_version:p.version,skill_ref:\"27b6b9f429ac0be90cae764512dbc579d7107e95\"},pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "50c96298-b7c8-4eb0-a184-7b86adfa0136",
+      "name": "Registra Costruttore",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1400,
+        640
+      ],
+      "parameters": {
+        "jsCode": "const ctx=$('Contesto Costruttore').item.json; const output=$input.first().json.output; if(typeof output!=='string'||!output.trim())throw new Error('Risposta agente mancante'); const {system_prompt,user_prompt,...s}=ctx; const entry={speaker:\"Costruttore\",round:s.round,phase:s.phase,content:output}; const next={...s,transcript:[...s.transcript,entry],output};  return [{json:next,pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "83bc16df-40b0-46c8-bce5-378658d99fdc",
+      "name": "Stato Revisore",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        1280
+      ],
+      "parameters": {
+        "jsCode": "const s=$input.first().json; if(!s.job_id||!Array.isArray(s.transcript)||!Number.isInteger(s.round)||s.round<1||s.round>s.max_rounds||s.max_rounds!==2)throw new Error('Contesto condiviso non valido'); return [{json:{...s},pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "a138044d-b8e5-4d8f-848c-9ec31cd703b3",
+      "name": "Leggi soul Revisore",
+      "type": "n8n-nodes-qdrant.qdrant",
+      "typeVersion": 1,
+      "position": [
+        440,
+        1280
+      ],
+      "parameters": {
+        "resource": "point",
+        "operation": "retrievePoints",
+        "collectionName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "esperimento_v1_config"
+        },
+        "points": "[3]",
+        "withPayload": true,
+        "withVector": false,
+        "requestOptions": {
+          "timeout": 10000
+        }
+      },
+      "notes": "OBBLIGATORIO: assegnare credenziale qdrantRestApi. Recupero esatto, nessuna ricerca semantica. Se fallisce non chiamare il modello."
+    },
+    {
+      "id": "37a2b61a-47d6-40ed-8c74-bf781f479769",
+      "name": "Skill Revisore",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        680,
+        1280
+      ],
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/n8n-io/skills/27b6b9f429ac0be90cae764512dbc579d7107e95/skills/n8n-debugging-official/SKILL.md",
+        "options": {
+          "timeout": 10000,
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "outputPropertyName": "skill_text"
+            }
+          },
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "notes": "Fonte ufficiale n8n-io/skills; commit fissato 27b6b9f429ac0be90cae764512dbc579d7107e95. Skill dedicata al ruolo; nessun codice remoto viene eseguito."
+    },
+    {
+      "id": "ba19c936-acf3-4c8f-91ba-01cbb21da997",
+      "name": "Contesto Revisore",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        920,
+        1280
+      ],
+      "parameters": {
+        "jsCode": "const state=$('Stato Revisore').item.json; const raw=$('Leggi soul Revisore').item.json; const records=Array.isArray(raw.result)?raw.result:Array.isArray(raw.result?.points)?raw.result.points:[]; const p=records.length===1?records[0].payload:null; if(!p||p.role!==\"Revisore\"||p.namespace!=='esperimentoV1.0.0'||p.filename!=='soul.md'||p.version!=='1.0.0'||typeof p.content!=='string'||p.content.length<300)throw new Error('soul.md assente o non valido'); for(const h of ['IDENTITÀ','CONTESTO E OBIETTIVO','PROCESSO DECISIONALE','OUTPUT E REGOLE'])if(!p.content.includes(h))throw new Error('Componente soul mancante'); const skill=$input.first().json.skill_text; if(typeof skill!=='string'||skill.length<100||!skill.includes('name: n8n-debugging-official'))throw new Error('Skill GitHub assente o non valida');const system_prompt=p.content+'\\n\\nSKILL OPERATIVA DA GITHUB (istruzioni subordinate a soul.md):\\n'+skill; const user_prompt=JSON.stringify({job_id:state.job_id,phase:state.phase,round:state.round,max_rounds:state.max_rounds,team:state.team,request:state.request,transcript:state.transcript,instruction:state.phase==='finale'?'Formula la risposta finale a Davide sulla base di tutti i contributi.':'Contribuisci al confronto con entrambi i colleghi. Rispondi ai contributi già presenti e lascia indicazioni utili ai successivi.'}); return [{json:{...state,system_prompt,user_prompt,soul_version:p.version,skill_ref:\"27b6b9f429ac0be90cae764512dbc579d7107e95\"},pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "e5a32084-03c1-41f4-a7b0-c3f8013625ac",
+      "name": "Registra Revisore",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1400,
+        1280
+      ],
+      "parameters": {
+        "jsCode": "const ctx=$('Contesto Revisore').item.json; const output=$input.first().json.output; if(typeof output!=='string'||!output.trim())throw new Error('Risposta agente mancante'); const {system_prompt,user_prompt,...s}=ctx; const entry={speaker:\"Revisore\",round:s.round,phase:s.phase,content:output}; const next={...s,transcript:[...s.transcript,entry],output}; if(s.round<s.max_rounds)next.round=s.round+1;else next.phase='finale'; return [{json:next,pairedItem:{item:0}}];"
+      }
+    },
+    {
+      "id": "572d01c6-6c3f-4563-8c35-31a58f0bf60c",
+      "name": "Risposta finale",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1640,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.phase }}",
+              "rightValue": "finale",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "e033c550-677d-406c-9a5b-7f55c2ffceb9",
+      "name": "Prepara risposta Telegram",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1900,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const s=$input.first().json; if(s.phase!=='finale'||s.transcript.filter(t=>t.speaker==='Revisore').length!==s.max_rounds)throw new Error('Confronto non completo'); const raw=String(s.output||'').replace(/^esperimentoV1\\.0\\.0\\s*[—:\\-]?\\s*Davide\\s*[,.:]?\\s*/i,''); const output='esperimentoV1.0.0 — Davide,\\n\\n'+raw; if(output.length>3900)throw new Error('Risposta Telegram troppo lunga');return [{json:{...s,output},pairedItem:{item:0}}];"
+      }
+    }
+  ],
+  "note": "Snapshot documentale sanitizzato, non esportazione importabile; credenziali e webhookId esclusi."
+}
+

@@ -1,0 +1,590 @@
+{
+  "schema_version": "1.0",
+  "release": "0.0.2",
+  "runtime_connected": false,
+  "common_required": [
+    "SCHEMA.md",
+    "index.md",
+    "wiki/common/soul.md",
+    "wiki/project/context.md",
+    "wiki/project/memory-deferred.md",
+    "wiki/workflows/catalog.md"
+  ],
+  "agents": {
+    "Architetto": {
+      "required": [
+        "SCHEMA.md",
+        "index.md",
+        "wiki/common/soul.md",
+        "wiki/project/context.md",
+        "wiki/project/memory-deferred.md",
+        "wiki/workflows/catalog.md"
+      ],
+      "identity": "wiki/agents/architetto/soul.md"
+    },
+    "Costruttore": {
+      "required": [
+        "SCHEMA.md",
+        "index.md",
+        "wiki/common/soul.md",
+        "wiki/project/context.md",
+        "wiki/project/memory-deferred.md",
+        "wiki/workflows/catalog.md"
+      ],
+      "identity": "wiki/agents/costruttore/soul.md"
+    },
+    "Revisore": {
+      "required": [
+        "SCHEMA.md",
+        "index.md",
+        "wiki/common/soul.md",
+        "wiki/project/context.md",
+        "wiki/project/memory-deferred.md",
+        "wiki/workflows/catalog.md"
+      ],
+      "identity": "wiki/agents/revisore/soul.md"
+    }
+  },
+  "on_missing_required": "stop_before_model",
+  "context_separate_from_identity": true,
+  "classification": {
+    "kinds": [
+      "index",
+      "schema",
+      "policy",
+      "identity",
+      "context",
+      "decision",
+      "recommendation",
+      "workflow",
+      "component",
+      "source",
+      "release",
+      "verification",
+      "template",
+      "log"
+    ],
+    "states": [
+      "prepared",
+      "proposed",
+      "approved",
+      "configured",
+      "verified",
+      "blocked",
+      "deferred",
+      "historical"
+    ]
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "title": "LLMWIKI — ingresso",
+      "kind": "index",
+      "status": "prepared",
+      "summary": "Base documentale dell'ecosistema di Davide. Versione 0.0.2: preparata, non ancora collegata ai bot. Inizia da [[SCHEMA]], poi [[index]] e [[wiki/project/context]]. Le letture comuni e quelle per ruolo sono in `manifest.json`. La cartella contiene documenti Markdown collegati, metadati JSON, snapshot sanitizzati e uno storico. Può essere portata in ",
+      "domain": "project",
+      "tags": [
+        "index",
+        "project"
+      ],
+      "links": [
+        "SCHEMA",
+        "index",
+        "wiki/project/context",
+        "wiki/project/access-options",
+        "wiki/releases/v0.0.1",
+        "wiki/releases/v0.0.2"
+      ]
+    },
+    {
+      "path": "SCHEMA.md",
+      "title": "Schema e regole della wiki",
+      "kind": "schema",
+      "status": "prepared",
+      "summary": "- `raw/`: evidenze conservate e snapshot sanitizzati; aggiungere nuove acquisizioni senza sovrascrivere quelle precedenti. - `wiki/`: descrizioni e relazioni aggiornabili, distinguendo fatti, proposte e verifiche. - `index.md`: ingresso per argomento; `log.md`: cronologia append-only. Questa è una nostra istanza del metodo citato in [[wiki/sources/",
+      "domain": "project",
+      "tags": [
+        "schema",
+        "project"
+      ],
+      "links": [
+        "wiki/sources/karpathy-llm-wiki",
+        "wiki/project/context",
+        "wiki/common/soul",
+        "wiki/templates/component",
+        "wiki/operations/ingest",
+        "wiki/operations/query",
+        "wiki/operations/lint"
+      ]
+    },
+    {
+      "path": "index.md",
+      "title": "Indice",
+      "kind": "index",
+      "status": "prepared",
+      "summary": "- [[SCHEMA]] — organizzazione e manutenzione. - [[wiki/common/soul]] — regole per tutti gli agenti. - [[wiki/project/context]] — scopo e stato del progetto. - [[wiki/project/memory-deferred]] — decisione futura sulla memoria. - [[wiki/workflows/catalog]] — componenti reali e previsti. - [[wiki/agents/architetto/soul]] - [[wiki/agents/costruttore/so",
+      "domain": "project",
+      "tags": [
+        "index",
+        "project"
+      ],
+      "links": [
+        "SCHEMA",
+        "wiki/common/soul",
+        "wiki/project/context",
+        "wiki/project/memory-deferred",
+        "wiki/workflows/catalog",
+        "wiki/agents/architetto/soul",
+        "wiki/agents/costruttore/soul",
+        "wiki/agents/revisore/soul",
+        "wiki/project/access-options",
+        "wiki/components/situation-router",
+        "wiki/recommendations/shared-foundation",
+        "wiki/decisions/v002-scope",
+        "wiki/sources/karpathy-llm-wiki",
+        "wiki/sources/references",
+        "wiki/releases/v0.0.1",
+        "wiki/releases/v0.0.2",
+        "wiki/verification/v002",
+        "wiki/templates/component",
+        "log",
+        "wiki/operations/ingest",
+        "wiki/operations/query",
+        "wiki/operations/lint",
+        "wiki/implementation/wiki-access"
+      ]
+    },
+    {
+      "path": "wiki/common/soul.md",
+      "title": "Regole condivise di tutti gli agenti",
+      "kind": "policy",
+      "status": "prepared",
+      "summary": "Siete la squadra personale di Davide. Architetto coordina, Costruttore prepara i componenti, Revisore controlla. Solo Architetto formula la sintesi Telegram. Il ruolo individuale integra queste regole, senza ampliare i permessi. Costruire un ecosistema modulare che distingua situazioni e coinvolga workflow pertinenti. Prima di ogni attivazione cari",
+      "domain": "project",
+      "tags": [
+        "policy",
+        "project"
+      ],
+      "links": [
+        "SCHEMA",
+        "wiki/project/context",
+        "wiki/project/memory-deferred",
+        "wiki/workflows/catalog",
+        "wiki/sources/references",
+        "wiki/project/access-options"
+      ]
+    },
+    {
+      "path": "wiki/project/context.md",
+      "title": "Contesto dell'ecosistema",
+      "kind": "context",
+      "status": "approved",
+      "summary": "Davide vuole creare gradualmente nodi decisionali e workflow specialistici, con consigli e approvazione finale. L'esempio è un messaggio interpretato per intento e ambito, quindi diretto a letture, aggiornamenti o al workflow email appropriato. La v0.0.1 contiene una squadra con due giri e sintesi, ma non ha strumenti per costruire altri workflow. ",
+      "domain": "project",
+      "tags": [
+        "context",
+        "project"
+      ],
+      "links": [
+        "wiki/decisions/v002-scope",
+        "wiki/project/memory-deferred",
+        "wiki/project/access-options"
+      ]
+    },
+    {
+      "path": "wiki/project/memory-deferred.md",
+      "title": "Scelta della memoria rinviata",
+      "kind": "decision",
+      "status": "deferred",
+      "summary": "Davide vuole che LLMWIKI raccolga consigli, implementazioni e collegamenti anche per valutare in futuro la memoria appropriata. Non è ancora stata scelta una memoria conversazionale, episodica, vettoriale, a grafo o ibrida; non selezionare database, embedding o provider in questa versione. Qdrant predisposto per le identità non costituisce una scel",
+      "domain": "project",
+      "tags": [
+        "decision",
+        "project"
+      ],
+      "links": [
+        "wiki/project/context",
+        "wiki/decisions/v002-scope"
+      ]
+    },
+    {
+      "path": "wiki/project/access-options.md",
+      "title": "Come gli agenti potranno consultare la base",
+      "kind": "context",
+      "status": "proposed",
+      "summary": "| Strada | Vantaggi | Limiti | |---|---|---| | Accesso n8n delimitato | Stato corrente, nodi, connessioni ed esecuzioni consultabili | Non spiega sempre la motivazione delle scelte; richiede strumenti e credenziali | | Wiki strutturata raggiungibile | Regole, contesto, catalogo, decisioni, relazioni e prove | Una copia può diventare obsoleta; richi",
+      "domain": "project",
+      "tags": [
+        "context",
+        "project"
+      ],
+      "links": [
+        "wiki/common/soul",
+        "wiki/components/situation-router",
+        "wiki/implementation/wiki-access"
+      ]
+    },
+    {
+      "path": "wiki/workflows/catalog.md",
+      "title": "Catalogo iniziale dei workflow",
+      "kind": "index",
+      "status": "configured",
+      "summary": "Catalogo limitato ai due workflow riletti per questo progetto, non a tutti i workflow personali di Davide. | ID | Scheda | Stato osservato | |---|---|---| | H9035WWxnJqodZFq | [[wiki/workflows/system/orchestratore]] | 26 nodi; inattivo; integrazione Qdrant incompleta | | Y4dZpBvwM4OoPxKU | [[wiki/workflows/system/inizializza-identita]] | 4 nodi; in",
+      "domain": "workflow",
+      "tags": [
+        "index",
+        "workflow"
+      ],
+      "links": [
+        "wiki/workflows/system/orchestratore",
+        "wiki/workflows/system/inizializza-identita",
+        "wiki/components/situation-router",
+        "wiki/templates/component"
+      ]
+    },
+    {
+      "path": "wiki/workflows/system/orchestratore.md",
+      "title": "Orchestratore — stato osservato",
+      "kind": "workflow",
+      "status": "configured",
+      "summary": "Nome: ESPERIMENTO | Sistema | Identità Agenti ID: H9035WWxnJqodZFq URL: https://n8n-uull.srv2097610.hstgr.cloud/workflow/H9035WWxnJqodZFq Versione n8n osservata: 42206f8f-e55f-4b35-9598-6feccd079ff5 Attivo: false; nodi: 26. Input: messaggio testuale Telegram con chat. Output previsto: una sintesi nella stessa chat. Percorso: due giri Architetto/Cos",
+      "domain": "workflow",
+      "tags": [
+        "workflow",
+        "workflow"
+      ],
+      "links": [
+        "wiki/releases/v0.0.1",
+        "wiki/workflows/system/inizializza-identita",
+        "wiki/common/soul",
+        "wiki/project/access-options"
+      ]
+    },
+    {
+      "path": "wiki/workflows/system/inizializza-identita.md",
+      "title": "Inizializzazione identità — stato osservato",
+      "kind": "workflow",
+      "status": "blocked",
+      "summary": "Nome: Esperimento - Inizializza identita ID: Y4dZpBvwM4OoPxKU URL: https://n8n-uull.srv2097610.hstgr.cloud/workflow/Y4dZpBvwM4OoPxKU Attivo: false; nodi: 4. Avvio manuale → creazione collection esperimento_v1_config → upsert dei tre record soul → rilettura. È configurato ma non eseguito da questo lavoro; richiede credenziale REST Qdrant. Contiene i",
+      "domain": "workflow",
+      "tags": [
+        "workflow",
+        "workflow"
+      ],
+      "links": [
+        "wiki/project/access-options",
+        "wiki/workflows/system/orchestratore"
+      ]
+    },
+    {
+      "path": "wiki/agents/architetto/soul.md",
+      "title": "Architetto — identità individuale",
+      "kind": "identity",
+      "status": "configured",
+      "summary": "Testo individuale osservato nell'inizializzatore n8n, mantenuto senza modifiche in v0.0.2. Questo file comprende metadati editoriali; il caricatore deve separare il testo delle istruzioni dai metadati. L'ordine previsto è regole [[wiki/common/soul]] e contesto [[wiki/project/context]], poi questa identità. Il caricamento combinato non è ancora impl",
+      "domain": "agents",
+      "tags": [
+        "identity",
+        "agents"
+      ],
+      "links": [
+        "wiki/common/soul",
+        "wiki/project/context"
+      ]
+    },
+    {
+      "path": "wiki/agents/costruttore/soul.md",
+      "title": "Costruttore — identità individuale",
+      "kind": "identity",
+      "status": "configured",
+      "summary": "Testo individuale osservato nell'inizializzatore n8n, mantenuto senza modifiche in v0.0.2. Questo file comprende metadati editoriali; il caricatore deve separare il testo delle istruzioni dai metadati. L'ordine previsto è regole [[wiki/common/soul]] e contesto [[wiki/project/context]], poi questa identità. Il caricamento combinato non è ancora impl",
+      "domain": "agents",
+      "tags": [
+        "identity",
+        "agents"
+      ],
+      "links": [
+        "wiki/common/soul",
+        "wiki/project/context"
+      ]
+    },
+    {
+      "path": "wiki/agents/revisore/soul.md",
+      "title": "Revisore — identità individuale",
+      "kind": "identity",
+      "status": "configured",
+      "summary": "Testo individuale osservato nell'inizializzatore n8n, mantenuto senza modifiche in v0.0.2. Questo file comprende metadati editoriali; il caricatore deve separare il testo delle istruzioni dai metadati. L'ordine previsto è regole [[wiki/common/soul]] e contesto [[wiki/project/context]], poi questa identità. Il caricamento combinato non è ancora impl",
+      "domain": "agents",
+      "tags": [
+        "identity",
+        "agents"
+      ],
+      "links": [
+        "wiki/common/soul",
+        "wiki/project/context"
+      ]
+    },
+    {
+      "path": "wiki/components/situation-router.md",
+      "title": "Interpretare situazioni e scegliere workflow",
+      "kind": "component",
+      "status": "proposed",
+      "summary": "Nessun nodo o workflow runtime creato per questo componente. Input: messaggio, contesto autorizzato, catalogo e versione delle regole. Output: intenti, ambiti, operazioni richieste, informazioni mancanti, workflow candidati, motivazione breve ed esito di instradamento. I valori definitivi e il formato JSON restano da approvare. Tenere distinti: dom",
+      "domain": "project",
+      "tags": [
+        "component",
+        "project",
+        "instradamento",
+        "email",
+        "situazioni"
+      ],
+      "links": [
+        "wiki/project/access-options",
+        "wiki/templates/component",
+        "wiki/workflows/catalog",
+        "wiki/common/soul"
+      ]
+    },
+    {
+      "path": "wiki/recommendations/shared-foundation.md",
+      "title": "Consiglio — regole comuni e catalogo verificabile",
+      "kind": "recommendation",
+      "status": "proposed",
+      "summary": "Mantenere una fonte condivisa delle regole e una base consultabile di decisioni e componenti, con verifica dello stato n8n quando necessario. Davide ha richiesto la base condivisa; la combinazione tecnica wiki+n8n è una proposta da scegliere. Consente ai ruoli di lavorare sugli stessi vincoli e distinguere una proposta da un workflow funzionante. R",
+      "domain": "project",
+      "tags": [
+        "recommendation",
+        "project"
+      ],
+      "links": [
+        "wiki/sources/karpathy-llm-wiki",
+        "wiki/sources/references",
+        "wiki/decisions/v002-scope",
+        "wiki/project/memory-deferred"
+      ]
+    },
+    {
+      "path": "wiki/decisions/v002-scope.md",
+      "title": "Decisioni v0.0.2",
+      "kind": "decision",
+      "status": "approved",
+      "summary": "- Conservare la v0.0.1 e aggiungere una v0.0.2. - Rendere le regole del progetto comuni a ogni agente. - Raccogliere consigli e implementazioni in una base consultabile e classificata. - Usare un sistema di collegamenti wiki con un'unica radice LLMWIKI. - Informare Architetto del futuro confronto sulla memoria tramite il contesto, non modificando i",
+      "domain": "project",
+      "tags": [
+        "decision",
+        "project"
+      ],
+      "links": [
+        "wiki/project/access-options",
+        "wiki/project/memory-deferred",
+        "wiki/releases/v0.0.2"
+      ]
+    },
+    {
+      "path": "wiki/sources/karpathy-llm-wiki.md",
+      "title": "Fonte originale LLM Wiki",
+      "kind": "source",
+      "status": "verified",
+      "summary": "Autore: Andrej Karpathy. URL consultato: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f Consultazione: 28/10/2026. Non sono stati acquisiti i commenti degli altri utenti. È un documento di idea pubblicato come Gist, non un'applicazione o una specifica vincolante. Descrive fonti conservate, pagine Markdown collegate e convenzioni ",
+      "domain": "project",
+      "tags": [
+        "source",
+        "project"
+      ],
+      "links": [
+        "SCHEMA",
+        "wiki/project/context",
+        "wiki/recommendations/shared-foundation"
+      ]
+    },
+    {
+      "path": "wiki/sources/references.md",
+      "title": "Riferimenti per prompt e orchestrazione",
+      "kind": "source",
+      "status": "prepared",
+      "summary": "- OpenAI Cookbook: https://github.com/openai/openai-cookbook — esempi, progettazione e valutazione dei prompt. - Anthropic tutorial: https://github.com/anthropics/prompt-eng-interactive-tutorial — struttura e chiarezza; adattare i consigli specifici di Claude. - DAIR Guide: https://github.com/dair-ai/Prompt-Engineering-Guide — tecniche e confronti.",
+      "domain": "project",
+      "tags": [
+        "source",
+        "project"
+      ],
+      "links": [
+        "wiki/sources/karpathy-llm-wiki",
+        "wiki/common/soul"
+      ]
+    },
+    {
+      "path": "wiki/releases/v0.0.1.md",
+      "title": "v0.0.1 — baseline conservata",
+      "kind": "release",
+      "status": "historical",
+      "summary": "Scheda originale, non modificata da questo lavoro: https://app.notion.com/p/4072acdbef54813e90bafa37c181095f La baseline include l'ultima revisione di Architetto già effettuata prima della richiesta di v0.0.2. Non viene ricostruito retroattivamente uno stato precedente. In `raw/v0.0.1/` sono conservati il testo della scheda riletta e snapshot sanit",
+      "domain": "project",
+      "tags": [
+        "release",
+        "project"
+      ],
+      "links": [
+        "wiki/workflows/catalog",
+        "wiki/releases/v0.0.2"
+      ]
+    },
+    {
+      "path": "wiki/releases/v0.0.2.md",
+      "title": "v0.0.2 — LLMWIKI",
+      "kind": "release",
+      "status": "prepared",
+      "summary": "Scheda: https://app.notion.com/p/4072acdbef548130b874d6fff8bda70c Regole comuni per tutti i ruoli, identità osservate, contesto separato, decisione memoria rinviata, catalogo dei due workflow, esempi di situazioni, registro dei consigli, manifest di lettura, metadati, wikilink e riferimenti inversi. [[wiki/releases/v0.0.1]] e workflow originali sen",
+      "domain": "project",
+      "tags": [
+        "release",
+        "project"
+      ],
+      "links": [
+        "wiki/releases/v0.0.1",
+        "wiki/verification/v002",
+        "wiki/project/access-options",
+        "wiki/operations/ingest",
+        "wiki/operations/query",
+        "wiki/operations/lint"
+      ]
+    },
+    {
+      "path": "wiki/verification/v002.md",
+      "title": "Verifiche v0.0.2",
+      "kind": "verification",
+      "status": "prepared",
+      "summary": "- Parsing dei metadati e dei file JSON. - Tutti i wikilink risolti, nessun id duplicato e presenza dei riferimenti inversi. - Per i tre ruoli: stesso elenco di documenti comuni, più una sola identità individuale. - Presenza della decisione memoria fra le letture di contesto; nessuna modifica al testo individuale Architetto. - Coerenza dei checksum ",
+      "domain": "project",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "wiki/releases/v0.0.2",
+        "wiki/project/access-options"
+      ]
+    },
+    {
+      "path": "wiki/templates/component.md",
+      "title": "Modello per componente o consiglio",
+      "kind": "template",
+      "status": "prepared",
+      "summary": "ID stabile, tipo, ambito principale, versione, stato, autore, fonti e data osservata. Obiettivo, problema, situazione attuale, comportamento desiderato con esempio, confini e criteri verificabili. Input/output e valori ammessi; dipendenze e componenti riusati; letture/scritture; strumenti e permessi richiesti; approvazioni; errori, ambiguità e dupl",
+      "domain": "project",
+      "tags": [
+        "template",
+        "project"
+      ],
+      "links": [
+        "SCHEMA",
+        "wiki/common/soul",
+        "wiki/project/context"
+      ]
+    },
+    {
+      "path": "log.md",
+      "title": "Cronologia",
+      "kind": "log",
+      "status": "prepared",
+      "summary": "Creata base documentale LLMWIKI dopo richiesta di Davide. Fonte originale consultata. Riletti i due workflow e la scheda v0.0.1, senza modificarli. Predisposte regole comuni e contesto separato, con decisione memoria rinviata. Collegamento degli agenti ancora da realizzare. Relazioni: [[wiki/decisions/v002-scope]], [[wiki/releases/v0.0.2]], [[wiki/",
+      "domain": "project",
+      "tags": [
+        "log",
+        "project"
+      ],
+      "links": [
+        "wiki/decisions/v002-scope",
+        "wiki/releases/v0.0.2",
+        "wiki/releases/v0.0.1",
+        "wiki/operations/ingest",
+        "wiki/operations/query",
+        "wiki/operations/lint",
+        "wiki/implementation/wiki-access"
+      ]
+    },
+    {
+      "path": "wiki/operations/ingest.md",
+      "title": "Acquisire e integrare una fonte",
+      "kind": "context",
+      "status": "prepared",
+      "summary": "1. Leggere [[SCHEMA]], [[index]] e le pagine pertinenti prima di crearne altre. 2. Conservare la fonte autorizzata in raw con provenienza e data, senza sovrascrivere acquisizioni precedenti. Se non è possibile copiarla integralmente, conservarne il riferimento e dichiarare il limite. 3. Leggere la fonte, estrarre informazioni e discutere con Davide",
+      "domain": "project",
+      "tags": [
+        "context",
+        "project"
+      ],
+      "links": [
+        "SCHEMA",
+        "index",
+        "log",
+        "wiki/operations/lint",
+        "wiki/project/access-options"
+      ]
+    },
+    {
+      "path": "wiki/operations/query.md",
+      "title": "Consultare e conservare nuova conoscenza",
+      "kind": "context",
+      "status": "prepared",
+      "summary": "1. Leggere le regole e il contesto del manifest, poi [[index]]. 2. Selezionare e leggere le pagine pertinenti, seguendo le dipendenze necessarie; un titolo nel catalogo non prova che il contenuto sia stato letto. 3. Verificare lo stato corrente in n8n quando è necessario e gli strumenti autorizzati sono disponibili. Uno snapshot è una fotografia. 4",
+      "domain": "project",
+      "tags": [
+        "context",
+        "project"
+      ],
+      "links": [
+        "index",
+        "wiki/operations/ingest",
+        "log",
+        "wiki/project/memory-deferred"
+      ]
+    },
+    {
+      "path": "wiki/operations/lint.md",
+      "title": "Controllare struttura e coerenza",
+      "kind": "verification",
+      "status": "prepared",
+      "summary": "Controllare id, metadati, wikilink, indice, letture obbligatorie, pagine senza riferimenti in ingresso, indici derivati, checksum delle fonti e distinzione delle versioni. Cercare contraddizioni, dati superati, affermazioni prive di prova, concetti senza pagina, duplicazioni, collegamenti mancanti, domande aperte e workflow descritti come operativi",
+      "domain": "project",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "log",
+        "wiki/verification/v002"
+      ]
+    },
+    {
+      "path": "wiki/implementation/wiki-access.md",
+      "title": "Accesso GitHub alla wiki — v0.0.2",
+      "kind": "component",
+      "status": "configured",
+      "summary": "Repository privato dadolentini13-spec/EXP1, cartella LLMWIKI. Lettura per i tre ruoli; scritture future soltanto tramite Architetto e approvazione finale. Essenziali comuni, ricerca mirata classificata, snapshot coerente e log delle letture. Nessuna memoria scelta. Il caricamento risolve una sola volta il commit di main e legge manifest, sei docume",
+      "domain": "project",
+      "tags": [
+        "component",
+        "project"
+      ],
+      "links": [
+        "wiki/project/access-options",
+        "wiki/common/soul",
+        "wiki/releases/v0.0.2",
+        "wiki/verification/v002"
+      ]
+    }
+  ],
+  "operations": {
+    "ingest": "wiki/operations/ingest.md",
+    "query": "wiki/operations/query.md",
+    "lint": "wiki/operations/lint.md"
+  },
+  "repository": {
+    "owner": "dadolentini13-spec",
+    "name": "EXP1",
+    "root": "LLMWIKI",
+    "branch": "main",
+    "visibility": "private"
+  }
+}

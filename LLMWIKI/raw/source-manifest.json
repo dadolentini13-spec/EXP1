@@ -1,0 +1,30 @@
+{
+  "captured_on": "2026-10-28",
+  "external_sources": [
+    {
+      "id": "karpathy-llm-wiki",
+      "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "author": "Andrej Karpathy",
+      "type": "idea-file",
+      "reviewed": true,
+      "full_text_copied": false
+    }
+  ],
+  "project_sources": [
+    {
+      "id": "H9035WWxnJqodZFq",
+      "type": "n8n-workflow",
+      "active": false
+    },
+    {
+      "id": "Y4dZpBvwM4OoPxKU",
+      "type": "n8n-workflow",
+      "active": false
+    },
+    {
+      "id": "4072acdb-ef54-813e-90ba-fa37c181095f",
+      "type": "notion-v001"
+    }
+  ]
+}
+

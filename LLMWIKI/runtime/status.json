@@ -1,0 +1,25 @@
+{
+  "release": "0.0.2",
+  "repository": "dadolentini13-spec/EXP1",
+  "root": "LLMWIKI",
+  "reader_workflow": "FDb2O8tfyh6oMUht",
+  "access_test_workflow": "POr7YW1yIRXYseLZ",
+  "github_credential_configured": false,
+  "model_connection_configured": false,
+  "model_connection_blocked_by_auto_review": true,
+  "model_data_transfer_requires_explicit_approval": true,
+  "active": false,
+  "tests": {
+    "unit": "11 passed",
+    "n8n_simulated_bootstrap": "3083 success",
+    "n8n_simulated_read": "3084 success",
+    "n8n_simulated_required_missing": "3085 expected error",
+    "n8n_simulated_search": "3086 success"
+  },
+  "limits": [
+    "No live GitHub test through n8n without its credential",
+    "No model calls or Telegram sends",
+    "No wiki write tool configured",
+    "Full agent connection prepared, not deployed"
+  ]
+}

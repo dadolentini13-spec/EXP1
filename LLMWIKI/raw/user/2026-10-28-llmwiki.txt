@@ -1,0 +1,4 @@
+Richiesta originale di Davide, 28/10/2026:
+fai esattamente cosi https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+
+Questa acquisizione non modifica le fonti v0.0.1.

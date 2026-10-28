@@ -1,0 +1,761 @@
+{
+  "release": "0.0.2",
+  "edges": [
+    {
+      "from": "README",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "index",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "SCHEMA",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "SCHEMA",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "SCHEMA",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "SCHEMA",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "SCHEMA",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "SCHEMA",
+      "to": "wiki/operations/query",
+      "relation": "references"
+    },
+    {
+      "from": "SCHEMA",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/agents/architetto/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/agents/costruttore/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/agents/revisore/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/recommendations/shared-foundation",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/sources/references",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "log",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/query",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/common/soul",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/common/soul",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/common/soul",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/common/soul",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/common/soul",
+      "to": "wiki/sources/references",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/common/soul",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/context",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/context",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/context",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/memory-deferred",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/memory-deferred",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/access-options",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/access-options",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/access-options",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/workflows/system/inizializza-identita",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/workflows/system/inizializza-identita",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/inizializza-identita",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/inizializza-identita",
+      "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/architetto/soul",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/architetto/soul",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/costruttore/soul",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/costruttore/soul",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/revisore/soul",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/revisore/soul",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/sources/references",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/decisions/v002-scope",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/decisions/v002-scope",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/decisions/v002-scope",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/karpathy-llm-wiki",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/karpathy-llm-wiki",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/karpathy-llm-wiki",
+      "to": "wiki/recommendations/shared-foundation",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/references",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/references",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.1",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.1",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/operations/query",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/templates/component",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/templates/component",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/templates/component",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/operations/query",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/ingest",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/ingest",
+      "to": "index",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/ingest",
+      "to": "log",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/ingest",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/ingest",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/query",
+      "to": "index",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/query",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/query",
+      "to": "log",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/query",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/lint",
+      "to": "log",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/lint",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    }
+  ],
+  "backlinks": {
+    "SCHEMA": [
+      "README",
+      "index",
+      "wiki/common/soul",
+      "wiki/operations/ingest",
+      "wiki/sources/karpathy-llm-wiki",
+      "wiki/templates/component"
+    ],
+    "index": [
+      "README",
+      "wiki/operations/ingest",
+      "wiki/operations/query"
+    ],
+    "wiki/project/context": [
+      "README",
+      "SCHEMA",
+      "index",
+      "wiki/agents/architetto/soul",
+      "wiki/agents/costruttore/soul",
+      "wiki/agents/revisore/soul",
+      "wiki/common/soul",
+      "wiki/project/memory-deferred",
+      "wiki/sources/karpathy-llm-wiki",
+      "wiki/templates/component"
+    ],
+    "wiki/project/access-options": [
+      "README",
+      "index",
+      "wiki/common/soul",
+      "wiki/components/situation-router",
+      "wiki/decisions/v002-scope",
+      "wiki/implementation/wiki-access",
+      "wiki/operations/ingest",
+      "wiki/project/context",
+      "wiki/releases/v0.0.2",
+      "wiki/verification/v002",
+      "wiki/workflows/system/inizializza-identita",
+      "wiki/workflows/system/orchestratore"
+    ],
+    "wiki/releases/v0.0.1": [
+      "README",
+      "index",
+      "log",
+      "wiki/releases/v0.0.2",
+      "wiki/workflows/system/orchestratore"
+    ],
+    "wiki/releases/v0.0.2": [
+      "README",
+      "index",
+      "log",
+      "wiki/decisions/v002-scope",
+      "wiki/implementation/wiki-access",
+      "wiki/releases/v0.0.1",
+      "wiki/verification/v002"
+    ],
+    "wiki/sources/karpathy-llm-wiki": [
+      "SCHEMA",
+      "index",
+      "wiki/recommendations/shared-foundation",
+      "wiki/sources/references"
+    ],
+    "wiki/common/soul": [
+      "SCHEMA",
+      "index",
+      "wiki/agents/architetto/soul",
+      "wiki/agents/costruttore/soul",
+      "wiki/agents/revisore/soul",
+      "wiki/components/situation-router",
+      "wiki/implementation/wiki-access",
+      "wiki/project/access-options",
+      "wiki/sources/references",
+      "wiki/templates/component",
+      "wiki/workflows/system/orchestratore"
+    ],
+    "wiki/templates/component": [
+      "SCHEMA",
+      "index",
+      "wiki/components/situation-router",
+      "wiki/workflows/catalog"
+    ],
+    "wiki/operations/ingest": [
+      "SCHEMA",
+      "index",
+      "log",
+      "wiki/operations/query",
+      "wiki/releases/v0.0.2"
+    ],
+    "wiki/operations/query": [
+      "SCHEMA",
+      "index",
+      "log",
+      "wiki/releases/v0.0.2"
+    ],
+    "wiki/operations/lint": [
+      "SCHEMA",
+      "index",
+      "log",
+      "wiki/operations/ingest",
+      "wiki/releases/v0.0.2"
+    ],
+    "wiki/project/memory-deferred": [
+      "index",
+      "wiki/common/soul",
+      "wiki/decisions/v002-scope",
+      "wiki/operations/query",
+      "wiki/project/context",
+      "wiki/recommendations/shared-foundation"
+    ],
+    "wiki/workflows/catalog": [
+      "index",
+      "wiki/common/soul",
+      "wiki/components/situation-router",
+      "wiki/releases/v0.0.1"
+    ],
+    "wiki/agents/architetto/soul": [
+      "index"
+    ],
+    "wiki/agents/costruttore/soul": [
+      "index"
+    ],
+    "wiki/agents/revisore/soul": [
+      "index"
+    ],
+    "wiki/components/situation-router": [
+      "index",
+      "wiki/project/access-options",
+      "wiki/workflows/catalog"
+    ],
+    "wiki/recommendations/shared-foundation": [
+      "index",
+      "wiki/sources/karpathy-llm-wiki"
+    ],
+    "wiki/decisions/v002-scope": [
+      "index",
+      "log",
+      "wiki/project/context",
+      "wiki/project/memory-deferred",
+      "wiki/recommendations/shared-foundation"
+    ],
+    "wiki/sources/references": [
+      "index",
+      "wiki/common/soul",
+      "wiki/recommendations/shared-foundation"
+    ],
+    "wiki/verification/v002": [
+      "index",
+      "wiki/implementation/wiki-access",
+      "wiki/operations/lint",
+      "wiki/releases/v0.0.2"
+    ],
+    "log": [
+      "index",
+      "wiki/operations/ingest",
+      "wiki/operations/lint",
+      "wiki/operations/query"
+    ],
+    "wiki/implementation/wiki-access": [
+      "index",
+      "log",
+      "wiki/project/access-options"
+    ],
+    "wiki/workflows/system/orchestratore": [
+      "wiki/workflows/catalog",
+      "wiki/workflows/system/inizializza-identita"
+    ],
+    "wiki/workflows/system/inizializza-identita": [
+      "wiki/workflows/catalog",
+      "wiki/workflows/system/orchestratore"
+    ]
+  }
+}

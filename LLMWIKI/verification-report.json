@@ -1,0 +1,16 @@
+{
+  "release": "0.0.2",
+  "markdown_pages": 27,
+  "unit_tests_passed": 11,
+  "simulated_n8n_executions": [
+    "3083",
+    "3084",
+    "3085 (expected failure)",
+    "3086"
+  ],
+  "common_documents": 6,
+  "identities": 3,
+  "github_n8n_credential_configured": false,
+  "model_transmission_approved": false,
+  "model_connected": false
+}
