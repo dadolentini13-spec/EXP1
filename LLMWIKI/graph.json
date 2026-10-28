@@ -935,6 +935,31 @@
       "from": "wiki/workflows/system/orchestratore",
       "to": "wiki/project/access-options",
       "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "to": "wiki/verification/v002",
+      "relation": "references"
     }
   ],
   "backlinks": {
@@ -958,7 +983,8 @@
       "index",
       "wiki/project/memory-deferred",
       "wiki/sources/karpathy-llm-wiki",
-      "wiki/templates/component"
+      "wiki/templates/component",
+      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
     ],
     "wiki/skills/catalog": [
       "README",
@@ -999,7 +1025,8 @@
       "wiki/releases/v0.0.2",
       "wiki/verification/v002",
       "wiki/workflows/catalog",
-      "wiki/workflows/system/orchestratore-v002"
+      "wiki/workflows/system/orchestratore-v002",
+      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
     ],
     "wiki/sources/karpathy-llm-wiki": [
       "README",
@@ -1198,7 +1225,8 @@
       "wiki/implementation/wiki-access",
       "wiki/operations/lint",
       "wiki/releases/v0.0.2",
-      "wiki/workflows/system/orchestratore-v002"
+      "wiki/workflows/system/orchestratore-v002",
+      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
     ],
     "wiki/workflows/system/inizializza-identita": [
       "index",
@@ -1216,6 +1244,10 @@
       "index",
       "wiki/workflows/catalog",
       "wiki/workflows/system/inizializza-identita"
+    ],
+    "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato": [
+      "index",
+      "log"
     ]
   }
 }

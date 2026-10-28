@@ -101,3 +101,5 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 - [[wiki/workflows/system/orchestratore-v002|Orchestratore con tool v0.0.2]]
 - [[wiki/workflows/system/orchestratore|Orchestratore — stato osservato]]
 
+
+- [[wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato|Verifica accesso wiki con token aggiornato]] — verification/project; proposed.

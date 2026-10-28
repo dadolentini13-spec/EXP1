@@ -55,7 +55,7 @@
       "workflow"
     ]
   },
-  "document_count": 46,
+  "document_count": 47,
   "documents": [
     {
       "path": "README.md",
@@ -157,7 +157,8 @@
         "wiki/verification/v002",
         "wiki/workflows/system/inizializza-identita",
         "wiki/workflows/system/orchestratore-v002",
-        "wiki/workflows/system/orchestratore"
+        "wiki/workflows/system/orchestratore",
+        "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
       ]
     },
     {
@@ -180,7 +181,8 @@
         "wiki/operations/lint",
         "wiki/implementation/wiki-access",
         "wiki/verification/v002",
-        "wiki/skills/catalog"
+        "wiki/skills/catalog",
+        "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
       ]
     },
     {
@@ -887,6 +889,23 @@
         "wiki/workflows/system/inizializza-identita",
         "wiki/common/soul",
         "wiki/project/access-options"
+      ]
+    },
+    {
+      "path": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato.md",
+      "title": "Verifica accesso wiki con token aggiornato",
+      "kind": "verification",
+      "domain": "project",
+      "status": "proposed",
+      "summary": "Verifica richiesta da Davide dopo l'aggiornamento del token GitHub. - Lettura reale del contesto [[wiki/project/context]] e del manifest tramite tool n8n: esecuzione 3159, HTTP 200 per entrambi, snapshot a6b9485ba68e4cc9e5c1c39f1e336ab4a166",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "wiki/project/context",
+        "wiki/implementation/wiki-access",
+        "wiki/verification/v002"
       ]
     }
   ],
