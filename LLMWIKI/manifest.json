@@ -55,7 +55,7 @@
       "workflow"
     ]
   },
-  "document_count": 48,
+  "document_count": 49,
   "documents": [
     {
       "path": "README.md",
@@ -159,7 +159,8 @@
         "wiki/workflows/system/orchestratore-v002",
         "wiki/workflows/system/orchestratore",
         "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-        "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q"
+        "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+        "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email"
       ]
     },
     {
@@ -184,7 +185,8 @@
         "wiki/verification/v002",
         "wiki/skills/catalog",
         "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-        "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q"
+        "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+        "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email"
       ]
     },
     {
@@ -917,6 +919,23 @@
       "domain": "email",
       "status": "proposed",
       "summary": "# Stato e ambito **Proposta**, non approvata, configurata o verificata. Contratto minimo per classificare una email rispetto a un criterio esplicito. Solo etichetta: nessun instradamento, invio email o workflow realizzato. ## Interfaccia pr",
+      "tags": [
+        "component",
+        "email"
+      ],
+      "links": [
+        "wiki/project/context",
+        "wiki/workflows/catalog",
+        "wiki/skills/prompt-design"
+      ]
+    },
+    {
+      "path": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email.md",
+      "title": "Contratto proposto per classificatore AI di pertinenza email (3239)",
+      "kind": "component",
+      "domain": "email",
+      "status": "proposed",
+      "summary": "# Stato Proposta non approvata. Contratto minimo per classificare email; non è un workflow n8n né una configurazione verificata. ## Fonti effettivamente lette nel job - Architetto: [[wiki/project/context]] v0.0.2 e [[wiki/workflows/catalog]",
       "tags": [
         "component",
         "email"

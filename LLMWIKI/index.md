@@ -105,3 +105,5 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 - [[wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato|Verifica accesso wiki con token aggiornato]] — verification/project; proposed.
 
 - [[wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q|Contratto proposto: classificatore AI di pertinenza email a quattro esiti]] — component/email; proposed.
+
+- [[wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email|Contratto proposto per classificatore AI di pertinenza email (3239)]] — component/email; proposed.
