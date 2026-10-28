@@ -1,6 +1,6 @@
 ---
 id: "wiki/project/context"
-title: "Contesto dell'ecosistema"
+title: "Contesto dell’ecosistema"
 kind: "context"
 status: "approved"
 version: "0.0.2"
@@ -9,13 +9,10 @@ updated: "2026-10-28"
 
 # Contesto dell'ecosistema
 
-Davide vuole creare gradualmente nodi decisionali e workflow specialistici, con consigli e approvazione finale. L'esempio è un messaggio interpretato per intento e ambito, quindi diretto a letture, aggiornamenti o al workflow email appropriato.
+Davide costruisce gradualmente un ecosistema che distingue intento, dominio e operazione e coinvolge workflow pertinenti. Una domanda non implica automaticamente un database e un'affermazione non concede una scrittura. Le situazioni si distinguono per contratto e comportamento, non per la sola forma grammaticale.
 
-La v0.0.1 contiene una squadra con due giri e sintesi, ma non ha strumenti per costruire altri workflow. Le identità sono preparate in un inizializzatore non eseguito. Manca la credenziale REST Qdrant nei nodi predisposti. La v0.0.2 aggiunge questa base, non attiva nuovi poteri.
+Architetto coordina, propone criteri e consigli e assegna requisiti; Costruttore prepara n8n e codice anche Python; Revisore controlla requisiti e limiti. Tutti hanno almeno tre skill disponibili e scelgono quelle pertinenti dal [[wiki/skills/catalog]]. Python non viene eseguito e non è previsto un ambiente di prova per gli agenti.
 
-Nomi, firma Telegram esperimentoV1.0.0 e payload soul 1.0.0 sono riferimenti runtime storici; non coincidono con la versione documentale 0.0.2. Non rinominarli silenziosamente.
+La v0.0.2 usa tool per wiki e skill, senza documenti obbligatori. La configurazione è separata dalla v0.0.1; il nuovo nome e la firma Telegram sono esperimentoV0.0.2. La baseline conserva i nomi storici e Qdrant non viene inizializzato.
 
-Le situazioni differenti non richiedono automaticamente un workflow per ciascuna frase: riusare un workflow parametrico quando contratto, permessi e comportamento coincidono; separare quando differiscono in modo sostanziale. Questo è un criterio proposto da valutare, non una decisione per tutti i casi.
-
-Prima della prossima proposta leggere [[wiki/decisions/v002-scope]] e [[wiki/project/memory-deferred]]. L'accesso runtime alla base è ancora da collegare: [[wiki/project/access-options]].
-
+Conservare decisioni e fonti nella wiki senza inventare stato n8n o verifiche. [[wiki/project/memory-deferred]] registra una decisione futura: non inserirla nel prompt individuale di Architetto. Stato attuale: [[wiki/implementation/wiki-access]].

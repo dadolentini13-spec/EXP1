@@ -1,0 +1,20 @@
+[
+  {
+    "id": "prompt-design/openai",
+    "repo": "openai/openai-cookbook",
+    "path": "examples/gpt-5/gpt-5-2_prompting_guide.ipynb",
+    "sha": "a8132ca2f7a5de3a6cf15d9e79d172787b42b697"
+  },
+  {
+    "id": "prompt-design/anthropic",
+    "repo": "anthropics/prompt-eng-interactive-tutorial",
+    "path": "Anthropic 1P/02_Being_Clear_and_Direct.ipynb",
+    "sha": "0d277542e927652da25b0014c9b346723af55881"
+  },
+  {
+    "id": "prompt-design/dair",
+    "repo": "dair-ai/Prompt-Engineering-Guide",
+    "path": "guides/prompts-intro.md",
+    "sha": "57673726396dd94acb23bdb1e67f27c78ee85a8e"
+  }
+]

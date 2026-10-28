@@ -17,7 +17,7 @@ updated: "2026-10-28"
 Questa è una nostra istanza del metodo citato in [[wiki/sources/karpathy-llm-wiki]], non un'implementazione ufficiale dell'autore.
 
 ## Metadati
-Ogni pagina Markdown ha id univoco uguale al percorso senza estensione, titolo, tipo, stato, versione e data. Tipi ammessi: index, schema, policy, identity, context, decision, recommendation, workflow, component, source, release, verification, template, log.
+Ogni pagina Markdown ha id univoco uguale al percorso senza estensione, titolo, tipo, stato, versione e data. Tipi ammessi: index, schema, policy, identity, context, decision, recommendation, workflow, component, source, release, verification, template, log, skill.
 
 Stati: prepared, proposed, approved, configured, verified, blocked, deferred, historical. Un documento prepared non rende operativo il componente descritto; i workflow indicano separatamente configurazione ed esecuzione.
 
@@ -33,4 +33,4 @@ Prima di modificare Notion leggere le regole del progetto di destinazione, non a
 
 ## Operazioni del manutentore LLM
 L'assistente mantiene la wiki integrando sintesi e relazioni; Davide sceglie fonti, obiettivi e decisioni. Seguire [[wiki/operations/ingest]], [[wiki/operations/query]] e [[wiki/operations/lint]]. Leggere l'indice e conservare le risposte utili entro l'autorizzazione ricevuta.
-La base operativa usa file Markdown e Git. Manifest e grafo JSON sono indici derivati, non un database della memoria. Ogni modifica richiede controllo e commit; la destinazione remota resta da scegliere.
+La base operativa usa file Markdown e Git. Manifest e grafo JSON sono indici derivati, non un database della memoria. Ogni modifica richiede controllo e commit; la destinazione remota è dadolentini13-spec/EXP1, radice LLMWIKI. Nessuna lettura è obbligatoria: l’assenza di un documento produce indisponibilità, non un arresto.

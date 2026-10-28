@@ -1,46 +1,103 @@
 ---
 id: "index"
-title: "Indice"
+title: "Indice della LLMWIKI"
 kind: "index"
-status: "prepared"
+status: "configured"
 version: "0.0.2"
 updated: "2026-10-28"
 ---
 
-# Indice
+# Indice della LLMWIKI
 
-## Letture comuni
-- [[SCHEMA]] — organizzazione e manutenzione.
-- [[wiki/common/soul]] — regole per tutti gli agenti.
-- [[wiki/project/context]] — scopo e stato del progetto.
-- [[wiki/project/memory-deferred]] — decisione futura sulla memoria.
-- [[wiki/workflows/catalog]] — componenti reali e previsti.
+Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.json. Usa i tool per leggere soltanto ciò che serve; nessun documento è obbligatorio.
 
-## Ruoli
-- [[wiki/agents/architetto/soul]]
-- [[wiki/agents/costruttore/soul]]
-- [[wiki/agents/revisore/soul]]
+## component
 
-## Architettura e conoscenza
-- [[wiki/project/access-options]] — confronto accesso n8n/wiki.
-- [[wiki/components/situation-router]] — casi decisionali ancora da implementare.
-- [[wiki/recommendations/shared-foundation]] — consiglio e basi.
-- [[wiki/decisions/v002-scope]] — richieste di Davide e scelte aperte.
-- [[wiki/sources/karpathy-llm-wiki]] — origine del metodo.
-- [[wiki/sources/references]] — riferimenti su prompting e orchestrazione.
+- [[wiki/components/situation-router|Interpretare situazioni e scegliere workflow]]
+- [[wiki/implementation/wiki-access|Accesso wiki tramite tool — v0.0.2]]
 
-## Storico e verifica
-- [[wiki/releases/v0.0.1]]
-- [[wiki/releases/v0.0.2]]
-- [[wiki/verification/v002]]
-- [[wiki/templates/component]]
-- [[log]]
+## context
 
+- [[wiki/operations/ingest|Acquisire e integrare una fonte]]
+- [[wiki/operations/query|Consultare e conservare nuova conoscenza]]
+- [[wiki/project/context|Contesto dell’ecosistema]]
 
-## Operazioni
-- [[wiki/operations/ingest]] — acquisire e integrare.
-- [[wiki/operations/query]] — consultare e conservare conoscenza.
-- [[wiki/operations/lint]] — controllare struttura e coerenza.
+## decision
 
-## Implementazione accesso
-- [[wiki/implementation/wiki-access]] — configurazione salvata, prove e blocchi residui.
+- [[wiki/decisions/v002-scope|Decisioni v0.0.2]]
+- [[wiki/project/access-options|Consultazione e accessi]]
+- [[wiki/project/memory-deferred|Scelta della memoria rinviata]]
+
+## identity
+
+- [[wiki/agents/architetto/soul|Architetto: identità individuale]]
+- [[wiki/agents/costruttore/soul|Costruttore: identità individuale]]
+- [[wiki/agents/revisore/soul|Revisore: identità individuale]]
+
+## index
+
+- [[README|LLMWIKI — ingresso]]
+- [[wiki/skills/catalog|Catalogo skill pertinenti]]
+- [[wiki/workflows/catalog|Catalogo iniziale dei workflow]]
+
+## log
+
+- [[log|Cronologia]]
+
+## policy
+
+- [[wiki/common/soul|Regole condivise]]
+
+## recommendation
+
+- [[wiki/recommendations/shared-foundation|Consiglio — regole comuni e catalogo verificabile]]
+
+## release
+
+- [[wiki/releases/v0.0.1|v0.0.1 — baseline conservata]]
+- [[wiki/releases/v0.0.2|Release v0.0.2]]
+
+## schema
+
+- [[SCHEMA|Schema e regole della wiki]]
+
+## skill
+
+- [[wiki/skills/n8n-agents-official|Agent come risorsa n8n]]
+- [[wiki/skills/n8n-ai-nodes-official|Nodi AI e strumenti]]
+- [[wiki/skills/n8n-binary-and-data-official|File e dati binari]]
+- [[wiki/skills/n8n-code-nodes-official|Codice nei nodi]]
+- [[wiki/skills/n8n-credentials-and-security-official|Credenziali e permessi]]
+- [[wiki/skills/n8n-data-tables-official|Tabelle operative n8n]]
+- [[wiki/skills/n8n-debugging-official|Diagnosi e revisione]]
+- [[wiki/skills/n8n-error-handling-official|Gestione errori]]
+- [[wiki/skills/n8n-expressions-official|Espressioni n8n]]
+- [[wiki/skills/n8n-extending-mcp-official|Estensione MCP]]
+- [[wiki/skills/n8n-loops-official|Cicli e iterazioni]]
+- [[wiki/skills/n8n-node-configuration-official|Configurazione nodi]]
+- [[wiki/skills/n8n-subworkflows-official|Architettura modulare]]
+- [[wiki/skills/n8n-workflow-lifecycle-official|Ciclo di vita workflow]]
+- [[wiki/skills/prompt-design|Skill prompt: contratti, esempi e valutazione]]
+- [[wiki/skills/python-engineering|Skill Python: progettazione e consegna del codice]]
+- [[wiki/skills/wiki-maintenance|Skill LLM Wiki: ingest, query e lint]]
+
+## source
+
+- [[wiki/sources/karpathy-llm-wiki|Fonte originale LLM Wiki]]
+- [[wiki/sources/references|Riferimenti per prompt e orchestrazione]]
+
+## template
+
+- [[wiki/templates/component|Modello per componente o consiglio]]
+
+## verification
+
+- [[wiki/operations/lint|Controllare struttura e coerenza]]
+- [[wiki/verification/v002|Verifiche v0.0.2]]
+
+## workflow
+
+- [[wiki/workflows/system/inizializza-identita|Inizializzazione identità — stato osservato]]
+- [[wiki/workflows/system/orchestratore-v002|Orchestratore con tool v0.0.2]]
+- [[wiki/workflows/system/orchestratore|Orchestratore — stato osservato]]
+

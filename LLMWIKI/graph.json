@@ -3,12 +3,12 @@
   "edges": [
     {
       "from": "README",
-      "to": "SCHEMA",
+      "to": "index",
       "relation": "references"
     },
     {
       "from": "README",
-      "to": "index",
+      "to": "SCHEMA",
       "relation": "references"
     },
     {
@@ -18,7 +18,17 @@
     },
     {
       "from": "README",
-      "to": "wiki/project/access-options",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "wiki/sources/karpathy-llm-wiki",
       "relation": "references"
     },
     {
@@ -29,6 +39,11 @@
     {
       "from": "README",
       "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "README",
+      "to": "wiki/project/memory-deferred",
       "relation": "references"
     },
     {
@@ -68,12 +83,22 @@
     },
     {
       "from": "index",
-      "to": "SCHEMA",
+      "to": "wiki/components/situation-router",
       "relation": "references"
     },
     {
       "from": "index",
-      "to": "wiki/common/soul",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/query",
       "relation": "references"
     },
     {
@@ -83,12 +108,17 @@
     },
     {
       "from": "index",
-      "to": "wiki/project/memory-deferred",
+      "to": "wiki/decisions/v002-scope",
       "relation": "references"
     },
     {
       "from": "index",
-      "to": "wiki/workflows/catalog",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/project/memory-deferred",
       "relation": "references"
     },
     {
@@ -108,52 +138,17 @@
     },
     {
       "from": "index",
-      "to": "wiki/project/access-options",
+      "to": "README",
       "relation": "references"
     },
     {
       "from": "index",
-      "to": "wiki/components/situation-router",
+      "to": "wiki/skills/catalog",
       "relation": "references"
     },
     {
       "from": "index",
-      "to": "wiki/recommendations/shared-foundation",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/decisions/v002-scope",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/sources/karpathy-llm-wiki",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/sources/references",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/releases/v0.0.1",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/releases/v0.0.2",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/verification/v002",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/templates/component",
+      "to": "wiki/workflows/catalog",
       "relation": "references"
     },
     {
@@ -163,317 +158,152 @@
     },
     {
       "from": "index",
-      "to": "wiki/operations/ingest",
+      "to": "wiki/common/soul",
       "relation": "references"
     },
     {
       "from": "index",
-      "to": "wiki/operations/query",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/operations/lint",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/implementation/wiki-access",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/common/soul",
-      "to": "SCHEMA",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/common/soul",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/common/soul",
-      "to": "wiki/project/memory-deferred",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/common/soul",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/common/soul",
-      "to": "wiki/sources/references",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/common/soul",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/context",
-      "to": "wiki/decisions/v002-scope",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/context",
-      "to": "wiki/project/memory-deferred",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/context",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/memory-deferred",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/memory-deferred",
-      "to": "wiki/decisions/v002-scope",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/access-options",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/access-options",
-      "to": "wiki/components/situation-router",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/project/access-options",
-      "to": "wiki/implementation/wiki-access",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/catalog",
-      "to": "wiki/workflows/system/orchestratore",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/catalog",
-      "to": "wiki/workflows/system/inizializza-identita",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/catalog",
-      "to": "wiki/components/situation-router",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/catalog",
-      "to": "wiki/templates/component",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/orchestratore",
-      "to": "wiki/releases/v0.0.1",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/orchestratore",
-      "to": "wiki/workflows/system/inizializza-identita",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/orchestratore",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/orchestratore",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/inizializza-identita",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/inizializza-identita",
-      "to": "wiki/workflows/system/orchestratore",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/agents/architetto/soul",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/agents/architetto/soul",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/agents/costruttore/soul",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/agents/costruttore/soul",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/agents/revisore/soul",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/agents/revisore/soul",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/templates/component",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/recommendations/shared-foundation",
-      "to": "wiki/sources/karpathy-llm-wiki",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/recommendations/shared-foundation",
-      "to": "wiki/sources/references",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/recommendations/shared-foundation",
-      "to": "wiki/decisions/v002-scope",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/recommendations/shared-foundation",
-      "to": "wiki/project/memory-deferred",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/decisions/v002-scope",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/decisions/v002-scope",
-      "to": "wiki/project/memory-deferred",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/decisions/v002-scope",
-      "to": "wiki/releases/v0.0.2",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/sources/karpathy-llm-wiki",
-      "to": "SCHEMA",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/sources/karpathy-llm-wiki",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/sources/karpathy-llm-wiki",
       "to": "wiki/recommendations/shared-foundation",
       "relation": "references"
     },
     {
-      "from": "wiki/sources/references",
-      "to": "wiki/sources/karpathy-llm-wiki",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/sources/references",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/releases/v0.0.1",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/releases/v0.0.1",
-      "to": "wiki/releases/v0.0.2",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/releases/v0.0.2",
+      "from": "index",
       "to": "wiki/releases/v0.0.1",
       "relation": "references"
     },
     {
-      "from": "wiki/releases/v0.0.2",
-      "to": "wiki/verification/v002",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/releases/v0.0.2",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/releases/v0.0.2",
-      "to": "wiki/operations/ingest",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/releases/v0.0.2",
-      "to": "wiki/operations/query",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/releases/v0.0.2",
-      "to": "wiki/operations/lint",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/verification/v002",
+      "from": "index",
       "to": "wiki/releases/v0.0.2",
       "relation": "references"
     },
     {
-      "from": "wiki/verification/v002",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/templates/component",
+      "from": "index",
       "to": "SCHEMA",
       "relation": "references"
     },
     {
-      "from": "wiki/templates/component",
-      "to": "wiki/common/soul",
+      "from": "index",
+      "to": "wiki/skills/n8n-agents-official",
       "relation": "references"
     },
     {
-      "from": "wiki/templates/component",
-      "to": "wiki/project/context",
+      "from": "index",
+      "to": "wiki/skills/n8n-ai-nodes-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-binary-and-data-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-code-nodes-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-credentials-and-security-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-data-tables-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-debugging-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-error-handling-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-expressions-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-extending-mcp-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-loops-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-node-configuration-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-subworkflows-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-workflow-lifecycle-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/prompt-design",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/python-engineering",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/wiki-maintenance",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/sources/references",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/system/inizializza-identita",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/system/orchestratore-v002",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/system/orchestratore",
       "relation": "references"
     },
     {
@@ -509,6 +339,101 @@
     {
       "from": "log",
       "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/architetto/soul",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/architetto/soul",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/costruttore/soul",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/costruttore/soul",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/revisore/soul",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/agents/revisore/soul",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/common/soul",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/decisions/v002-scope",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/decisions/v002-scope",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/decisions/v002-scope",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/workflows/system/orchestratore-v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/skills/catalog",
       "relation": "references"
     },
     {
@@ -537,6 +462,16 @@
       "relation": "references"
     },
     {
+      "from": "wiki/operations/lint",
+      "to": "log",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/operations/lint",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
       "from": "wiki/operations/query",
       "to": "index",
       "relation": "references"
@@ -557,75 +492,522 @@
       "relation": "references"
     },
     {
-      "from": "wiki/operations/lint",
-      "to": "log",
+      "from": "wiki/project/access-options",
+      "to": "wiki/implementation/wiki-access",
       "relation": "references"
     },
     {
-      "from": "wiki/operations/lint",
-      "to": "wiki/verification/v002",
+      "from": "wiki/project/access-options",
+      "to": "wiki/skills/catalog",
       "relation": "references"
     },
     {
-      "from": "wiki/implementation/wiki-access",
-      "to": "wiki/project/access-options",
+      "from": "wiki/project/context",
+      "to": "wiki/skills/catalog",
       "relation": "references"
     },
     {
-      "from": "wiki/implementation/wiki-access",
-      "to": "wiki/common/soul",
+      "from": "wiki/project/context",
+      "to": "wiki/project/memory-deferred",
       "relation": "references"
     },
     {
-      "from": "wiki/implementation/wiki-access",
+      "from": "wiki/project/context",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/memory-deferred",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/project/memory-deferred",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/sources/references",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/recommendations/shared-foundation",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.1",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.1",
       "to": "wiki/releases/v0.0.2",
       "relation": "references"
     },
     {
-      "from": "wiki/implementation/wiki-access",
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
       "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/workflows/system/orchestratore-v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-workflow-lifecycle-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-subworkflows-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-ai-nodes-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-node-configuration-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-code-nodes-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-expressions-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-error-handling-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-credentials-and-security-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-debugging-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-loops-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-binary-and-data-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-data-tables-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-extending-mcp-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/n8n-agents-official",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/python-engineering",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/prompt-design",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/catalog",
+      "to": "wiki/skills/wiki-maintenance",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-agents-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-ai-nodes-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-binary-and-data-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-code-nodes-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-credentials-and-security-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-data-tables-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-debugging-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-error-handling-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-expressions-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-extending-mcp-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-loops-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-node-configuration-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-subworkflows-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/n8n-workflow-lifecycle-official",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/prompt-design",
+      "to": "wiki/sources/references",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/prompt-design",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/python-engineering",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/python-engineering",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/wiki-maintenance",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/wiki-maintenance",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/wiki-maintenance",
+      "to": "index",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/wiki-maintenance",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/wiki-maintenance",
+      "to": "wiki/operations/query",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/skills/wiki-maintenance",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/karpathy-llm-wiki",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/karpathy-llm-wiki",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/karpathy-llm-wiki",
+      "to": "wiki/recommendations/shared-foundation",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/references",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/sources/references",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/templates/component",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/templates/component",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/templates/component",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
+      "to": "wiki/workflows/system/orchestratore-v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/workflows/system/inizializza-identita",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/workflows/system/orchestratore-v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/inizializza-identita",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/inizializza-identita",
+      "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/agents/architetto/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/agents/costruttore/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/agents/revisore/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/workflows/system/inizializza-identita",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/project/access-options",
       "relation": "references"
     }
   ],
   "backlinks": {
-    "SCHEMA": [
-      "README",
-      "index",
-      "wiki/common/soul",
-      "wiki/operations/ingest",
-      "wiki/sources/karpathy-llm-wiki",
-      "wiki/templates/component"
-    ],
     "index": [
       "README",
       "wiki/operations/ingest",
-      "wiki/operations/query"
+      "wiki/operations/query",
+      "wiki/skills/wiki-maintenance"
+    ],
+    "SCHEMA": [
+      "README",
+      "index",
+      "wiki/operations/ingest",
+      "wiki/skills/wiki-maintenance",
+      "wiki/sources/karpathy-llm-wiki",
+      "wiki/templates/component"
     ],
     "wiki/project/context": [
       "README",
       "SCHEMA",
       "index",
-      "wiki/agents/architetto/soul",
-      "wiki/agents/costruttore/soul",
-      "wiki/agents/revisore/soul",
-      "wiki/common/soul",
       "wiki/project/memory-deferred",
       "wiki/sources/karpathy-llm-wiki",
       "wiki/templates/component"
     ],
-    "wiki/project/access-options": [
+    "wiki/skills/catalog": [
       "README",
       "index",
-      "wiki/common/soul",
-      "wiki/components/situation-router",
-      "wiki/decisions/v002-scope",
+      "log",
+      "wiki/agents/architetto/soul",
+      "wiki/agents/costruttore/soul",
+      "wiki/agents/revisore/soul",
       "wiki/implementation/wiki-access",
-      "wiki/operations/ingest",
+      "wiki/project/access-options",
+      "wiki/project/context",
+      "wiki/releases/v0.0.2",
+      "wiki/skills/n8n-agents-official",
+      "wiki/skills/n8n-ai-nodes-official",
+      "wiki/skills/n8n-binary-and-data-official",
+      "wiki/skills/n8n-code-nodes-official",
+      "wiki/skills/n8n-credentials-and-security-official",
+      "wiki/skills/n8n-data-tables-official",
+      "wiki/skills/n8n-debugging-official",
+      "wiki/skills/n8n-error-handling-official",
+      "wiki/skills/n8n-expressions-official",
+      "wiki/skills/n8n-extending-mcp-official",
+      "wiki/skills/n8n-loops-official",
+      "wiki/skills/n8n-node-configuration-official",
+      "wiki/skills/n8n-subworkflows-official",
+      "wiki/skills/n8n-workflow-lifecycle-official",
+      "wiki/skills/prompt-design",
+      "wiki/skills/python-engineering",
+      "wiki/verification/v002"
+    ],
+    "wiki/implementation/wiki-access": [
+      "README",
+      "index",
+      "log",
+      "wiki/common/soul",
+      "wiki/project/access-options",
       "wiki/project/context",
       "wiki/releases/v0.0.2",
       "wiki/verification/v002",
-      "wiki/workflows/system/inizializza-identita",
-      "wiki/workflows/system/orchestratore"
+      "wiki/workflows/catalog",
+      "wiki/workflows/system/orchestratore-v002"
+    ],
+    "wiki/sources/karpathy-llm-wiki": [
+      "README",
+      "SCHEMA",
+      "index",
+      "wiki/recommendations/shared-foundation",
+      "wiki/skills/wiki-maintenance",
+      "wiki/sources/references"
     ],
     "wiki/releases/v0.0.1": [
       "README",
@@ -639,15 +1021,16 @@
       "index",
       "log",
       "wiki/decisions/v002-scope",
-      "wiki/implementation/wiki-access",
-      "wiki/releases/v0.0.1",
-      "wiki/verification/v002"
+      "wiki/releases/v0.0.1"
     ],
-    "wiki/sources/karpathy-llm-wiki": [
-      "SCHEMA",
+    "wiki/project/memory-deferred": [
+      "README",
       "index",
+      "wiki/decisions/v002-scope",
+      "wiki/operations/query",
+      "wiki/project/context",
       "wiki/recommendations/shared-foundation",
-      "wiki/sources/references"
+      "wiki/verification/v002"
     ],
     "wiki/common/soul": [
       "SCHEMA",
@@ -656,10 +1039,10 @@
       "wiki/agents/costruttore/soul",
       "wiki/agents/revisore/soul",
       "wiki/components/situation-router",
-      "wiki/implementation/wiki-access",
-      "wiki/project/access-options",
+      "wiki/skills/python-engineering",
       "wiki/sources/references",
       "wiki/templates/component",
+      "wiki/workflows/system/orchestratore-v002",
       "wiki/workflows/system/orchestratore"
     ],
     "wiki/templates/component": [
@@ -673,70 +1056,58 @@
       "index",
       "log",
       "wiki/operations/query",
-      "wiki/releases/v0.0.2"
+      "wiki/skills/wiki-maintenance"
     ],
     "wiki/operations/query": [
       "SCHEMA",
       "index",
       "log",
-      "wiki/releases/v0.0.2"
+      "wiki/skills/wiki-maintenance"
     ],
     "wiki/operations/lint": [
       "SCHEMA",
       "index",
       "log",
       "wiki/operations/ingest",
-      "wiki/releases/v0.0.2"
-    ],
-    "wiki/project/memory-deferred": [
-      "index",
-      "wiki/common/soul",
-      "wiki/decisions/v002-scope",
-      "wiki/operations/query",
-      "wiki/project/context",
-      "wiki/recommendations/shared-foundation"
-    ],
-    "wiki/workflows/catalog": [
-      "index",
-      "wiki/common/soul",
-      "wiki/components/situation-router",
-      "wiki/releases/v0.0.1"
-    ],
-    "wiki/agents/architetto/soul": [
-      "index"
-    ],
-    "wiki/agents/costruttore/soul": [
-      "index"
-    ],
-    "wiki/agents/revisore/soul": [
-      "index"
+      "wiki/skills/wiki-maintenance"
     ],
     "wiki/components/situation-router": [
       "index",
-      "wiki/project/access-options",
       "wiki/workflows/catalog"
-    ],
-    "wiki/recommendations/shared-foundation": [
-      "index",
-      "wiki/sources/karpathy-llm-wiki"
     ],
     "wiki/decisions/v002-scope": [
       "index",
       "log",
-      "wiki/project/context",
       "wiki/project/memory-deferred",
       "wiki/recommendations/shared-foundation"
     ],
-    "wiki/sources/references": [
+    "wiki/project/access-options": [
       "index",
-      "wiki/common/soul",
-      "wiki/recommendations/shared-foundation"
+      "wiki/components/situation-router",
+      "wiki/decisions/v002-scope",
+      "wiki/operations/ingest",
+      "wiki/workflows/system/inizializza-identita",
+      "wiki/workflows/system/orchestratore"
     ],
-    "wiki/verification/v002": [
+    "wiki/agents/architetto/soul": [
       "index",
-      "wiki/implementation/wiki-access",
-      "wiki/operations/lint",
-      "wiki/releases/v0.0.2"
+      "wiki/workflows/system/orchestratore-v002"
+    ],
+    "wiki/agents/costruttore/soul": [
+      "index",
+      "wiki/workflows/system/orchestratore-v002"
+    ],
+    "wiki/agents/revisore/soul": [
+      "index",
+      "wiki/workflows/system/orchestratore-v002"
+    ],
+    "README": [
+      "index"
+    ],
+    "wiki/workflows/catalog": [
+      "index",
+      "wiki/components/situation-router",
+      "wiki/releases/v0.0.1"
     ],
     "log": [
       "index",
@@ -744,18 +1115,107 @@
       "wiki/operations/lint",
       "wiki/operations/query"
     ],
-    "wiki/implementation/wiki-access": [
+    "wiki/recommendations/shared-foundation": [
+      "index",
+      "wiki/sources/karpathy-llm-wiki"
+    ],
+    "wiki/skills/n8n-agents-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-ai-nodes-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-binary-and-data-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-code-nodes-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-credentials-and-security-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-data-tables-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-debugging-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-error-handling-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-expressions-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-extending-mcp-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-loops-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-node-configuration-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-subworkflows-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-workflow-lifecycle-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/prompt-design": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/python-engineering": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/wiki-maintenance": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/sources/references": [
+      "index",
+      "wiki/recommendations/shared-foundation",
+      "wiki/skills/prompt-design"
+    ],
+    "wiki/verification/v002": [
       "index",
       "log",
-      "wiki/project/access-options"
-    ],
-    "wiki/workflows/system/orchestratore": [
-      "wiki/workflows/catalog",
-      "wiki/workflows/system/inizializza-identita"
+      "wiki/implementation/wiki-access",
+      "wiki/operations/lint",
+      "wiki/releases/v0.0.2",
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/workflows/system/inizializza-identita": [
+      "index",
       "wiki/workflows/catalog",
       "wiki/workflows/system/orchestratore"
+    ],
+    "wiki/workflows/system/orchestratore-v002": [
+      "index",
+      "wiki/implementation/wiki-access",
+      "wiki/releases/v0.0.2",
+      "wiki/verification/v002",
+      "wiki/workflows/catalog"
+    ],
+    "wiki/workflows/system/orchestratore": [
+      "index",
+      "wiki/workflows/catalog",
+      "wiki/workflows/system/inizializza-identita"
     ]
   }
 }

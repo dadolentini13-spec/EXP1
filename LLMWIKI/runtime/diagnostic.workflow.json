@@ -1,0 +1,128 @@
+{
+  "id": "POr7YW1yIRXYseLZ",
+  "name": "ESPERIMENTO | LLMWIKI | Verifica accesso v0.0.2",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "09a91634-0463-49ad-acd7-37764a0bcfa9",
+      "name": "Preparazione",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/dadolentini13-spec/EXP1/git/ref/heads/main",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github.raw+json"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          },
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true,
+              "responseFormat": "text",
+              "outputPropertyName": "data"
+            }
+          },
+          "timeout": 20000
+        },
+        "method": "GET"
+      },
+      "id": "0b691ae1-9f39-4d39-a847-6b7dae35a742",
+      "name": "Risolvi snapshot GitHub",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -80,
+        -448
+      ],
+      "onError": "continueRegularOutput",
+      "notes": "Assegnare GitHub LLMWIKI in sola lettura su EXP1.",
+      "credentials": {
+        "githubApi": {
+          "id": "7uxzuMzezdN4pcTv",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "id": "36ec2727-c551-484d-a757-91d4cdfcc73f",
+      "name": "Esito accesso",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const r=$input.first().json;let body=r.body??r.data??r;try{if(typeof body==='string')body=JSON.parse(body);}catch{}const sha=body.object?.sha;return [{json:{ok:/^[a-f0-9]{40}$/.test(sha||''),continue:true,sha:sha||null,http_status:Number(r.statusCode||0),error:body.message||null,note:'Diagnostica non bloccante. Nessun documento obbligatorio e nessun modello coinvolto.'}}];"
+      }
+    }
+  ],
+  "connections": {
+    "Preparazione": {
+      "main": [
+        [
+          {
+            "node": "Risolvi snapshot GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Risolvi snapshot GitHub": {
+      "main": [
+        [
+          {
+            "node": "Esito accesso",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "nodeGroups": [
+    {
+      "id": "cc5c2545-1c5c-49b9-86fc-d3e1ad58ffef",
+      "name": "Caricamento senza modelli",
+      "nodeNames": [
+        "Risolvi snapshot GitHub"
+      ],
+      "description": "Fissa un commit e verifica tutte le letture comuni. Nessun contenuto viene passato a un modello AI."
+    }
+  ],
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": true,
+    "saveExecutionProgress": true,
+    "saveManualExecutions": true,
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "executionTimeout": 120,
+    "binaryMode": "separate"
+  }
+}

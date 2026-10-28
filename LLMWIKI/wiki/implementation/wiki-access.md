@@ -1,40 +1,39 @@
 ---
 id: "wiki/implementation/wiki-access"
-title: "Accesso GitHub alla wiki — v0.0.2"
+title: "Accesso wiki tramite tool — v0.0.2"
 kind: "component"
 status: "configured"
 version: "0.0.2"
 updated: "2026-10-28"
 ---
 
-# Accesso GitHub alla wiki
+# Accesso wiki tramite tool
 
-## Decisioni applicate
-Repository privato dadolentini13-spec/EXP1, cartella LLMWIKI. Lettura per i tre ruoli; scritture future soltanto tramite Architetto e approvazione finale. Essenziali comuni, ricerca mirata classificata, snapshot coerente e log delle letture. Nessuna memoria scelta.
+## Contratto approvato
+GitHub privato EXP1, radice LLMWIKI. Ogni AI Agent ha Wiki e Skill collegati alla porta ai_tool, senza nodi di precaricamento sulla catena principale. I subworkflow interni implementano i tool. Le istruzioni essenziali condivise e le tre identità sono incluse nella configurazione degli agenti; nessun documento esterno è obbligatorio.
 
-## Architettura preparata
-Il caricamento risolve una sola volta il commit di main e legge manifest, sei documenti comuni e tre identità a quel commit. I tre agenti ricevono le stesse regole; contesto e indice restano distinti dall'identità individuale. Le pagine ulteriori si cercano per metadati e parole, con l'agente che sceglie query e percorsi; non viene usato un motore semantico a embedding.
+Search restituisce metadati classificati; read legge una pagina indicizzata. Non vengono caricati tutti i documenti. La ricerca è per parole e classificazioni, guidata dall'agente: non è ricerca semantica a embedding. I wikilink indirizzano ulteriori letture.
 
-Il lettore espone search/read con commit, ruolo e job fissati dal chiamante. I percorsi devono essere nella lista del manifest e nella wiki; niente raw, URL arbitrari o scritture. La ricerca restituisce metadati, non tutta la wiki. Le letture sono registrate nelle esecuzioni n8n con documento, snapshot, agente, esito e data.
+Un documento o indice assente, una richiesta non ammessa, 403 o timeout restituiscono ok:false, continue:true e dettagli: non arrestano il confronto. I permessi restano applicati dal codice; continuare non significa ignorarli.
 
-## Workflow salvati
-- [Consultazione wiki](https://n8n-uull.srv2097610.hstgr.cloud/workflow/FDb2O8tfyh6oMUht): 7 nodi, trigger da workflow, sola lettura.
-- [Verifica accesso](https://n8n-uull.srv2097610.hstgr.cloud/workflow/POr7YW1yIRXYseLZ): 9 nodi, avvio manuale, nessun modello e nessun Telegram.
+## Snapshot e audit
+La prima consultazione della wiki risolve main a uno SHA e lo conserva per job_id in una tabella tecnica n8n; le chiamate successive usano quello SHA. I ruoli sono sequenziali e parallel_tool_calls è disabilitato. La tabella contiene soltanto job_id e SHA: non è la memoria degli agenti. Le skill ufficiali hanno revisione sorgente fissa; le tre guide interne sono incluse nel deployment. Se manca l'accesso privato, le skill pubbliche e incluse restano disponibili.
 
-Entrambi sono inattivi e richiedono credenziale GitHub. Il lettore limita il chiamante alla verifica accesso; quando il flusso agenti sarà autorizzato, il perimetro sarà aggiornato secondo necessità.
+Le esecuzioni n8n conservano i risultati e i log di lettura con job, ruolo, percorso, revisione, esito e data. I log non sono inseriti nel prompt intero a ogni turno.
 
-## Collegamento agenti non applicato
-La configurazione completa dei tre agenti è preparata in runtime/planned-agent-connection.json, ma l'aggiornamento n8n è stato respinto dalla revisione automatica: passerebbe wiki privata e messaggi Telegram ai modelli OpenAI senza autorizzazione specifica alla trasmissione. Non è stato aggirato il blocco. Al posto del collegamento AI è stata salvata una verifica che legge soltanto e non chiama modelli o Telegram.
+## Scrittura Architetto
+Registra wiki è collegato soltanto ad Architetto. Crea esclusivamente un nuovo record proposto sotto wiki/records e aggiorna manifest, indice, log e grafo in un commit atomico. Non può sovrascrivere regole, identità, raw o v0.0.1. Link inesistenti, duplicati e concorrenza restituiscono un esito al chiamante. Nessun force push. La registrazione non equivale ad approvazione delle azioni descritte. La sessione corrente conserva lo snapshot; le nuove sessioni vedono il commit nuovo.
 
-## Verifiche
-11 test unitari superati. Test n8n con servizi esterni simulati: 3083 caricamento riuscito; 3084 lettura riuscita; 3085 arresto atteso su SCHEMA mancante; 3086 ricerca riuscita. Sono stati controllati i log restituiti, non solo gli stati delle esecuzioni.
+## Workflow
+- Orchestratore: y6GPjnFOVuronj0z, 27 nodi, tre agenti, due round e sintesi finale.
+- Consultazione: FDb2O8tfyh6oMUht, 21 nodi interni al tool.
+- Registrazione: nnpZJePc10RpgNGa, 21 nodi interni al tool.
+- Diagnostica: POr7YW1yIRXYseLZ, 3 nodi, nessun modello, risultato non bloccante.
 
-Queste prove non dimostrano l'accesso GitHub reale da n8n né l'uso della wiki da parte dei modelli. Una credenziale Contents: Read sul solo EXP1 e il consenso specifico al passaggio ai modelli sono prerequisiti distinti.
+## Stato e limite osservato
+Tutti salvati e inattivi nella cartella Esperimento del progetto personale corretto. Credenziale GitHub account collegata; lettura reale 3118 ha ricevuto 403 Resource not accessible by personal access token su EXP1. Servono autorizzazione a EXP1 e Contents Read and write per leggere e scrivere. Nessuna credenziale viene memorizzata nel testo dei nodi.
 
-## Piano rimanente
-1. Configurare credenziale GitHub in n8n e testare una lettura reale senza modelli.
-2. Ottenere il consenso esplicito alla trasmissione ai modelli OpenAI.
-3. Applicare la configurazione dei tre agenti, mantenendo la v0.0.1.
-4. Verificare contesto, snapshot e chiamate agli strumenti prima dell'attivazione.
+La precedente revisione automatica aveva bloccato il collegamento ai modelli; Davide ha poi approvato la revisione e l'implementazione completa. La configurazione dei modelli OpenAI è stata salvata con la nuova architettura, senza attivarla. Nessuna prova completa con modelli e Telegram è stata effettuata. Vedi [[wiki/verification/v002]], [[wiki/workflows/system/orchestratore-v002]] e [[wiki/skills/catalog]].
 
-Collegamenti: [[wiki/project/access-options]], [[wiki/common/soul]], [[wiki/releases/v0.0.2]], [[wiki/verification/v002]].
+## Accesso Telegram
+Il mittente viene controllato prima dei modelli e dei tool. Solo chat privata e ID utente esplicitamente autorizzato; runtime/deployment.json ha una lista inizialmente vuota. Il numero ID di Davide non è disponibile nelle fonti consultate: va configurato prima di attivare il bot. Questo controllo di accesso è distinto dalla consultazione non bloccante dei documenti.

@@ -2,27 +2,17 @@
 id: "README"
 title: "LLMWIKI — ingresso"
 kind: "index"
-status: "prepared"
+status: "configured"
 version: "0.0.2"
 updated: "2026-10-28"
 ---
 
-# LLMWIKI — ingresso
+# LLMWIKI
 
-Base documentale dell'ecosistema di Davide. Versione 0.0.2: preparata, non ancora collegata ai bot.
+Base condivisa dell'ecosistema di Davide nel repository privato EXP1. La v0.0.2 configura i tre agenti n8n con tool Wiki e Skill. Nessuna lettura obbligatoria e nessun blocco se un documento manca.
 
-Inizia da [[SCHEMA]], poi [[index]] e [[wiki/project/context]]. Le letture comuni e quelle per ruolo sono in `manifest.json`.
+Consulta [[index]], [[SCHEMA]], [[wiki/project/context]], [[wiki/skills/catalog]] e [[wiki/implementation/wiki-access]] secondo il compito. Il metodo di riferimento è [[wiki/sources/karpathy-llm-wiki]].
 
-La cartella contiene documenti Markdown collegati, metadati JSON, snapshot sanitizzati e uno storico. Può essere portata in GitHub o su un server; nessun archivio della memoria è stato selezionato.
+Stato: configurazioni salvate e inattive. La credenziale n8n è collegata ma GitHub restituisce 403 su EXP1: occorre abilitare il repository e Contents Read and write. Catalogo, guide incluse e skill pubbliche funzionano anche senza accesso alla wiki privata. Non sono stati eseguiti Python, chiamate ai modelli o invii Telegram durante queste verifiche.
 
-La pubblicazione della cartella non concede da sola accesso agli agenti: seguire [[wiki/project/access-options]]. La versione storica è [[wiki/releases/v0.0.1]], la nuova è [[wiki/releases/v0.0.2]].
-
-
-## Utilizzo e storico
-Il manutentore con accesso ai file segue SCHEMA e le operazioni dell'indice. Il pacchetto include un bundle con lo storico Git, ripristinabile in una directory separata:
-
-```bash
-git clone /percorso/LLMWIKI-history.bundle LLMWIKI
-```
-
-Il bundle ripristina lo storico della release. Rapporti di consegna e bundle stesso sono materiale di confezionamento esterno allo storico. Nessun repository GitHub remoto è stato creato o aggiornato e i bot n8n non hanno ancora accesso ai file.
+Lo storico è GitHub; [[wiki/releases/v0.0.1]] resta storico e la revisione è [[wiki/releases/v0.0.2]]. La scelta della memoria resta nel contesto [[wiki/project/memory-deferred]].

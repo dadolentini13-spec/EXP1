@@ -10,7 +10,7 @@ updated: "2026-10-28"
 # Controllare struttura e coerenza
 
 ## Struttura
-Controllare id, metadati, wikilink, indice, letture obbligatorie, pagine senza riferimenti in ingresso, indici derivati, checksum delle fonti e distinzione delle versioni.
+Controllare id, metadati, wikilink, indice, politica di lettura non bloccante, pagine senza riferimenti in ingresso, indici derivati, checksum delle fonti e distinzione delle versioni.
 
 ## Contenuto
 Cercare contraddizioni, dati superati, affermazioni prive di prova, concetti senza pagina, duplicazioni, collegamenti mancanti, domande aperte e workflow descritti come operativi pur essendo proposti.

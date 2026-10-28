@@ -2,24 +2,45 @@
   "release": "0.0.2",
   "repository": "dadolentini13-spec/EXP1",
   "root": "LLMWIKI",
+  "main_workflow": "y6GPjnFOVuronj0z",
   "reader_workflow": "FDb2O8tfyh6oMUht",
-  "access_test_workflow": "POr7YW1yIRXYseLZ",
-  "github_credential_configured": false,
-  "model_connection_configured": false,
-  "model_connection_blocked_by_auto_review": true,
-  "model_data_transfer_requires_explicit_approval": true,
+  "writer_workflow": "nnpZJePc10RpgNGa",
+  "diagnostic_workflow": "POr7YW1yIRXYseLZ",
+  "agent_tools_configured": true,
+  "github_credential_assigned": true,
+  "private_wiki_access_verified": false,
+  "private_wiki_http_status": 403,
+  "github_required_permission": "EXP1 repository + Contents: Read and write",
+  "model_connection_configured": true,
+  "model_connection_blocked_by_auto_review": false,
+  "revision_approved_by_user": true,
+  "telegram_allowed_user_ids_configured": false,
   "active": false,
+  "python_execution_enabled": false,
+  "skills_available_per_role": 17,
   "tests": {
-    "unit": "11 passed",
-    "n8n_simulated_bootstrap": "3083 success",
-    "n8n_simulated_read": "3084 success",
-    "n8n_simulated_required_missing": "3085 expected error",
-    "n8n_simulated_search": "3086 success"
+    "unit": "17 passed",
+    "private_github_live": "3118: HTTP403 returned as unavailable, workflow success",
+    "skill_catalog": "3120: 17 entries",
+    "python_guide": "3121: bundled guide delivered, no execution",
+    "n8n_skill_live": "3122: official Code skill HTTP200 pinned revision",
+    "main_simulated": "3125: two rounds + final, 7 contributions; models and Telegram pinned",
+    "writer_role_denial": "3126: Costruttore denied without write",
+    "prompt_source_live": "3130: Anthropic markdown-only HTTP200 pinned revision",
+    "missing_document": "3135: simulated404 logged, continue true, workflow success",
+    "writer_simulated": "3140: proposed record, atomic5file commit; mutations simulated. Earlier3136 exposed unavailable structuredClone, fixed and regression-tested.",
+    "telegram_denial": "3137: unauthorized sender rejected before models",
+    "snapshot_reuse": "3138: same SHA reused, no head resolution"
   },
-  "limits": [
-    "No live GitHub test through n8n without its credential",
-    "No model calls or Telegram sends",
-    "No wiki write tool configured",
-    "Full agent connection prepared, not deployed"
+  "remaining": [
+    "Fix n8n GitHub token repository grant and Contents permissions",
+    "Configure Davide Telegram user ID before activation",
+    "Live private wiki read/write and complete model-to-tool integration verification before activation"
+  ],
+  "not_performed": [
+    "No Python execution",
+    "No model calls in verification",
+    "No Telegram sends",
+    "No workflow activation"
   ]
 }

@@ -20,3 +20,7 @@ Catalogo limitato ai due workflow riletti per questo progetto, non a tutti i wor
 
 Ogni scheda indica dipendenze, input/output e verifiche. Controllare lo stato corrente in n8n quando il compito lo richiede; gli snapshot in raw sono una fotografia, non sincronizzazione continua.
 
+
+## v0.0.2 — configurata, inattiva
+
+[[wiki/workflows/system/orchestratore-v002]] descrive il nuovo sistema e i tool. [[wiki/implementation/wiki-access]] elenca reader, writer e diagnostica. Le voci storiche sopra descrivono soltanto la v0.0.1.
