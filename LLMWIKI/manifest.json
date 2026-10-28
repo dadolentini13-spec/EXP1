@@ -55,7 +55,7 @@
       "workflow"
     ]
   },
-  "document_count": 47,
+  "document_count": 48,
   "documents": [
     {
       "path": "README.md",
@@ -158,7 +158,8 @@
         "wiki/workflows/system/inizializza-identita",
         "wiki/workflows/system/orchestratore-v002",
         "wiki/workflows/system/orchestratore",
-        "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
+        "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+        "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q"
       ]
     },
     {
@@ -182,7 +183,8 @@
         "wiki/implementation/wiki-access",
         "wiki/verification/v002",
         "wiki/skills/catalog",
-        "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato"
+        "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+        "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q"
       ]
     },
     {
@@ -906,6 +908,23 @@
         "wiki/workflows/system/inizializza-identita",
         "wiki/common/soul",
         "wiki/project/access-options"
+      ]
+    },
+    {
+      "path": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q.md",
+      "title": "Contratto proposto: classificatore AI di pertinenza email a quattro esiti",
+      "kind": "component",
+      "domain": "email",
+      "status": "proposed",
+      "summary": "# Stato e ambito **Proposta**, non approvata, configurata o verificata. Contratto minimo per classificare una email rispetto a un criterio esplicito. Solo etichetta: nessun instradamento, invio email o workflow realizzato. ## Interfaccia pr",
+      "tags": [
+        "component",
+        "email"
+      ],
+      "links": [
+        "wiki/project/context",
+        "wiki/workflows/catalog",
+        "wiki/skills/prompt-design"
       ]
     }
   ],

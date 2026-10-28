@@ -960,6 +960,31 @@
       "from": "wiki/workflows/system/orchestratore",
       "to": "wiki/project/access-options",
       "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "to": "wiki/skills/prompt-design",
+      "relation": "references"
     }
   ],
   "backlinks": {
@@ -984,7 +1009,8 @@
       "wiki/project/memory-deferred",
       "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "wiki/sources/karpathy-llm-wiki",
-      "wiki/templates/component"
+      "wiki/templates/component",
+      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q"
     ],
     "wiki/skills/catalog": [
       "README",
@@ -1134,7 +1160,8 @@
     "wiki/workflows/catalog": [
       "index",
       "wiki/components/situation-router",
-      "wiki/releases/v0.0.1"
+      "wiki/releases/v0.0.1",
+      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q"
     ],
     "log": [
       "index",
@@ -1204,7 +1231,8 @@
     ],
     "wiki/skills/prompt-design": [
       "index",
-      "wiki/skills/catalog"
+      "wiki/skills/catalog",
+      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q"
     ],
     "wiki/skills/python-engineering": [
       "index",
@@ -1246,6 +1274,10 @@
       "wiki/workflows/system/inizializza-identita"
     ],
     "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato": [
+      "index",
+      "log"
+    ],
+    "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q": [
       "index",
       "log"
     ]
