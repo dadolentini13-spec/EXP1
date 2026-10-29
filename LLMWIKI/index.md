@@ -113,3 +113,9 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 - [[wiki/records/3866-summary|Collaudo integrazione documentale]] — verification/project; proposed.
 
 - [[wiki/implementation/wiki-integration|Registrazione unica e integrazione tematica]] — implementation/project; configured.
+
+## Operazioni Karpathy — ampliamento
+- [[wiki/operations/bootstrap-soul|Avvio: identità canoniche]]
+- [[wiki/operations/ingest-intelligente|Ingest intelligente]]
+- [[wiki/operations/query-accumulativa|Query cumulativa]]
+- [[wiki/operations/lint-wikilinks|Lint e wikilink]]
