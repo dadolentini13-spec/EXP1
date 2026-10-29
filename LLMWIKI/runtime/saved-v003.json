@@ -1,0 +1,25 @@
+[
+  {
+    "id": "FDb2O8tfyh6oMUht",
+    "versionId": "57697c1e-fb1b-432e-9f87-c6b788459c94",
+    "active": true,
+    "activeVersionId": "57697c1e-fb1b-432e-9f87-c6b788459c94",
+    "sameAsDraft": true,
+    "nodeCount": 21
+  },
+  {
+    "id": "nnpZJePc10RpgNGa",
+    "versionId": "cce6223d-59de-476f-bf20-9d5717ce62db",
+    "active": true,
+    "activeVersionId": "cce6223d-59de-476f-bf20-9d5717ce62db",
+    "sameAsDraft": true,
+    "nodeCount": 21
+  },
+  {
+    "id": "H9035WWxnJqodZFq",
+    "versionId": "f64bcc1b-a65a-4f5e-976a-3dbc98ec91ea",
+    "active": false,
+    "activeVersionId": null,
+    "nodeCount": 27
+  }
+]

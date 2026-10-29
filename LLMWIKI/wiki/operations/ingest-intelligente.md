@@ -2,7 +2,7 @@
 id: "wiki/operations/ingest-intelligente"
 title: "Ingestione intelligente e integrazione della conoscenza"
 kind: "context"
-status: "prepared"
+status: "configured"
 version: "0.0.3"
 updated: "2026-10-29"
 ---
@@ -24,3 +24,6 @@ Applicazione del metodo originale di [[wiki/sources/karpathy-llm-wiki]], operazi
 Fonti `raw/` immutabili; pagine approvate e identità non modificate senza autorizzazione; provenance e date sulle informazioni significative; snapshot coerente per compito; gestione non bloccante dei documenti aggiuntivi mancanti. Lo stato `proposed` non è un'approvazione di Davide.
 
 Usa tool Wiki per lettura, tool Registra wiki per le patch permesse e la registrazione finale. Le capacità non presenti nel tool vengono dichiarate come limiti, non simulate.
+
+
+Contratto operativo: integrations_json per patch esatte e new_pages_json per nuove pagine sotto components/concepts/decisions; massimo12pagine e120000caratteri per commit, tutte nuove pagine proposed. Fonti, record e nuovi percorsi devono risultare assenti (HTTP404); le pagine esistenti richiedono testo precedente univoco. Un retry restituisce il record esistente e non applica ulteriori modifiche.

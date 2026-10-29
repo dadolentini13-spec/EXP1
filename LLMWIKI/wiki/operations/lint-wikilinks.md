@@ -2,7 +2,7 @@
 id: "wiki/operations/lint-wikilinks"
 title: "Revisione strutturale, semantica e dei wikilink"
 kind: "verification"
-status: "prepared"
+status: "configured"
 version: "0.0.3"
 updated: "2026-10-29"
 ---
@@ -28,3 +28,6 @@ Architetto prepara correzioni tematiche conformi al tool di registrazione; Revis
 
 ## Esito
 Rapporto sintetico ordinato per impatto; le correzioni concordate aggiornano le pagine coinvolte con un commit e una voce su `log.md`; i conflitti irrisolti restano tracciati, non vengono cancellati.
+
+
+Tool operativo: Wiki con mode lint restituisce rilievi su manifest, grafo, backlinks e index. Il rapporto specifica page_bodies_checked:false e semantic_review_performed:false. I controlli su ogni corpo, provenienza e significato richiedono letture mirate e revisione degli agenti; non si dichiara una copertura semantica globale.

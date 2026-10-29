@@ -2,7 +2,7 @@
 id: "wiki/operations/query-accumulativa"
 title: "Consultazione che accumula nuova conoscenza"
 kind: "context"
-status: "prepared"
+status: "configured"
 version: "0.0.3"
 updated: "2026-10-29"
 ---
@@ -19,3 +19,4 @@ Metodo [[wiki/sources/karpathy-llm-wiki]], operazione Query. Non ridurre la risp
 6. Architetto coordina la registrazione consentita, mentre Costruttore e Revisore propongono contenuto e controlli. Nessuna decisione approvata viene inventata.
 
 Output: risposta, pagine consultate, conflitti, nuova conoscenza proposta, percorsi di integrazione, esito del salvataggio (se effettuato), limiti.
+

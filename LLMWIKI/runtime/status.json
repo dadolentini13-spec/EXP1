@@ -1,5 +1,5 @@
 {
-  "release": "0.0.2",
+  "release": "0.0.3",
   "repository": "dadolentini13-spec/EXP1",
   "root": "LLMWIKI",
   "main_workflow": "H9035WWxnJqodZFq",
@@ -19,7 +19,7 @@
   "python_execution_enabled": false,
   "skills_available_per_role": 17,
   "tests": {
-    "unit": "29 passed",
+    "unit": "29 passed on previous v0.0.2 source; not a v0.0.3 regression result",
     "private_github_live": "3159: manifest e contesto privato HTTP200",
     "skill_catalog": "3120: 17 entries",
     "python_guide": "3121: bundled guide delivered, no execution",
@@ -46,7 +46,8 @@
     "integration_readback": "3893: updated topic read in new job,HTTP200,SHA c8f5e371daed4d710759e7c61438ed25f4c6fd3f"
   },
   "remaining": [
-    "Attach live n8n schema inspection/validation tool to Costruttore: MCP credential missing, endpoint and tool IDs to confirm"
+    "MCP credential in n8n for Costruttore live node schemas; must verify server tools with that credential before attaching",
+    "No new v0.0.3 model/tool collaudo performed per user instruction"
   ],
   "not_performed": [
     "No Python execution",
@@ -60,12 +61,49 @@
   "official_workflow_name": "ESPERIMENTO | Sistema",
   "archived_parallel_workflow": "y6GPjnFOVuronj0z",
   "internal_tools_published": true,
-  "live_acceptance": "wiki_tools_passed; schema_tool_pending",
+  "live_acceptance": "v0.0.2 verified previously; v0.0.3 configured, not runtime tested",
   "updated": "2026-10-29",
   "wiki_integration_configured": true,
   "wiki_integration_verified": true,
   "schema_tool_attached": false,
   "schema_tool_prepared": true,
-  "review": "Independent review: no remaining Important issues after embedded-bundle regeneration; minor retry limitation if target read unavailable before dedup;29JS tests pass",
-  "model_behavior_limit": "Live3866 attempted5early writes; deterministic guard blocked all before GitHub"
+  "review": "Static independent review. Fixed unindexed record collision, builder empty-body regeneration and model API mode drift; no runtime tests in this review.",
+  "model_behavior_limit": "Live3866 attempted5early writes; deterministic guard blocked all before GitHub",
+  "wiki_bootstrap_tool_configured": true,
+  "runtime_identity_copies_removed": true,
+  "identity_fetch_before_model_guaranteed": false,
+  "wiki_lint_tool_configured": true,
+  "wiki_lint_scope": "manifest_graph_index; semantic review delegated to agents on selected pages",
+  "wiki_creation_configured": true,
+  "thematic_pages_per_commit": 12,
+  "thematic_batch_characters": 120000,
+  "new_resource_collision_preflight_configured": true,
+  "new_v003_runtime_tests_performed": false,
+  "saved_versions": [
+    {
+      "id": "FDb2O8tfyh6oMUht",
+      "versionId": "57697c1e-fb1b-432e-9f87-c6b788459c94",
+      "active": true,
+      "activeVersionId": "57697c1e-fb1b-432e-9f87-c6b788459c94",
+      "sameAsDraft": true,
+      "nodeCount": 21
+    },
+    {
+      "id": "nnpZJePc10RpgNGa",
+      "versionId": "cce6223d-59de-476f-bf20-9d5717ce62db",
+      "active": true,
+      "activeVersionId": "cce6223d-59de-476f-bf20-9d5717ce62db",
+      "sameAsDraft": true,
+      "nodeCount": 21
+    },
+    {
+      "id": "H9035WWxnJqodZFq",
+      "versionId": "f64bcc1b-a65a-4f5e-976a-3dbc98ec91ea",
+      "active": false,
+      "activeVersionId": null,
+      "nodeCount": 27
+    }
+  ],
+  "schema_validation": "39 node schemas valid; syntax inspected; no v0.0.3 runtime test",
+  "automatic_review": "Main update initially blocked; accepted after unchanged graph/credentials/inactive status and prior user authorizations were provided"
 }

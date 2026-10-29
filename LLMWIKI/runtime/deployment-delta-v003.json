@@ -1,0 +1,17 @@
+{
+  "workflowId": "H9035WWxnJqodZFq",
+  "before_active": false,
+  "after_active": false,
+  "node_names_unchanged": true,
+  "connections_unchanged": true,
+  "credentials_unchanged": true,
+  "settings_unchanged": true,
+  "existing_wiki_writer_before": {
+    "__rl": true,
+    "mode": "id",
+    "value": "nnpZJePc10RpgNGa"
+  },
+  "existing_telegram_allowlist": true,
+  "nodes_added": [],
+  "send_node_unchanged": true
+}

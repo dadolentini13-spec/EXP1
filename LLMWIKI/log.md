@@ -45,3 +45,8 @@ Registrazione unica per compito, solo fase finale, fonte originale e patch temat
 
 ## 2026-10-29 | release | v0.0.3
 Registrate le modifiche successive alla v0.0.2: prompt iniziali che rimandano alle identità canoniche, nuove procedure Ingestione/Consultazione/Revisione e catalogazione nella wiki. Nessuna modifica al ciclo degli agenti o ai tool esistenti durante il passaggio di versione; nessun nuovo test. [[wiki/releases/v0.0.3]].
+
+
+## 29/10/2026 — completamento operativo v0.0.3
+
+Bootstrap canonico via tool, rimozione delle identità duplicate nel runtime, lint strutturale e creazione/integrazione tematica fino a12pagine con fonte e indici atomici. Preservati una sintesi per compito, retry, approvazioni e workflow unico. Nessun nuovo collaudo dei bot; configurazione distinta dalle prove storiche3866/3893. Rimane credenziale MCP di Costruttore. Vedi [[wiki/releases/v0.0.3]].
