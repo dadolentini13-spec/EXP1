@@ -57,7 +57,7 @@
       "workflow"
     ]
   },
-  "document_count": 52,
+  "document_count": 56,
   "documents": [
     {
       "path": "README.md",
@@ -1013,6 +1013,42 @@
         "wiki/verification/v002",
         "wiki/releases/v0.0.1"
       ]
+    },
+    {
+      "path": "wiki/operations/bootstrap-soul.md",
+      "title": "Bootstrap leggero delle identità",
+      "kind": "context",
+      "domain": "project",
+      "status": "prepared",
+      "summary": "Bootstrap leggero delle identità",
+      "version": "0.0.2"
+    },
+    {
+      "path": "wiki/operations/ingest-intelligente.md",
+      "title": "Ingest intelligente e integrazione della conoscenza",
+      "kind": "context",
+      "domain": "project",
+      "status": "prepared",
+      "summary": "Ingest intelligente e integrazione della conoscenza",
+      "version": "0.0.2"
+    },
+    {
+      "path": "wiki/operations/query-accumulativa.md",
+      "title": "Query che accumula nuova conoscenza",
+      "kind": "context",
+      "domain": "project",
+      "status": "prepared",
+      "summary": "Query che accumula nuova conoscenza",
+      "version": "0.0.2"
+    },
+    {
+      "path": "wiki/operations/lint-wikilinks.md",
+      "title": "Lint strutturale, semantico e wikilink",
+      "kind": "verification",
+      "domain": "project",
+      "status": "prepared",
+      "summary": "Lint strutturale, semantico e wikilink",
+      "version": "0.0.2"
     }
   ],
   "operations": {
