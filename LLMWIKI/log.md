@@ -34,3 +34,5 @@ Preparati lettore e verifica manuale in n8n, senza attivazioni. Test locali e si
 ##29/10/2026 — unificazione approvata e collaudo reale
 
 Unico orchestratore H9035WWxnJqodZFq; copia parallela archiviata; tool interni riservati. Live3239: sette contributi, letture Wiki/Skill, due record proposti; richiesta di una sola scheda non rispettata. Entrambi conservati senza approvazione. Stato e limiti in [[wiki/verification/v002]].
+
+- 2026-10-29 — Architetto, job 3833: registrato [[wiki/records/3833-summary|Verifica documentale della proposta situation-router nel collaudo 3833]] come proposed; integrazioni: nessuna.

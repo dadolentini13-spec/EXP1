@@ -56,7 +56,7 @@
       "workflow"
     ]
   },
-  "document_count": 49,
+  "document_count": 50,
   "documents": [
     {
       "path": "README.md",
@@ -162,7 +162,8 @@
         "wiki/workflows/system/orchestratore",
         "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
         "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-        "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email"
+        "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+        "wiki/records/3833-summary"
       ]
     },
     {
@@ -188,7 +189,8 @@
         "wiki/skills/catalog",
         "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
         "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-        "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email"
+        "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+        "wiki/records/3833-summary"
       ]
     },
     {
@@ -948,6 +950,22 @@
         "wiki/implementation/wiki-access",
         "wiki/verification/v002",
         "wiki/releases/v0.0.1"
+      ]
+    },
+    {
+      "path": "wiki/records/3833-summary.md",
+      "title": "Verifica documentale della proposta situation-router nel collaudo 3833",
+      "kind": "verification",
+      "domain": "project",
+      "status": "proposed",
+      "summary": "# Verifica documentale: proposta situation-router Stato: proposta documentale; non è un’approvazione né una verifica runtime. ## Evidenze La pagina [[wiki/components/situation-router]] è stata letta nello snapshot del job 3833: versione 0.0",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "wiki/components/situation-router",
+        "wiki/skills/wiki-maintenance"
       ]
     }
   ],
