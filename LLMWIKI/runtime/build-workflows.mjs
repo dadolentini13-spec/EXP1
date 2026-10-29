@@ -4,7 +4,7 @@ const root=new URL('../../',import.meta.url).pathname;
 const core=fs.readFileSync(new URL('./wiki-access.mjs',import.meta.url),'utf8').replace(/^export /gm,'');
 const base=JSON.parse(fs.readFileSync(new URL('../raw/v0.0.1/orchestratore.sanitized.json',import.meta.url)));
 for(const n of base.nodes){if(n.name==='Telegram Trigger'||n.name==='Send a text message')n.credentials={telegramApi:{id:'C0DNVZHTUp74UOHg',name:'Esperimento - Telegram'}};if(n.type==='@n8n/n8n-nodes-langchain.lmChatOpenAi')n.credentials={openAiApi:{id:'ZeF2JvTqxLKhOvOt',name:'JARVIS - OpenAI'}};}
-const readerId='FDb2O8tfyh6oMUht',mainId='y6GPjnFOVuronj0z',writerId='nnpZJePc10RpgNGa',tableId='AyxbyCQNNFCs0IbH';
+const readerId='FDb2O8tfyh6oMUht',mainId='H9035WWxnJqodZFq',writerId='nnpZJePc10RpgNGa',tableId='AyxbyCQNNFCs0IbH';
 const cred={githubApi:{id:'7uxzuMzezdN4pcTv',name:'GitHub account'}};
 const api='https://api.github.com/repos/dadolentini13-spec/EXP1';
 const expr=s=>'={{ '+s+' }}';
@@ -47,8 +47,8 @@ const remove=n=>n.name.startsWith('Leggi soul ')||n.name.startsWith('Skill ');
 const nodes=base.nodes.filter(n=>!remove(n)).map(n=>{const o=structuredClone(n);delete o.id;delete o.webhookId;return o;});
 for(const role of ['Architetto','Costruttore','Revisore']){
  nodes.find(n=>n.name==='Contesto '+role).parameters.jsCode=core+`\nreturn [{json:agentContext($('Stato ${role}').first().json,${JSON.stringify(role)})}];`;
- nodes.find(n=>n.name===role).parameters.options={...nodes.find(n=>n.name===role).parameters.options,maxIterations:12,returnIntermediateSteps:true};
- const model=nodes.find(n=>n.name==='Modello '+role);model.parameters.builtInTools={codeInterpreter:false};model.parameters.options={...model.parameters.options,extraBody:{parallel_tool_calls:false}};
+ nodes.find(n=>n.name===role).parameters.options={...nodes.find(n=>n.name===role).parameters.options,maxIterations:20,returnIntermediateSteps:true};
+ const model=nodes.find(n=>n.name==='Modello '+role);model.parameters.builtInTools={codeInterpreter:false};model.parameters.options={...model.parameters.options,maxTokens:6000,extraBody:{parallel_tool_calls:false}};
  const values={job_id:expr(`$('Contesto ${role}').first().json.job_id`),agent:role,mode:expr("$fromAI('mode','search per cercare pagine, read per leggere un percorso.','string','search')"),query:expr("$fromAI('query','Argomento o parole chiave.','string','')"),domain:expr("$fromAI('domain','Dominio opzionale: email, project, agents, workflow. Vuoto per tutti.','string','')"),kind:expr("$fromAI('kind','Tipo opzionale. Vuoto per tutti.','string','')"),path:expr("$fromAI('path','Percorso relativo Markdown restituito dalla ricerca; per read.','string','')")};
  nodes.push({name:'Wiki '+role,type:'@n8n/n8n-nodes-langchain.toolWorkflow',typeVersion:2.2,position:[0,0],parameters:{description:'Consulta la LLMWIKI privata: cerca per classificazione, leggi pagine e segui wikilink. Snapshot fissato per questa esecuzione; errori restituiti come unavailable, mai interrompere il lavoro per documento assente.',source:'database',workflowId:{__rl:true,mode:'id',value:readerId},workflowInputs:{mappingMode:'defineBelow',value:values,schema:schema(Object.keys(values))}}});
  const skillValues={job_id:values.job_id,agent:role,mode:expr("$fromAI('skill_mode','skills per catalogo e suggerimenti pertinenti; skill per leggere una skill.','string','skills')"),query:expr("$fromAI('skill_query','Compito per selezionare skill pertinenti.','string','')"),domain:'',kind:'',path:expr("$fromAI('skill_id','ID skill, ID/references/file.md per riferimento n8n, oppure prompt-design/openai, prompt-design/anthropic, prompt-design/dair.','string','')")};
@@ -61,7 +61,7 @@ const startNode=nodes.find(n=>n.name==='Avvia compito');startNode.parameters.jsC
 const edges=[];for(const [s,types]of Object.entries(base.connections)){if(s.startsWith('Leggi soul ')||s.startsWith('Skill '))continue;for(const[type,outs]of Object.entries(types))outs.forEach((out,i)=>out.forEach(c=>{if(c.node.startsWith('Leggi soul '))edges.push([s,'Contesto '+s.replace('Stato ',''),type,i]);else edges.push([s,c.node,type,i]);}));}
 for(const role of ['Architetto','Costruttore','Revisore']){edges.push(['Wiki '+role,role,'ai_tool'],['Skill '+role,role,'ai_tool']);}
 edges.push(['Registra wiki Architetto','Architetto','ai_tool']);
-const main=graph(nodes,edges);main.name='ESPERIMENTO | Sistema | v0.0.2';main.settings.executionTimeout=1200;
+const main=graph(nodes,edges);main.name='ESPERIMENTO | Sistema';main.id=mainId;main.settings.executionTimeout=1200;
 nodes.find(n=>n.name==='Prepara risposta Telegram').parameters.jsCode="const s=$input.first().json;const raw=String(s.output||'').replace(/^esperimentoV[\\d.]+\\s*[—:\\-]?\\s*Davide\\s*[,.:]?\\s*/i,'');const full='esperimentoV0.0.2 — Davide,\\n\\n'+raw;const chunks=[];for(let i=0;i<full.length;i+=3800)chunks.push({json:{...s,output:full.slice(i,i+3800)},pairedItem:{item:0}});return chunks;";
 fs.writeFileSync(new URL('./orchestratore-v002.workflow.json',import.meta.url),JSON.stringify(main,null,2));
 for(const [role,identity]of Object.entries(identities))fs.writeFileSync(new URL('../wiki/agents/'+role.toLowerCase()+'/soul.md',import.meta.url),`---\nid: "wiki/agents/${role.toLowerCase()}/soul"\ntitle: "${role}: identità individuale"\nkind: "identity"\nstatus: "configured"\nversion: "0.0.2"\nupdated: "2026-10-28"\n---\n\n${identity}\n\nRegole comuni: [[wiki/common/soul]]. Competenze consultabili: [[wiki/skills/catalog]].\n`);

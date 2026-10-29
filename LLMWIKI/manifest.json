@@ -50,6 +50,7 @@
     ],
     "domains": [
       "agents",
+      "email",
       "project",
       "skills",
       "workflow"
@@ -75,6 +76,7 @@
         "wiki/skills/catalog",
         "wiki/implementation/wiki-access",
         "wiki/sources/karpathy-llm-wiki",
+        "wiki/verification/v002",
         "wiki/releases/v0.0.1",
         "wiki/releases/v0.0.2",
         "wiki/project/memory-deferred"
@@ -296,7 +298,7 @@
       "kind": "component",
       "status": "configured",
       "domain": "project",
-      "summary": "GitHub privato EXP1, radice LLMWIKI. Ogni AI Agent ha Wiki e Skill collegati alla porta ai_tool, senza nodi di precaricamento sulla catena principale. I subworkflow interni implementano i tool. Le istruzioni essenziali condivise e le tre identità sono incluse nella configurazione degli agenti; nessu",
+      "summary": "La v0.0.2 approvata è integrata nell'orchestratore originale **H9035WWxnJqodZFq — ESPERIMENTO | Sistema** (27 nodi). La copia parallela y6GPjnFOVuronj0z è archiviata. Le due utility Wiki/Skill e scrittura restano tool interni richiamabili dall'orchestratore; non sono altre squadre ufficiali. Il read",
       "tags": [
         "component",
         "project"
@@ -304,7 +306,8 @@
       "links": [
         "wiki/verification/v002",
         "wiki/workflows/system/orchestratore-v002",
-        "wiki/skills/catalog"
+        "wiki/skills/catalog",
+        "wiki/workflows/system/orchestratore"
       ]
     },
     {
@@ -429,6 +432,40 @@
       ]
     },
     {
+      "path": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q.md",
+      "title": "Contratto proposto: classificatore AI di pertinenza email a quattro esiti",
+      "kind": "component",
+      "status": "proposed",
+      "domain": "email",
+      "summary": "**Proposta**, non approvata, configurata o verificata. Contratto minimo per classificare una email rispetto a un criterio esplicito. Solo etichetta: nessun instradamento, invio email o workflow realizzato. Input applicativo richiesto: `criterion` e `email_text`, stringhe non vuote. Validarne presenz",
+      "tags": [
+        "component",
+        "email"
+      ],
+      "links": [
+        "wiki/project/context",
+        "wiki/workflows/catalog",
+        "wiki/skills/prompt-design"
+      ]
+    },
+    {
+      "path": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email.md",
+      "title": "Contratto proposto per classificatore AI di pertinenza email (3239)",
+      "kind": "component",
+      "status": "proposed",
+      "domain": "email",
+      "summary": "Proposta non approvata. Contratto minimo per classificare email; non è un workflow n8n né una configurazione verificata. - Architetto: [[wiki/project/context]] v0.0.2 e [[wiki/workflows/catalog]] v0.0.2 (letti nuovamente in round 2); skill [[wiki/skills/prompt-design]] `deployment-v0.0.2`. - Nel tra",
+      "tags": [
+        "component",
+        "email"
+      ],
+      "links": [
+        "wiki/project/context",
+        "wiki/workflows/catalog",
+        "wiki/skills/prompt-design"
+      ]
+    },
+    {
       "path": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato.md",
       "title": "Verifica accesso wiki con token aggiornato",
       "kind": "verification",
@@ -467,7 +504,7 @@
       "kind": "release",
       "status": "configured",
       "domain": "project",
-      "summary": "Estende la base LLM Wiki con un nuovo orchestratore, identità completate, tool Wiki e Skill per tre agenti, registrazione controllata riservata ad Architetto. 17 skill disponibili a ogni ruolo, selezionate per compito; n8n ufficiali a revisione fissa più guide interne Python, prompt e wiki. Nessun d",
+      "summary": "Estende la base LLM Wiki con l’orchestratore unico originale aggiornato, identità completate, tool Wiki e Skill per tre agenti, registrazione controllata riservata ad Architetto. 17 skill disponibili a ogni ruolo, selezionate per compito; n8n ufficiali a revisione fissa più guide interne Python, pro",
       "tags": [
         "release",
         "project"
@@ -829,12 +866,13 @@
       "kind": "verification",
       "status": "configured",
       "domain": "project",
-      "summary": "17 test JavaScript superati: niente documenti obbligatori, richieste invalide e documenti mancanti restituiti senza arresto; ricerca classificata; cataloghi per ruolo; registrazione riservata, link validi, indici coerenti, titoli sicuri; autorizzazione Telegram; compatibilità sandbox n8n senza struc",
+      "summary": "La v0.0.2 approvata è integrata nell'orchestratore originale **H9035WWxnJqodZFq — ESPERIMENTO | Sistema** (27 nodi). La copia parallela y6GPjnFOVuronj0z è archiviata. Le due utility Wiki/Skill e scrittura restano tool interni richiamabili dall'orchestratore; non sono altre squadre ufficiali. Il read",
       "tags": [
         "verification",
         "project"
       ],
       "links": [
+        "wiki/verification/v002",
         "wiki/project/memory-deferred",
         "wiki/implementation/wiki-access",
         "wiki/workflows/system/orchestratore-v002",
@@ -843,22 +881,21 @@
     },
     {
       "path": "wiki/workflows/catalog.md",
-      "title": "Catalogo iniziale dei workflow",
+      "title": "Catalogo dei workflow dell’ecosistema",
       "kind": "index",
       "status": "configured",
       "domain": "workflow",
-      "summary": "Catalogo limitato ai due workflow riletti per questo progetto, non a tutti i workflow personali di Davide. | ID | Scheda | Stato osservato | |---|---|---| | H9035WWxnJqodZFq | [[wiki/workflows/system/orchestratore]] | 26 nodi; inattivo; integrazione Qdrant incompleta | | Y4dZpBvwM4OoPxKU | [[wiki/wo",
+      "summary": "| ID | Scheda | Stato | |---|---|---| | H9035WWxnJqodZFq | [[wiki/workflows/system/orchestratore]] | ESPERIMENTO Sistema,27nodi; v0.0.2 integrata; ingresso Telegram inattivo durante il collaudo | FDb2O8tfyh6oMUht: Wiki e Skill. nnpZJePc10RpgNGa: registrazione proposta di Architetto. Pubblicati per e",
       "tags": [
         "index",
         "workflow"
       ],
       "links": [
         "wiki/workflows/system/orchestratore",
+        "wiki/implementation/wiki-access",
         "wiki/workflows/system/inizializza-identita",
         "wiki/components/situation-router",
-        "wiki/templates/component",
-        "wiki/workflows/system/orchestratore-v002",
-        "wiki/implementation/wiki-access"
+        "wiki/templates/component"
       ]
     },
     {
@@ -882,68 +919,35 @@
       "kind": "workflow",
       "status": "configured",
       "domain": "workflow",
-      "summary": "ID n8n y6GPjnFOVuronj0z. Nome ESPERIMENTO | Sistema | v0.0.2. Cartella Esperimento, progetto personale di Davide (dado.lentini13@gmail.com). 27 nodi, gruppi Architetto, Costruttore, Revisore e Consegna Telegram. Catena: messaggio Telegram, stato compito, Architetto → Costruttore → Revisore, due roun",
+      "summary": "La v0.0.2 approvata è integrata nell'orchestratore originale **H9035WWxnJqodZFq — ESPERIMENTO | Sistema** (27 nodi). La copia parallela y6GPjnFOVuronj0z è archiviata. Le due utility Wiki/Skill e scrittura restano tool interni richiamabili dall'orchestratore; non sono altre squadre ufficiali. Il read",
       "tags": [
         "workflow"
       ],
       "links": [
+        "wiki/verification/v002",
         "wiki/common/soul",
         "wiki/agents/architetto/soul",
         "wiki/agents/costruttore/soul",
         "wiki/agents/revisore/soul",
-        "wiki/verification/v002",
-        "wiki/implementation/wiki-access"
+        "wiki/implementation/wiki-access",
+        "wiki/workflows/system/orchestratore"
       ]
     },
     {
       "path": "wiki/workflows/system/orchestratore.md",
-      "title": "Orchestratore — stato osservato",
+      "title": "ESPERIMENTO — workflow ufficiale",
       "kind": "workflow",
       "status": "configured",
       "domain": "workflow",
-      "summary": "Nome: ESPERIMENTO | Sistema | Identità Agenti ID: H9035WWxnJqodZFq URL: https://n8n-uull.srv2097610.hstgr.cloud/workflow/H9035WWxnJqodZFq Versione n8n osservata: 42206f8f-e55f-4b35-9598-6feccd079ff5 Attivo: false; nodi: 26. Input: messaggio testuale Telegram con chat. Output previsto: una sintesi ne",
+      "summary": "Nome: ESPERIMENTO | Sistema. ID ufficiale H9035WWxnJqodZFq. La revisione v0.0.2 approvata è integrata in questo workflow su richiesta di Davide del 29/10/2026. La v0.0.1 è conservata nello storico Git, negli snapshot raw e nella storia versioni n8n; non è una seconda versione operativa. 27 nodi: Tel",
       "tags": [
         "workflow"
       ],
       "links": [
-        "wiki/releases/v0.0.1",
-        "wiki/workflows/system/inizializza-identita",
-        "wiki/common/soul",
-        "wiki/project/access-options"
-      ]
-    },
-    {
-      "path": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q.md",
-      "title": "Contratto proposto: classificatore AI di pertinenza email a quattro esiti",
-      "kind": "component",
-      "domain": "email",
-      "status": "proposed",
-      "summary": "# Stato e ambito **Proposta**, non approvata, configurata o verificata. Contratto minimo per classificare una email rispetto a un criterio esplicito. Solo etichetta: nessun instradamento, invio email o workflow realizzato. ## Interfaccia pr",
-      "tags": [
-        "component",
-        "email"
-      ],
-      "links": [
-        "wiki/project/context",
-        "wiki/workflows/catalog",
-        "wiki/skills/prompt-design"
-      ]
-    },
-    {
-      "path": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email.md",
-      "title": "Contratto proposto per classificatore AI di pertinenza email (3239)",
-      "kind": "component",
-      "domain": "email",
-      "status": "proposed",
-      "summary": "# Stato Proposta non approvata. Contratto minimo per classificare email; non è un workflow n8n né una configurazione verificata. ## Fonti effettivamente lette nel job - Architetto: [[wiki/project/context]] v0.0.2 e [[wiki/workflows/catalog]",
-      "tags": [
-        "component",
-        "email"
-      ],
-      "links": [
-        "wiki/project/context",
-        "wiki/workflows/catalog",
-        "wiki/skills/prompt-design"
+        "wiki/workflows/system/orchestratore-v002",
+        "wiki/implementation/wiki-access",
+        "wiki/verification/v002",
+        "wiki/releases/v0.0.1"
       ]
     }
   ],

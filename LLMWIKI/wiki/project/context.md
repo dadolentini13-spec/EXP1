@@ -4,7 +4,7 @@ title: "Contesto dell’ecosistema"
 kind: "context"
 status: "approved"
 version: "0.0.2"
-updated: "2026-10-28"
+updated: "2026-10-29"
 ---
 
 # Contesto dell'ecosistema
@@ -13,6 +13,6 @@ Davide costruisce gradualmente un ecosistema che distingue intento, dominio e op
 
 Architetto coordina, propone criteri e consigli e assegna requisiti; Costruttore prepara n8n e codice anche Python; Revisore controlla requisiti e limiti. Tutti hanno almeno tre skill disponibili e scelgono quelle pertinenti dal [[wiki/skills/catalog]]. Python non viene eseguito e non è previsto un ambiente di prova per gli agenti.
 
-La v0.0.2 usa tool per wiki e skill, senza documenti obbligatori. La configurazione è separata dalla v0.0.1; il nuovo nome e la firma Telegram sono esperimentoV0.0.2. La baseline conserva i nomi storici e Qdrant non viene inizializzato.
+La v0.0.2 usa tool per wiki e skill, senza documenti obbligatori. Dal29/10/2026 la configurazione è integrata nel workflow originale H9035WWxnJqodZFq, ESPERIMENTO | Sistema; la copia parallela è archiviata. La firma Telegram è esperimentoV0.0.2. La v0.0.1 resta documentata nello storico; Qdrant non viene inizializzato.
 
 Conservare decisioni e fonti nella wiki senza inventare stato n8n o verifiche. [[wiki/project/memory-deferred]] registra una decisione futura: non inserirla nel prompt individuale di Architetto. Stato attuale: [[wiki/implementation/wiki-access]].

@@ -16,3 +16,5 @@ Task4: complete —17JS tests pass, n8n simulated chain7contributions, missing d
 Ruling: private GitHub403 is a credential grant issue; do not substitute another account or expose the wiki publicly. Complete all code/docs and mark live access blocked.
 Ruling: no verified TelegramID in available sources; default deny until Davide supplies it. This is authorization, not mandatory-document loading.
 Final review: independent reviewer found allowlist gap and title delimiters; fixed with regression tests. Runtime writer3136 exposed structuredClone unavailable, fixed;3140 passed simulated publication path.
+
+29/10/2026: decisione successiva esplicita di Davide: unico workflow ufficiale. Integrata v002 nel main originale H9035WWxnJqodZFq,27nodi; copia y6GPjnFOVuronj0z archiviata. Helper callers aggiornati;20iterazioni e6000token output.21testJS; live3239 completa sette contributi e tool reali, ma produce2record anziché1: accettazione parziale. Writer append-only e schemi n8n live mancanti restano limiti dichiarati. Nessun Python o invio Telegram.

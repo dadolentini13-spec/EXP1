@@ -30,3 +30,7 @@ Preparati lettore e verifica manuale in n8n, senza attivazioni. Test locali e si
 - 2026-10-28 — Architetto, job 3239: registrato [[wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q|Contratto proposto: classificatore AI di pertinenza email a quattro esiti]] come proposed.
 
 - 2026-10-28 — Architetto, job 3239: registrato [[wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email|Contratto proposto per classificatore AI di pertinenza email (3239)]] come proposed.
+
+##29/10/2026 — unificazione approvata e collaudo reale
+
+Unico orchestratore H9035WWxnJqodZFq; copia parallela archiviata; tool interni riservati. Live3239: sette contributi, letture Wiki/Skill, due record proposti; richiesta di una sola scheda non rispettata. Entrambi conservati senza approvazione. Stato e limiti in [[wiki/verification/v002]].

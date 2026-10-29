@@ -2,7 +2,7 @@
   "release": "0.0.2",
   "repository": "dadolentini13-spec/EXP1",
   "root": "LLMWIKI",
-  "main_workflow": "y6GPjnFOVuronj0z",
+  "main_workflow": "H9035WWxnJqodZFq",
   "reader_workflow": "FDb2O8tfyh6oMUht",
   "writer_workflow": "nnpZJePc10RpgNGa",
   "diagnostic_workflow": "POr7YW1yIRXYseLZ",
@@ -19,7 +19,7 @@
   "python_execution_enabled": false,
   "skills_available_per_role": 17,
   "tests": {
-    "unit": "17 passed",
+    "unit": "21 passed",
     "private_github_live": "3159: manifest e contesto privato HTTP200",
     "skill_catalog": "3120: 17 entries",
     "python_guide": "3121: bundled guide delivered, no execution",
@@ -33,20 +33,30 @@
     "snapshot_reuse": "3138: same SHA reused, no head resolution",
     "writer_live": "3161: registrazione reale e commit atomico riusciti",
     "private_roundtrip": "3164: record appena registrato letto in nuova esecuzione HTTP200",
-    "authorized_context": "3163: ID Davide accettato, regole comuni+identità+richiesta ricevute da tutti e tre i nodi Contesto; modelli e invio simulati"
+    "authorized_context": "3163: ID Davide accettato, regole comuni+identità+richiesta ricevute da tutti e tre i nodi Contesto; modelli e invio simulati",
+    "first_live_attempt": "3176: services inactive, failed; corrected by publishing internal tools only",
+    "second_live_attempt": "3179: max12iterations reached after12source reads; corrected to20",
+    "third_live_attempt": "3196: partial responses and empty second Architetto answer; raised model maxTokens2500→6000; acceptance3239 completed",
+    "skill_normalization": "3236: official debugging guide HTTP200 with normalized read/skills aliases;21JS tests total",
+    "main_live": "3239: success;7 nonempty contributions, live Wiki/Skill reads,2 successful GitHub writes instead of1 requested; Telegram send pinned"
   },
   "remaining": [
-    "Live model-to-tool integration verification before activation",
-    "Decision components and routing to specialized workflows still to implement"
+    "Prevent duplicate semantic records within the same job independently of title;3239 wrote2 instead of1 requested",
+    "Attach live n8n schema inspection/validation tools for verified importable workflow delivery",
+    "Semantic integration into existing wiki pages is not implemented; writer remains append-only"
   ],
   "not_performed": [
     "No Python execution",
-    "No model calls in verification",
     "No Telegram sends",
-    "No workflow activation"
+    "No Telegram/main workflow activation"
   ],
   "private_wiki_write_verified": true,
   "allowed_telegram_user_ids": [
     "5218311620"
-  ]
+  ],
+  "official_workflow_name": "ESPERIMENTO | Sistema",
+  "archived_parallel_workflow": "y6GPjnFOVuronj0z",
+  "internal_tools_published": true,
+  "live_acceptance": "partial",
+  "updated": "2026-10-29"
 }

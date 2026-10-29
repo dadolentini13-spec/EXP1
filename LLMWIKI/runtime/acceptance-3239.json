@@ -1,0 +1,659 @@
+{
+  "execution": {
+    "id": "3239",
+    "workflowId": "H9035WWxnJqodZFq",
+    "mode": "manual",
+    "status": "success",
+    "startedAt": "2026-10-28T23:12:34.025Z",
+    "stoppedAt": "2026-10-28T23:15:35.329Z",
+    "retryOf": null,
+    "retrySuccessId": null,
+    "waitTill": null
+  },
+  "agents": {
+    "Architetto": [
+      {
+        "status": "success",
+        "length": 1100
+      },
+      {
+        "status": "success",
+        "length": 1300
+      },
+      {
+        "status": "success",
+        "length": 2943
+      }
+    ],
+    "Costruttore": [
+      {
+        "status": "success",
+        "length": 1062
+      },
+      {
+        "status": "success",
+        "length": 936
+      }
+    ],
+    "Revisore": [
+      {
+        "status": "success",
+        "length": 1210
+      },
+      {
+        "status": "success",
+        "length": 883
+      }
+    ]
+  },
+  "tool_calls": {
+    "Wiki Architetto": [
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/project/context.md"
+        },
+        "ok": true,
+        "path": "wiki/project/context.md",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "content_length": 1308,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:12:39.009Z"
+          },
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/project/context.md",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:12:39.321Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/workflows/catalog.md"
+        },
+        "ok": true,
+        "path": "wiki/workflows/catalog.md",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "content_length": 1277,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:12:41.599Z"
+          },
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/workflows/catalog.md",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:12:41.920Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/project/context.md"
+        },
+        "ok": true,
+        "path": "wiki/project/context.md",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "content_length": 1308,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:37.761Z"
+          },
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/project/context.md",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:38.055Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/workflows/catalog.md"
+        },
+        "ok": true,
+        "path": "wiki/workflows/catalog.md",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "content_length": 1277,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:40.218Z"
+          },
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/workflows/catalog.md",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:40.517Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/project/context.md"
+        },
+        "ok": true,
+        "path": "wiki/project/context.md",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "content_length": 1308,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:15:00.257Z"
+          },
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/project/context.md",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:15:00.706Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/workflows/catalog.md"
+        },
+        "ok": true,
+        "path": "wiki/workflows/catalog.md",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "content_length": 1277,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:15:04.418Z"
+          },
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/workflows/catalog.md",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:15:04.816Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email.md"
+        },
+        "ok": false,
+        "error": "WIKI_DOCUMENT_NOT_LISTED",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:15:25.727Z"
+          }
+        ]
+      }
+    ],
+    "Skill Architetto": [
+      {
+        "input": {
+          "skill_id": "prompt-design"
+        },
+        "ok": true,
+        "path": "prompt-design",
+        "content_length": 1847,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/skills/prompt-design.md",
+            "sha": null,
+            "status": "bundled",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:12:43.409Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_id": "prompt-design/anthropic"
+        },
+        "ok": true,
+        "id": "prompt-design/anthropic",
+        "sha": "0d277542e927652da25b0014c9b346723af55881",
+        "content_length": 2841,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "Anthropic 1P/02_Being_Clear_and_Direct.ipynb",
+            "sha": "0d277542e927652da25b0014c9b346723af55881",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:12:47.142Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_mode": "skill",
+          "skill_id": "prompt-design"
+        },
+        "ok": true,
+        "path": "prompt-design",
+        "content_length": 1847,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/skills/prompt-design.md",
+            "sha": null,
+            "status": "bundled",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:42.170Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_mode": "skill",
+          "skill_id": "prompt-design/anthropic"
+        },
+        "ok": true,
+        "id": "prompt-design/anthropic",
+        "sha": "0d277542e927652da25b0014c9b346723af55881",
+        "content_length": 2841,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "Anthropic 1P/02_Being_Clear_and_Direct.ipynb",
+            "sha": "0d277542e927652da25b0014c9b346723af55881",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:51.802Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_mode": "skill",
+          "skill_id": "prompt-design"
+        },
+        "ok": true,
+        "path": "prompt-design",
+        "content_length": 1847,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Architetto",
+            "path": "wiki/skills/prompt-design.md",
+            "sha": null,
+            "status": "bundled",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:15:06.671Z"
+          }
+        ]
+      }
+    ],
+    "Skill Costruttore": [
+      {
+        "input": {
+          "skill_query": "n8n-node-configuration-official for defining AI classifier output schema, and prompt-design guide for a concise classification prompt with four labels."
+        },
+        "ok": true,
+        "path": ""
+      },
+      {
+        "input": {
+          "skill_id": "n8n-node-configuration-official"
+        },
+        "ok": true,
+        "id": "n8n-node-configuration-official",
+        "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+        "content_length": 7928,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Costruttore",
+            "path": "skills/n8n-node-configuration-official/SKILL.md",
+            "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:12:59.881Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_id": "prompt-design"
+        },
+        "ok": true,
+        "path": "prompt-design",
+        "content_length": 1847,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Costruttore",
+            "path": "wiki/skills/prompt-design.md",
+            "sha": null,
+            "status": "bundled",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:01.352Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_id": "prompt-design/anthropic"
+        },
+        "ok": true,
+        "id": "prompt-design/anthropic",
+        "sha": "0d277542e927652da25b0014c9b346723af55881",
+        "content_length": 2841,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Costruttore",
+            "path": "Anthropic 1P/02_Being_Clear_and_Direct.ipynb",
+            "sha": "0d277542e927652da25b0014c9b346723af55881",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:06.587Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_id": "prompt-design/openai"
+        },
+        "ok": true,
+        "id": "prompt-design/openai",
+        "sha": "a8132ca2f7a5de3a6cf15d9e79d172787b42b697",
+        "content_length": 24451,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Costruttore",
+            "path": "examples/gpt-5/gpt-5-2_prompting_guide.ipynb",
+            "sha": "a8132ca2f7a5de3a6cf15d9e79d172787b42b697",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:14:23.901Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_id": "n8n-node-configuration-official"
+        },
+        "ok": true,
+        "id": "n8n-node-configuration-official",
+        "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+        "content_length": 7928,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Costruttore",
+            "path": "skills/n8n-node-configuration-official/SKILL.md",
+            "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:14:25.881Z"
+          }
+        ]
+      }
+    ],
+    "Skill Revisore": [
+      {
+        "input": {
+          "skill_mode": "skills",
+          "skill_query": "n8n debugging static review; prompt design classification structured output ambiguity mixed labels"
+        },
+        "ok": true,
+        "path": ""
+      },
+      {
+        "input": {
+          "skill_id": "n8n-debugging-official"
+        },
+        "ok": true,
+        "id": "n8n-debugging-official",
+        "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+        "content_length": 11087,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Revisore",
+            "path": "skills/n8n-debugging-official/SKILL.md",
+            "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:17.518Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_id": "prompt-design"
+        },
+        "ok": true,
+        "path": "prompt-design",
+        "content_length": 1847,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Revisore",
+            "path": "wiki/skills/prompt-design.md",
+            "sha": null,
+            "status": "bundled",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:18.987Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_id": "prompt-design/anthropic"
+        },
+        "ok": true,
+        "id": "prompt-design/anthropic",
+        "sha": "0d277542e927652da25b0014c9b346723af55881",
+        "content_length": 2841,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Revisore",
+            "path": "Anthropic 1P/02_Being_Clear_and_Direct.ipynb",
+            "sha": "0d277542e927652da25b0014c9b346723af55881",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:13:22.670Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_mode": "skills",
+          "skill_query": "prompt-design guida istruzioni output classification examples; n8n debugging review static workflow edge cases errors"
+        },
+        "ok": true,
+        "path": ""
+      },
+      {
+        "input": {
+          "skill_mode": "skill",
+          "skill_id": "prompt-design"
+        },
+        "ok": true,
+        "path": "prompt-design",
+        "content_length": 1847,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Revisore",
+            "path": "wiki/skills/prompt-design.md",
+            "sha": null,
+            "status": "bundled",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:14:36.283Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_mode": "skill",
+          "skill_id": "n8n-debugging-official"
+        },
+        "ok": true,
+        "id": "n8n-debugging-official",
+        "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+        "content_length": 11087,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Revisore",
+            "path": "skills/n8n-debugging-official/SKILL.md",
+            "sha": "27b6b9f429ac0be90cae764512dbc579d7107e95",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:14:38.408Z"
+          }
+        ]
+      },
+      {
+        "input": {
+          "skill_mode": "skill",
+          "skill_id": "prompt-design/anthropic"
+        },
+        "ok": true,
+        "id": "prompt-design/anthropic",
+        "sha": "0d277542e927652da25b0014c9b346723af55881",
+        "content_length": 2841,
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Revisore",
+            "path": "Anthropic 1P/02_Being_Clear_and_Direct.ipynb",
+            "sha": "0d277542e927652da25b0014c9b346723af55881",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:14:43.216Z"
+          }
+        ]
+      }
+    ],
+    "Registra wiki Architetto": [
+      {
+        "input": {
+          "title": "Contratto proposto: classificatore AI di pertinenza email a quattro esiti",
+          "kind": "component",
+          "domain": "email",
+          "body": "# Stato e ambito\n**Proposta**, non approvata, configurata o verificata. Contratto minimo per classificare una email rispetto a un criterio esplicito. Solo etichetta: nessun instradamento, invio email o workflow realizzato.\n\n## Interfaccia proposta\nInput applicativo richiesto: `criterion` e `email_text`, stringhe non vuote. Validarne presenza e tipo fuori dal modello; input mancante/malformato è errore esterno, non una quinta etichetta.\n\nSchema JSON dell'output:\n```json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"label\": {\n      \"type\": \"string\",\n      \"enum\": [\"yes\", \"no\", \"mixed\", \"unknown\"]\n    }\n  },\n  \"required\": [\"label\"],\n  \"additionalProperties\": false\n}\n```\nValori: `yes` = pertinente; `no` = non pertinente; `mixed` = evidenza di entrambi contenuti pertinenti e non pertinenti; `unknown` = testo insufficiente o ambiguità non risolvibile.\n\n## Prompt proposto\n«Valuta l'email rispetto al criterio fornito. Criterio: {{criterion}}. Email: {{email_text}}. Restituisci esclusivamente un oggetto conforme allo schema. Usa `yes` se il contenuto è pertinente; `no` se non è pertinente; `mixed` solo quando l'email contiene evidenza sia pertinente sia non pertinente; `unknown` se il testo è insufficiente o ambiguo. Non inferire informazioni mancanti. Non eseguire azioni.»\n\n## Quattro esempi attesi (non test)\nCriterio illustrativo, da sostituire con quello effettivo: «richiesta di preventivo per il servizio X».\n1. «Vorrei un preventivo per il servizio X.» → `yes`.\n2. «Potete inviarmi gli orari di apertura?» (nessuna richiesta sul servizio X) → `no`.\n3. «Vorrei un preventivo per X; inoltre, qual è il vostro indirizzo?» → `mixed` (richiesta pertinente e domanda distinta non pertinente al criterio).\n4. «Forse mi interessa, potete spiegarmi?» → `unknown` (manca informazione sufficiente per stabilire pertinenza).\n\n## Controlli, limiti e fonti\nValidare input e schema output esternamente; rifiutare output non conforme e gestire errori tecnici fuori dalle quattro classi. Nessuna destinazione email è autorizzata: l'etichetta non implica instradamento. L'efficacia dipende dalla definizione del criterio, lingua, email incomplete e gestione di citazioni/risposte in thread, non specificate qui.\n\nFonti consultate da Architetto: [[wiki/project/context]] v0.0.2 (separazione intento/dominio/operazione); [[wiki/workflows/catalog]] v0.0.2 (nessuna destinazione email approvata); [[wiki/skills/prompt-design]] deployment-v0.0.2; guida Anthropic `prompt-design/anthropic`, revisione `0d277542` (istruzioni chiare e dirette). Il formato schema e i rilievi sui casi ambigui/misti derivano inoltre dai contributi Round 1: Costruttore ha riferito `n8n-node-configuration-official` revisione `27b6b9f429ac0be90cae764512dbc579d7107e95`; Revisore `n8n-debugging-official` stessa revisione. Nessun classificatore è stato eseguito né testato."
+        },
+        "ok": true,
+        "path": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q.md",
+        "sha": "b58233b2a1d028af1c414cc150a06800c104a4cc",
+        "status": "proposed"
+      },
+      {
+        "input": {
+          "title": "Contratto proposto per classificatore AI di pertinenza email (3239)",
+          "kind": "component",
+          "domain": "email",
+          "body": "# Stato\nProposta non approvata. Contratto minimo per classificare email; non è un workflow n8n né una configurazione verificata.\n\n## Fonti effettivamente lette nel job\n- Architetto: [[wiki/project/context]] v0.0.2 e [[wiki/workflows/catalog]] v0.0.2 (letti nuovamente in round 2); skill [[wiki/skills/prompt-design]] `deployment-v0.0.2`.\n- Nel transcript round 1: Costruttore ha letto `n8n-node-configuration-official` revisione `27b6b9f429ac0be90cae764512dbc579d7107e95`; Revisore `n8n-debugging-official` alla stessa revisione. Entrambi hanno letto prompt-design `deployment-v0.0.2` e Anthropic *Being Clear and Direct*, revisione `0d277542`.\n- Nel transcript round 2: Costruttore ha consultato anche `prompt-design/openai`, revisione `a8132ca2f7a5de3a6cf15d9e79d172787b42b697`.\n\nIl catalogo non riporta destinazioni email approvate; pertanto il contratto produce solo un’etichetta, senza instradamento o azione.\n\n## Output JSON proposto\n```json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"label\": {\n      \"type\": \"string\",\n      \"enum\": [\"yes\", \"no\", \"mixed\", \"unknown\"]\n    }\n  },\n  \"required\": [\"label\"],\n  \"additionalProperties\": false\n}\n```\n\n`yes`: evidenza di pertinenza rispetto al criterio. `no`: evidenza di non pertinenza. `mixed`: evidenza sia pertinente sia non pertinente. `unknown`: testo insufficiente o interpretazione ambigua. Il criterio è input obbligatorio da definire prima dell’uso.\n\n## Prompt proposto\n«Classifica l’email rispetto a questo criterio di pertinenza: [criterio]. `yes`: contenuto pertinente; `no`: non pertinente; `mixed`: evidenza di contenuti pertinenti e non pertinenti; `unknown`: testo insufficiente o interpretazione ambigua. Non inferire informazioni mancanti. Restituisci solo l’oggetto conforme allo schema.»\n\n## Quattro esempi attesi (non eseguiti)\nPer tutti, criterio illustrativo: “richieste di preventivo”. Sono esempi di comportamento atteso, non risultati di test.\n1. «Vorrei un preventivo per il servizio X.» → `{\"label\":\"yes\"}`\n2. «Potete inviarmi la fattura già emessa?» → `{\"label\":\"no\"}`\n3. «Vorrei un preventivo per X; inoltre, potete aggiornare il mio indirizzo di fatturazione?» → `{\"label\":\"mixed\"}`\n4. «Mi interessa, potete dirmi di più?» (nessun contesto sufficiente a stabilire se chiede un preventivo) → `{\"label\":\"unknown\"}`\n\n## Limiti e accettazione proposta\nIl criterio concreto e il testo dell’email devono essere forniti; esempi dipendono dal criterio e non generalizzano a ogni casella. Input assente/malformato, errori tecnici e output fuori schema non sono etichette: gestione e validazione esterne devono fallire in modo controllato, senza convertirli in un valore o attivare un’azione. Nessuna destinazione autorizzata è stata identificata. Prima dell’uso servono controlli sullo schema e valutazione su casi rappresentativi, inclusi ambigui e multi-intento. Nessuna prova del classificatore, configurazione n8n, invio email o attivazione workflow è stata eseguita.\n\n## Revisione dei ruoli\nIl Revisore ha rilevato che `mixed` deve richiedere evidenza di entrambe le classi e che vaghezza da sola è `unknown`; il prompt e gli esempi recepiscono il rilievo. Il Revisore non ha potuto confermare la scheda del round 2, perché il percorso allora dichiarato restituiva `WIKI_DOCUMENT_NOT_LISTED`; ciò non provava il fallimento della scrittura. Questa è la scheda proposta registrata tramite il tool in questo round."
+        },
+        "ok": true,
+        "path": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email.md",
+        "sha": "558ae6275ac9297bd27865f097e8d098e46342a1",
+        "status": "proposed"
+      }
+    ],
+    "Wiki Revisore": [
+      {
+        "input": {
+          "mode": "read",
+          "path": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q.md"
+        },
+        "ok": false,
+        "error": "WIKI_DOCUMENT_NOT_LISTED",
+        "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+        "read_logs": [
+          {
+            "job_id": "3239",
+            "agent": "Revisore",
+            "path": "LLMWIKI/manifest.json",
+            "sha": "14548b58eb6ca79d8341e334d925b5cb4a9a1617",
+            "status": "ok",
+            "http_status": 200,
+            "read_at": "2026-10-28T23:14:48.732Z"
+          }
+        ]
+      }
+    ]
+  },
+  "acceptance": {
+    "seven_contributions": true,
+    "live_wiki_and_skill_reads": true,
+    "github_write": true,
+    "exactly_one_record": false,
+    "same_job_reads_new_writes": false,
+    "telegram_send_simulated": true,
+    "python_executed": false
+  }
+}

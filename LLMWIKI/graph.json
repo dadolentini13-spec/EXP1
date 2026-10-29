@@ -33,6 +33,11 @@
     },
     {
       "from": "README",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "README",
       "to": "wiki/releases/v0.0.1",
       "relation": "references"
     },
@@ -312,6 +317,16 @@
       "relation": "references"
     },
     {
+      "from": "index",
+      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "relation": "references"
+    },
+    {
       "from": "log",
       "to": "wiki/decisions/v002-scope",
       "relation": "references"
@@ -359,6 +374,16 @@
     {
       "from": "log",
       "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
       "relation": "references"
     },
     {
@@ -444,6 +469,11 @@
     {
       "from": "wiki/implementation/wiki-access",
       "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/workflows/system/orchestratore",
       "relation": "references"
     },
     {
@@ -554,6 +584,36 @@
     {
       "from": "wiki/recommendations/shared-foundation",
       "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "to": "wiki/skills/prompt-design",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "to": "wiki/skills/prompt-design",
       "relation": "references"
     },
     {
@@ -853,6 +913,11 @@
     },
     {
       "from": "wiki/verification/v002",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
       "to": "wiki/project/memory-deferred",
       "relation": "references"
     },
@@ -878,6 +943,11 @@
     },
     {
       "from": "wiki/workflows/catalog",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/catalog",
       "to": "wiki/workflows/system/inizializza-identita",
       "relation": "references"
     },
@@ -892,16 +962,6 @@
       "relation": "references"
     },
     {
-      "from": "wiki/workflows/catalog",
-      "to": "wiki/workflows/system/orchestratore-v002",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/catalog",
-      "to": "wiki/implementation/wiki-access",
-      "relation": "references"
-    },
-    {
       "from": "wiki/workflows/system/inizializza-identita",
       "to": "wiki/project/access-options",
       "relation": "references"
@@ -909,6 +969,11 @@
     {
       "from": "wiki/workflows/system/inizializza-identita",
       "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/verification/v002",
       "relation": "references"
     },
     {
@@ -933,82 +998,32 @@
     },
     {
       "from": "wiki/workflows/system/orchestratore-v002",
-      "to": "wiki/verification/v002",
+      "to": "wiki/implementation/wiki-access",
       "relation": "references"
     },
     {
       "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/workflows/system/orchestratore-v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
       "to": "wiki/implementation/wiki-access",
       "relation": "references"
     },
     {
       "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
       "to": "wiki/releases/v0.0.1",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/orchestratore",
-      "to": "wiki/workflows/system/inizializza-identita",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/orchestratore",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/workflows/system/orchestratore",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "to": "wiki/skills/prompt-design",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "to": "wiki/skills/prompt-design",
       "relation": "references"
     }
   ],
@@ -1032,11 +1047,11 @@
       "SCHEMA",
       "index",
       "wiki/project/memory-deferred",
+      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
       "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "wiki/sources/karpathy-llm-wiki",
-      "wiki/templates/component",
-      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email"
+      "wiki/templates/component"
     ],
     "wiki/skills/catalog": [
       "README",
@@ -1078,7 +1093,8 @@
       "wiki/releases/v0.0.2",
       "wiki/verification/v002",
       "wiki/workflows/catalog",
-      "wiki/workflows/system/orchestratore-v002"
+      "wiki/workflows/system/orchestratore-v002",
+      "wiki/workflows/system/orchestratore"
     ],
     "wiki/sources/karpathy-llm-wiki": [
       "README",
@@ -1087,6 +1103,18 @@
       "wiki/recommendations/shared-foundation",
       "wiki/skills/wiki-maintenance",
       "wiki/sources/references"
+    ],
+    "wiki/verification/v002": [
+      "README",
+      "index",
+      "log",
+      "wiki/implementation/wiki-access",
+      "wiki/operations/lint",
+      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "wiki/releases/v0.0.2",
+      "wiki/verification/v002",
+      "wiki/workflows/system/orchestratore-v002",
+      "wiki/workflows/system/orchestratore"
     ],
     "wiki/releases/v0.0.1": [
       "README",
@@ -1121,8 +1149,7 @@
       "wiki/skills/python-engineering",
       "wiki/sources/references",
       "wiki/templates/component",
-      "wiki/workflows/system/orchestratore-v002",
-      "wiki/workflows/system/orchestratore"
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/templates/component": [
       "SCHEMA",
@@ -1165,8 +1192,7 @@
       "wiki/components/situation-router",
       "wiki/decisions/v002-scope",
       "wiki/operations/ingest",
-      "wiki/workflows/system/inizializza-identita",
-      "wiki/workflows/system/orchestratore"
+      "wiki/workflows/system/inizializza-identita"
     ],
     "wiki/agents/architetto/soul": [
       "index",
@@ -1186,9 +1212,9 @@
     "wiki/workflows/catalog": [
       "index",
       "wiki/components/situation-router",
-      "wiki/releases/v0.0.1",
       "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email"
+      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "wiki/releases/v0.0.1"
     ],
     "log": [
       "index",
@@ -1258,9 +1284,9 @@
     ],
     "wiki/skills/prompt-design": [
       "index",
-      "wiki/skills/catalog",
       "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email"
+      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "wiki/skills/catalog"
     ],
     "wiki/skills/python-engineering": [
       "index",
@@ -1275,31 +1301,23 @@
       "wiki/recommendations/shared-foundation",
       "wiki/skills/prompt-design"
     ],
-    "wiki/verification/v002": [
-      "index",
-      "log",
-      "wiki/implementation/wiki-access",
-      "wiki/operations/lint",
-      "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "wiki/releases/v0.0.2",
-      "wiki/workflows/system/orchestratore-v002"
-    ],
     "wiki/workflows/system/inizializza-identita": [
       "index",
-      "wiki/workflows/catalog",
-      "wiki/workflows/system/orchestratore"
+      "wiki/workflows/catalog"
     ],
     "wiki/workflows/system/orchestratore-v002": [
       "index",
       "wiki/implementation/wiki-access",
       "wiki/releases/v0.0.2",
       "wiki/verification/v002",
-      "wiki/workflows/catalog"
+      "wiki/workflows/system/orchestratore"
     ],
     "wiki/workflows/system/orchestratore": [
       "index",
+      "wiki/implementation/wiki-access",
       "wiki/workflows/catalog",
-      "wiki/workflows/system/inizializza-identita"
+      "wiki/workflows/system/inizializza-identita",
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato": [
       "index",
