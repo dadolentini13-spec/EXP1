@@ -122,26 +122,6 @@
       "relation": "references"
     },
     {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/templates/component",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
       "from": "wiki/decisions/v002-scope",
       "to": "wiki/project/access-options",
       "relation": "references"
@@ -727,6 +707,16 @@
       "relation": "references"
     },
     {
+      "from": "wiki/records/3833-summary",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3833-summary",
+      "to": "wiki/skills/wiki-maintenance",
+      "relation": "references"
+    },
+    {
       "from": "index",
       "to": "wiki/components/situation-router",
       "relation": "references"
@@ -972,6 +962,11 @@
       "relation": "references"
     },
     {
+      "from": "index",
+      "to": "wiki/records/3866-summary",
+      "relation": "references"
+    },
+    {
       "from": "log",
       "to": "wiki/decisions/v002-scope",
       "relation": "references"
@@ -1037,13 +1032,43 @@
       "relation": "references"
     },
     {
-      "from": "wiki/records/3833-summary",
+      "from": "log",
+      "to": "wiki/records/3866-summary",
+      "relation": "references"
+    },
+    {
+      "from": "log",
       "to": "wiki/components/situation-router",
       "relation": "references"
     },
     {
-      "from": "wiki/records/3833-summary",
-      "to": "wiki/skills/wiki-maintenance",
+      "from": "wiki/components/situation-router",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/records/3866-summary",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3866-summary",
+      "to": "wiki/components/situation-router",
       "relation": "references"
     }
   ],
@@ -1164,18 +1189,18 @@
       "wiki/agents/architetto/soul",
       "wiki/agents/costruttore/soul",
       "wiki/agents/revisore/soul",
-      "wiki/components/situation-router",
       "wiki/skills/python-engineering",
       "wiki/sources/references",
       "wiki/templates/component",
       "wiki/workflows/system/orchestratore-v002",
-      "index"
+      "index",
+      "wiki/components/situation-router"
     ],
     "wiki/templates/component": [
       "SCHEMA",
-      "wiki/components/situation-router",
       "wiki/workflows/catalog",
-      "index"
+      "index",
+      "wiki/components/situation-router"
     ],
     "wiki/operations/ingest": [
       "SCHEMA",
@@ -1198,18 +1223,11 @@
       "log"
     ],
     "wiki/project/access-options": [
-      "wiki/components/situation-router",
       "wiki/decisions/v002-scope",
       "wiki/operations/ingest",
       "wiki/workflows/system/inizializza-identita",
-      "index"
-    ],
-    "wiki/workflows/catalog": [
-      "wiki/components/situation-router",
-      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "wiki/releases/v0.0.1",
-      "index"
+      "index",
+      "wiki/components/situation-router"
     ],
     "wiki/workflows/system/orchestratore-v002": [
       "wiki/implementation/wiki-access",
@@ -1241,6 +1259,13 @@
       "wiki/recommendations/shared-foundation",
       "wiki/skills/prompt-design",
       "index"
+    ],
+    "wiki/workflows/catalog": [
+      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "wiki/releases/v0.0.1",
+      "index",
+      "wiki/components/situation-router"
     ],
     "wiki/skills/prompt-design": [
       "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
@@ -1310,8 +1335,8 @@
     ],
     "wiki/skills/wiki-maintenance": [
       "wiki/skills/catalog",
-      "index",
-      "wiki/records/3833-summary"
+      "wiki/records/3833-summary",
+      "index"
     ],
     "wiki/recommendations/shared-foundation": [
       "wiki/sources/karpathy-llm-wiki",
@@ -1323,8 +1348,10 @@
     ],
     "wiki/components/situation-router": [
       "wiki/workflows/catalog",
+      "wiki/records/3833-summary",
       "index",
-      "wiki/records/3833-summary"
+      "log",
+      "wiki/records/3866-summary"
     ],
     "wiki/agents/architetto/soul": [
       "wiki/workflows/system/orchestratore-v002",
@@ -1356,6 +1383,11 @@
     "wiki/records/3833-summary": [
       "index",
       "log"
+    ],
+    "wiki/records/3866-summary": [
+      "index",
+      "log",
+      "wiki/components/situation-router"
     ]
   }
 }

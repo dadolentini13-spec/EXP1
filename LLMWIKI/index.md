@@ -109,3 +109,5 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 - [[wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email|Contratto proposto per classificatore AI di pertinenza email (3239)]] — component/email; proposed.
 
 - [[wiki/records/3833-summary|Verifica documentale della proposta situation-router nel collaudo 3833]] — verification/project; proposed.
+
+- [[wiki/records/3866-summary|Collaudo integrazione documentale]] — verification/project; proposed.

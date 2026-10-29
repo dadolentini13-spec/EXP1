@@ -9,7 +9,7 @@ updated: "2026-10-28"
 
 # Interpretare situazioni e scegliere workflow
 
-Nessun nodo o workflow runtime creato per questo componente.
+Il componente resta una proposta: nessun nodo decisionale o workflow specialistico è stato realizzato. La squadra ESPERIMENTO può ora consultare Wiki e Skill come tool e documentare il lavoro; questo non equivale all'implementazione del router.
 
 ## Contratto proposto
 Input: messaggio, contesto autorizzato, catalogo e versione delle regole. Output: intenti, ambiti, operazioni richieste, informazioni mancanti, workflow candidati, motivazione breve ed esito di instradamento. I valori definitivi e il formato JSON restano da approvare.
@@ -29,3 +29,6 @@ Una situazione nuova non genera automaticamente un workflow. Cercare una capacit
 
 Confrontare le due opzioni di [[wiki/project/access-options]], registrare il consiglio con [[wiki/templates/component]] e farlo verificare. Dipendenze: [[wiki/workflows/catalog]], [[wiki/common/soul]].
 
+
+
+Integrazione proposta del 2026-10-29; fonte [[wiki/records/3866-summary]]. La proposta non modifica lo stato di approvazione.

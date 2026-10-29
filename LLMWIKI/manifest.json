@@ -56,7 +56,7 @@
       "workflow"
     ]
   },
-  "document_count": 50,
+  "document_count": 51,
   "documents": [
     {
       "path": "README.md",
@@ -163,7 +163,8 @@
         "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
         "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
         "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-        "wiki/records/3833-summary"
+        "wiki/records/3833-summary",
+        "wiki/records/3866-summary"
       ]
     },
     {
@@ -190,7 +191,9 @@
         "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
         "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
         "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-        "wiki/records/3833-summary"
+        "wiki/records/3833-summary",
+        "wiki/records/3866-summary",
+        "wiki/components/situation-router"
       ]
     },
     {
@@ -262,7 +265,7 @@
       "kind": "component",
       "status": "proposed",
       "domain": "project",
-      "summary": "Nessun nodo o workflow runtime creato per questo componente. Input: messaggio, contesto autorizzato, catalogo e versione delle regole. Output: intenti, ambiti, operazioni richieste, informazioni mancanti, workflow candidati, motivazione breve ed esito di instradamento. I valori definitivi e il forma",
+      "summary": " # Interpretare situazioni e scegliere workflow Il componente resta una proposta: nessun nodo decisionale o workflow specialistico è stato realizzato. La squadra ESPERIMENTO può ora consultare Wiki e Skill come tool e documentare il lavoro;",
       "tags": [
         "component",
         "project",
@@ -274,7 +277,8 @@
         "wiki/project/access-options",
         "wiki/templates/component",
         "wiki/workflows/catalog",
-        "wiki/common/soul"
+        "wiki/common/soul",
+        "wiki/records/3866-summary"
       ]
     },
     {
@@ -966,6 +970,21 @@
       "links": [
         "wiki/components/situation-router",
         "wiki/skills/wiki-maintenance"
+      ]
+    },
+    {
+      "path": "wiki/records/3866-summary.md",
+      "title": "Collaudo integrazione documentale",
+      "kind": "verification",
+      "domain": "project",
+      "status": "proposed",
+      "summary": "## Stato Proposta di integrazione documentale; non è un’esecuzione né una verifica runtime del router. La pagina resta nello status `proposed`. ## Fonti lette ed evidenze - [[wiki/components/situation-router]] (versione 0.0.2, SHA `8341f81b",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "wiki/components/situation-router"
       ]
     }
   ],
