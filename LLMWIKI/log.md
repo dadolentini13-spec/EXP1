@@ -38,3 +38,7 @@ Unico orchestratore H9035WWxnJqodZFq; copia parallela archiviata; tool interni r
 - 2026-10-29 — Architetto, job 3833: registrato [[wiki/records/3833-summary|Verifica documentale della proposta situation-router nel collaudo 3833]] come proposed; integrazioni: nessuna.
 
 - 2026-10-29 — Architetto, job 3866: registrato [[wiki/records/3866-summary|Collaudo integrazione documentale]] come proposed; integrazioni: [[wiki/components/situation-router]].
+
+## 29/10/2026 — correzioni del collaudo e manutenzione wiki
+
+Registrazione unica per compito, solo fase finale, fonte originale e patch tematiche atomiche. Collaudo3866 con modelli/tool reali: sette contributi, una scrittura e retry senza effetti. Rilettura3893 riuscita.29testJS e review indipendente; artefatti riallineati dopo correzione dei prefissi job. MCP schemi preparato ma non collegato per credenziale assente. Vedi [[wiki/implementation/wiki-integration]] e [[wiki/verification/v002]].

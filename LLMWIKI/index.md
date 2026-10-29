@@ -111,3 +111,5 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 - [[wiki/records/3833-summary|Verifica documentale della proposta situation-router nel collaudo 3833]] — verification/project; proposed.
 
 - [[wiki/records/3866-summary|Collaudo integrazione documentale]] — verification/project; proposed.
+
+- [[wiki/implementation/wiki-integration|Registrazione unica e integrazione tematica]] — implementation/project; configured.

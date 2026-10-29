@@ -1,0 +1,118 @@
+{
+  "execution": {
+    "id": "3866",
+    "workflowId": "H9035WWxnJqodZFq",
+    "mode": "manual",
+    "status": "success",
+    "startedAt": "2026-10-29T07:58:10.194Z",
+    "stoppedAt": "2026-10-29T08:00:52.179Z",
+    "retryOf": null,
+    "retrySuccessId": null,
+    "waitTill": null
+  },
+  "agents": {
+    "Architetto": [
+      {
+        "status": "success",
+        "characters": 493
+      },
+      {
+        "status": "success",
+        "characters": 335
+      },
+      {
+        "status": "success",
+        "characters": 654
+      }
+    ],
+    "Costruttore": [
+      {
+        "status": "success",
+        "characters": 713
+      },
+      {
+        "status": "success",
+        "characters": 303
+      }
+    ],
+    "Revisore": [
+      {
+        "status": "success",
+        "characters": 351
+      },
+      {
+        "status": "success",
+        "characters": 780
+      }
+    ]
+  },
+  "writer_results": [
+    {
+      "ok": false,
+      "continue": true,
+      "error": "WIKI_WRITE_FINAL_PHASE_ONLY"
+    },
+    {
+      "ok": false,
+      "continue": true,
+      "error": "WIKI_WRITE_FINAL_PHASE_ONLY"
+    },
+    {
+      "ok": false,
+      "continue": true,
+      "error": "WIKI_WRITE_FINAL_PHASE_ONLY"
+    },
+    {
+      "ok": false,
+      "continue": true,
+      "error": "WIKI_WRITE_FINAL_PHASE_ONLY"
+    },
+    {
+      "ok": false,
+      "continue": true,
+      "error": "WIKI_WRITE_FINAL_PHASE_ONLY"
+    },
+    {
+      "ok": true,
+      "continue": true,
+      "status": "proposed",
+      "path": "wiki/records/3866-summary.md",
+      "integrated_paths": [
+        "wiki/components/situation-router.md"
+      ],
+      "sha": "c8f5e371daed4d710759e7c61438ed25f4c6fd3f",
+      "url": "https://github.com/dadolentini13-spec/EXP1/blob/c8f5e371daed4d710759e7c61438ed25f4c6fd3f/LLMWIKI/wiki/records/3866-summary.md",
+      "note": "Il job corrente conserva il precedente snapshot; il nuovo record sarà visibile alle nuove esecuzioni."
+    },
+    {
+      "ok": true,
+      "continue": true,
+      "no_change": true,
+      "status": "already_registered",
+      "path": "wiki/records/3866-summary.md",
+      "paths": [
+        "wiki/records/3866-summary.md"
+      ],
+      "note": "Compito già registrato. Nessuna nuova scrittura o integrazione applicata.",
+      "parent_sha": "c8f5e371daed4d710759e7c61438ed25f4c6fd3f",
+      "sha": "c8f5e371daed4d710759e7c61438ed25f4c6fd3f",
+      "job_id": "3866"
+    }
+  ],
+  "telegram": {
+    "ok": true,
+    "delivery": "simulated_no_message_sent"
+  },
+  "acceptance": {
+    "seven_nonempty_contributions": true,
+    "one_record": true,
+    "existing_topic_integrated": true,
+    "retry_without_new_commit": true,
+    "early_writes_blocked": true
+  },
+  "limitations": [
+    "MCP schema tools not attached: n8n MCP credential missing",
+    "Five model attempts to write before final phase blocked by deterministic guard; no Git request or side effect on these attempts",
+    "Scope: <=3 proposed/configured/prepared thematic pages; no automatic creation of new topics or modifications to approved pages"
+  ]
+}

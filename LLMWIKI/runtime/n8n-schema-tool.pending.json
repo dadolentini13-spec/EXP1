@@ -1,0 +1,22 @@
+{
+  "name": "Schemi n8n Costruttore",
+  "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+  "typeVersion": 1.4,
+  "disabled": true,
+  "parameters": {
+    "endpointUrl": "https://n8n-uull.srv2097610.hstgr.cloud/mcp-server/http",
+    "serverTransport": "httpStreamable",
+    "authentication": "bearerAuth",
+    "include": "selected",
+    "includeTools": [
+      "search_nodes",
+      "get_node_types",
+      "validate_node_config",
+      "validate_workflow"
+    ],
+    "options": {
+      "timeout": 60000
+    }
+  },
+  "notes": "Configurazione preparata, non collegata: endpoint da confermare e credenziale MCP dell'istanza mancante. Selezionare solo strumenti di lettura/validazione dopo tools/list; non attivare con credenziali di altri servizi."
+}

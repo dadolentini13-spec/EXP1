@@ -19,7 +19,7 @@
   "python_execution_enabled": false,
   "skills_available_per_role": 17,
   "tests": {
-    "unit": "21 passed",
+    "unit": "29 passed",
     "private_github_live": "3159: manifest e contesto privato HTTP200",
     "skill_catalog": "3120: 17 entries",
     "python_guide": "3121: bundled guide delivered, no execution",
@@ -38,12 +38,15 @@
     "second_live_attempt": "3179: max12iterations reached after12source reads; corrected to20",
     "third_live_attempt": "3196: partial responses and empty second Architetto answer; raised model maxTokens2500→6000; acceptance3239 completed",
     "skill_normalization": "3236: official debugging guide HTTP200 with normalized read/skills aliases;21JS tests total",
-    "main_live": "3239: success;7 nonempty contributions, live Wiki/Skill reads,2 successful GitHub writes instead of1 requested; Telegram send pinned"
+    "main_live_previous": "3239: success;7 nonempty contributions, live Wiki/Skill reads,2 successful GitHub writes instead of1 requested; Telegram send pinned",
+    "main_live": "3866: success;7 nonempty contributions,1 proposed record,1 existing topic integrated; identical retry already_registered without Git mutation; Telegram delivery simulated",
+    "integration_simulated": "3828: source,record,topic +4indexes in atomic7file tree with HTTP pins",
+    "idempotency_simulated": "3830: already_registered, no tree/commit/ref nodes executed",
+    "phase_guard": "3831 and live3866: early writes denied with continue:true before GitHub",
+    "integration_readback": "3893: updated topic read in new job,HTTP200,SHA c8f5e371daed4d710759e7c61438ed25f4c6fd3f"
   },
   "remaining": [
-    "Prevent duplicate semantic records within the same job independently of title;3239 wrote2 instead of1 requested",
-    "Attach live n8n schema inspection/validation tools for verified importable workflow delivery",
-    "Semantic integration into existing wiki pages is not implemented; writer remains append-only"
+    "Attach live n8n schema inspection/validation tool to Costruttore: MCP credential missing, endpoint and tool IDs to confirm"
   ],
   "not_performed": [
     "No Python execution",
@@ -57,6 +60,12 @@
   "official_workflow_name": "ESPERIMENTO | Sistema",
   "archived_parallel_workflow": "y6GPjnFOVuronj0z",
   "internal_tools_published": true,
-  "live_acceptance": "partial",
-  "updated": "2026-10-29"
+  "live_acceptance": "wiki_tools_passed; schema_tool_pending",
+  "updated": "2026-10-29",
+  "wiki_integration_configured": true,
+  "wiki_integration_verified": true,
+  "schema_tool_attached": false,
+  "schema_tool_prepared": true,
+  "review": "Independent review: no remaining Important issues after embedded-bundle regeneration; minor retry limitation if target read unavailable before dedup;29JS tests pass",
+  "model_behavior_limit": "Live3866 attempted5early writes; deterministic guard blocked all before GitHub"
 }

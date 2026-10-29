@@ -33,6 +33,11 @@
     },
     {
       "from": "README",
+      "to": "wiki/implementation/wiki-integration",
+      "relation": "references"
+    },
+    {
+      "from": "README",
       "to": "wiki/verification/v002",
       "relation": "references"
     },
@@ -87,6 +92,341 @@
       "relation": "references"
     },
     {
+      "from": "index",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/query",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/project/context",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/project/memory-deferred",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/agents/architetto/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/agents/costruttore/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/agents/revisore/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "README",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "log",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/recommendations/shared-foundation",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "SCHEMA",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-agents-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-ai-nodes-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-binary-and-data-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-code-nodes-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-credentials-and-security-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-data-tables-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-debugging-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-error-handling-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-expressions-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-extending-mcp-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-loops-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-node-configuration-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-subworkflows-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/n8n-workflow-lifecycle-official",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/prompt-design",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/python-engineering",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/skills/wiki-maintenance",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/sources/karpathy-llm-wiki",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/sources/references",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/system/inizializza-identita",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/system/orchestratore-v002",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/3833-summary",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/records/3866-summary",
+      "relation": "references"
+    },
+    {
+      "from": "index",
+      "to": "wiki/implementation/wiki-integration",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/decisions/v002-scope",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/operations/query",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/operations/lint",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/implementation/wiki-access",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/skills/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/3833-summary",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/records/3866-summary",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "log",
+      "to": "wiki/implementation/wiki-integration",
+      "relation": "references"
+    },
+    {
       "from": "wiki/agents/architetto/soul",
       "to": "wiki/common/soul",
       "relation": "references"
@@ -122,6 +462,31 @@
       "relation": "references"
     },
     {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/project/access-options",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/templates/component",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/workflows/catalog",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/common/soul",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/components/situation-router",
+      "to": "wiki/records/3866-summary",
+      "relation": "references"
+    },
+    {
       "from": "wiki/decisions/v002-scope",
       "to": "wiki/project/access-options",
       "relation": "references"
@@ -134,6 +499,11 @@
     {
       "from": "wiki/decisions/v002-scope",
       "to": "wiki/releases/v0.0.2",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-access",
+      "to": "wiki/implementation/wiki-integration",
       "relation": "references"
     },
     {
@@ -154,6 +524,26 @@
     {
       "from": "wiki/implementation/wiki-access",
       "to": "wiki/workflows/system/orchestratore",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-integration",
+      "to": "wiki/verification/v002",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-integration",
+      "to": "wiki/operations/ingest",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-integration",
+      "to": "wiki/skills/wiki-maintenance",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/implementation/wiki-integration",
+      "to": "wiki/implementation/wiki-access",
       "relation": "references"
     },
     {
@@ -178,7 +568,7 @@
     },
     {
       "from": "wiki/operations/ingest",
-      "to": "wiki/project/access-options",
+      "to": "wiki/implementation/wiki-integration",
       "relation": "references"
     },
     {
@@ -297,6 +687,21 @@
       "relation": "references"
     },
     {
+      "from": "wiki/records/3833-summary",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3833-summary",
+      "to": "wiki/skills/wiki-maintenance",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/records/3866-summary",
+      "to": "wiki/components/situation-router",
+      "relation": "references"
+    },
+    {
       "from": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "to": "wiki/project/context",
       "relation": "references"
@@ -324,6 +729,11 @@
     {
       "from": "wiki/releases/v0.0.2",
       "to": "wiki/releases/v0.0.1",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/releases/v0.0.2",
+      "to": "wiki/implementation/wiki-integration",
       "relation": "references"
     },
     {
@@ -593,6 +1003,11 @@
     },
     {
       "from": "wiki/verification/v002",
+      "to": "wiki/implementation/wiki-integration",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/verification/v002",
       "to": "wiki/verification/v002",
       "relation": "references"
     },
@@ -653,6 +1068,11 @@
     },
     {
       "from": "wiki/workflows/system/orchestratore-v002",
+      "to": "wiki/implementation/wiki-integration",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore-v002",
       "to": "wiki/verification/v002",
       "relation": "references"
     },
@@ -688,6 +1108,11 @@
     },
     {
       "from": "wiki/workflows/system/orchestratore",
+      "to": "wiki/implementation/wiki-integration",
+      "relation": "references"
+    },
+    {
+      "from": "wiki/workflows/system/orchestratore",
       "to": "wiki/workflows/system/orchestratore-v002",
       "relation": "references"
     },
@@ -704,371 +1129,6 @@
     {
       "from": "wiki/workflows/system/orchestratore",
       "to": "wiki/releases/v0.0.1",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3833-summary",
-      "to": "wiki/components/situation-router",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3833-summary",
-      "to": "wiki/skills/wiki-maintenance",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/components/situation-router",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/implementation/wiki-access",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/operations/ingest",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/operations/query",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/project/context",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/decisions/v002-scope",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/project/memory-deferred",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/agents/architetto/soul",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/agents/costruttore/soul",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/agents/revisore/soul",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "README",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "log",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/recommendations/shared-foundation",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/releases/v0.0.1",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/releases/v0.0.2",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "SCHEMA",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-agents-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-ai-nodes-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-binary-and-data-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-code-nodes-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-credentials-and-security-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-data-tables-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-debugging-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-error-handling-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-expressions-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-extending-mcp-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-loops-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-node-configuration-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-subworkflows-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/n8n-workflow-lifecycle-official",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/prompt-design",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/python-engineering",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/skills/wiki-maintenance",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/sources/karpathy-llm-wiki",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/sources/references",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/templates/component",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/operations/lint",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/verification/v002",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/workflows/system/inizializza-identita",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/workflows/system/orchestratore-v002",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/workflows/system/orchestratore",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/3833-summary",
-      "relation": "references"
-    },
-    {
-      "from": "index",
-      "to": "wiki/records/3866-summary",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/decisions/v002-scope",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/releases/v0.0.2",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/releases/v0.0.1",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/operations/ingest",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/operations/query",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/operations/lint",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/implementation/wiki-access",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/verification/v002",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/skills/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/3833-summary",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/records/3866-summary",
-      "relation": "references"
-    },
-    {
-      "from": "log",
-      "to": "wiki/components/situation-router",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/project/access-options",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/templates/component",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/workflows/catalog",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/common/soul",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/components/situation-router",
-      "to": "wiki/records/3866-summary",
-      "relation": "references"
-    },
-    {
-      "from": "wiki/records/3866-summary",
-      "to": "wiki/components/situation-router",
       "relation": "references"
     }
   ],
@@ -1081,25 +1141,27 @@
     ],
     "SCHEMA": [
       "README",
+      "index",
       "wiki/operations/ingest",
       "wiki/skills/wiki-maintenance",
       "wiki/sources/karpathy-llm-wiki",
-      "wiki/templates/component",
-      "index"
+      "wiki/templates/component"
     ],
     "wiki/project/context": [
       "README",
       "SCHEMA",
+      "index",
       "wiki/project/memory-deferred",
       "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
       "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
       "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "wiki/sources/karpathy-llm-wiki",
-      "wiki/templates/component",
-      "index"
+      "wiki/templates/component"
     ],
     "wiki/skills/catalog": [
       "README",
+      "index",
+      "log",
       "wiki/agents/architetto/soul",
       "wiki/agents/costruttore/soul",
       "wiki/agents/revisore/soul",
@@ -1123,13 +1185,14 @@
       "wiki/skills/n8n-workflow-lifecycle-official",
       "wiki/skills/prompt-design",
       "wiki/skills/python-engineering",
-      "wiki/verification/v002",
-      "index",
-      "log"
+      "wiki/verification/v002"
     ],
     "wiki/implementation/wiki-access": [
       "README",
+      "index",
+      "log",
       "wiki/common/soul",
+      "wiki/implementation/wiki-integration",
       "wiki/project/access-options",
       "wiki/project/context",
       "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
@@ -1137,236 +1200,247 @@
       "wiki/verification/v002",
       "wiki/workflows/catalog",
       "wiki/workflows/system/orchestratore-v002",
-      "wiki/workflows/system/orchestratore",
-      "index",
-      "log"
+      "wiki/workflows/system/orchestratore"
     ],
     "wiki/sources/karpathy-llm-wiki": [
       "README",
       "SCHEMA",
+      "index",
       "wiki/recommendations/shared-foundation",
       "wiki/skills/wiki-maintenance",
-      "wiki/sources/references",
-      "index"
+      "wiki/sources/references"
+    ],
+    "wiki/implementation/wiki-integration": [
+      "README",
+      "index",
+      "log",
+      "wiki/implementation/wiki-access",
+      "wiki/operations/ingest",
+      "wiki/releases/v0.0.2",
+      "wiki/verification/v002",
+      "wiki/workflows/system/orchestratore-v002",
+      "wiki/workflows/system/orchestratore"
     ],
     "wiki/verification/v002": [
       "README",
+      "index",
+      "log",
       "wiki/implementation/wiki-access",
+      "wiki/implementation/wiki-integration",
       "wiki/operations/lint",
       "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato",
       "wiki/releases/v0.0.2",
       "wiki/verification/v002",
       "wiki/workflows/system/orchestratore-v002",
-      "wiki/workflows/system/orchestratore",
-      "index",
-      "log"
+      "wiki/workflows/system/orchestratore"
     ],
     "wiki/releases/v0.0.1": [
       "README",
-      "wiki/releases/v0.0.2",
-      "wiki/workflows/system/orchestratore",
       "index",
-      "log"
+      "log",
+      "wiki/releases/v0.0.2",
+      "wiki/workflows/system/orchestratore"
     ],
     "wiki/releases/v0.0.2": [
       "README",
-      "wiki/decisions/v002-scope",
-      "wiki/releases/v0.0.1",
       "index",
-      "log"
+      "log",
+      "wiki/decisions/v002-scope",
+      "wiki/releases/v0.0.1"
     ],
     "wiki/project/memory-deferred": [
       "README",
+      "index",
       "wiki/decisions/v002-scope",
       "wiki/operations/query",
       "wiki/project/context",
       "wiki/recommendations/shared-foundation",
-      "wiki/verification/v002",
-      "index"
+      "wiki/verification/v002"
     ],
     "wiki/common/soul": [
       "SCHEMA",
+      "index",
       "wiki/agents/architetto/soul",
       "wiki/agents/costruttore/soul",
       "wiki/agents/revisore/soul",
+      "wiki/components/situation-router",
       "wiki/skills/python-engineering",
       "wiki/sources/references",
       "wiki/templates/component",
-      "wiki/workflows/system/orchestratore-v002",
-      "index",
-      "wiki/components/situation-router"
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/templates/component": [
       "SCHEMA",
-      "wiki/workflows/catalog",
       "index",
-      "wiki/components/situation-router"
+      "wiki/components/situation-router",
+      "wiki/workflows/catalog"
     ],
     "wiki/operations/ingest": [
       "SCHEMA",
-      "wiki/operations/query",
-      "wiki/skills/wiki-maintenance",
       "index",
-      "log"
+      "log",
+      "wiki/implementation/wiki-integration",
+      "wiki/operations/query",
+      "wiki/skills/wiki-maintenance"
     ],
     "wiki/operations/query": [
       "SCHEMA",
-      "wiki/skills/wiki-maintenance",
       "index",
-      "log"
+      "log",
+      "wiki/skills/wiki-maintenance"
     ],
     "wiki/operations/lint": [
       "SCHEMA",
-      "wiki/operations/ingest",
-      "wiki/skills/wiki-maintenance",
-      "index",
-      "log"
-    ],
-    "wiki/project/access-options": [
-      "wiki/decisions/v002-scope",
-      "wiki/operations/ingest",
-      "wiki/workflows/system/inizializza-identita",
-      "index",
-      "wiki/components/situation-router"
-    ],
-    "wiki/workflows/system/orchestratore-v002": [
-      "wiki/implementation/wiki-access",
-      "wiki/releases/v0.0.2",
-      "wiki/verification/v002",
-      "wiki/workflows/system/orchestratore",
-      "index"
-    ],
-    "wiki/workflows/system/orchestratore": [
-      "wiki/implementation/wiki-access",
-      "wiki/workflows/catalog",
-      "wiki/workflows/system/inizializza-identita",
-      "wiki/workflows/system/orchestratore-v002",
-      "index"
-    ],
-    "log": [
-      "wiki/operations/ingest",
-      "wiki/operations/lint",
-      "wiki/operations/query",
-      "index"
-    ],
-    "wiki/decisions/v002-scope": [
-      "wiki/project/memory-deferred",
-      "wiki/recommendations/shared-foundation",
-      "index",
-      "log"
-    ],
-    "wiki/sources/references": [
-      "wiki/recommendations/shared-foundation",
-      "wiki/skills/prompt-design",
-      "index"
-    ],
-    "wiki/workflows/catalog": [
-      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "wiki/releases/v0.0.1",
-      "index",
-      "wiki/components/situation-router"
-    ],
-    "wiki/skills/prompt-design": [
-      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
-      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-workflow-lifecycle-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-subworkflows-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-ai-nodes-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-node-configuration-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-code-nodes-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-expressions-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-error-handling-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-credentials-and-security-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-debugging-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-loops-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-binary-and-data-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-data-tables-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-extending-mcp-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/n8n-agents-official": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/python-engineering": [
-      "wiki/skills/catalog",
-      "index"
-    ],
-    "wiki/skills/wiki-maintenance": [
-      "wiki/skills/catalog",
-      "wiki/records/3833-summary",
-      "index"
-    ],
-    "wiki/recommendations/shared-foundation": [
-      "wiki/sources/karpathy-llm-wiki",
-      "index"
-    ],
-    "wiki/workflows/system/inizializza-identita": [
-      "wiki/workflows/catalog",
-      "index"
-    ],
-    "wiki/components/situation-router": [
-      "wiki/workflows/catalog",
-      "wiki/records/3833-summary",
       "index",
       "log",
-      "wiki/records/3866-summary"
+      "wiki/operations/ingest",
+      "wiki/skills/wiki-maintenance"
+    ],
+    "wiki/components/situation-router": [
+      "index",
+      "log",
+      "wiki/records/3833-summary",
+      "wiki/records/3866-summary",
+      "wiki/workflows/catalog"
+    ],
+    "wiki/decisions/v002-scope": [
+      "index",
+      "log",
+      "wiki/project/memory-deferred",
+      "wiki/recommendations/shared-foundation"
+    ],
+    "wiki/project/access-options": [
+      "index",
+      "wiki/components/situation-router",
+      "wiki/decisions/v002-scope",
+      "wiki/workflows/system/inizializza-identita"
     ],
     "wiki/agents/architetto/soul": [
-      "wiki/workflows/system/orchestratore-v002",
-      "index"
+      "index",
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/agents/costruttore/soul": [
-      "wiki/workflows/system/orchestratore-v002",
-      "index"
+      "index",
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/agents/revisore/soul": [
-      "wiki/workflows/system/orchestratore-v002",
-      "index"
+      "index",
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "README": [
       "index"
+    ],
+    "wiki/workflows/catalog": [
+      "index",
+      "wiki/components/situation-router",
+      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "wiki/releases/v0.0.1"
+    ],
+    "log": [
+      "index",
+      "wiki/operations/ingest",
+      "wiki/operations/lint",
+      "wiki/operations/query"
+    ],
+    "wiki/recommendations/shared-foundation": [
+      "index",
+      "wiki/sources/karpathy-llm-wiki"
+    ],
+    "wiki/skills/n8n-agents-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-ai-nodes-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-binary-and-data-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-code-nodes-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-credentials-and-security-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-data-tables-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-debugging-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-error-handling-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-expressions-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-extending-mcp-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-loops-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-node-configuration-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-subworkflows-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/n8n-workflow-lifecycle-official": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/prompt-design": [
+      "index",
+      "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
+      "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/python-engineering": [
+      "index",
+      "wiki/skills/catalog"
+    ],
+    "wiki/skills/wiki-maintenance": [
+      "index",
+      "wiki/implementation/wiki-integration",
+      "wiki/records/3833-summary",
+      "wiki/skills/catalog"
+    ],
+    "wiki/sources/references": [
+      "index",
+      "wiki/recommendations/shared-foundation",
+      "wiki/skills/prompt-design"
+    ],
+    "wiki/workflows/system/inizializza-identita": [
+      "index",
+      "wiki/workflows/catalog"
+    ],
+    "wiki/workflows/system/orchestratore-v002": [
+      "index",
+      "wiki/implementation/wiki-access",
+      "wiki/releases/v0.0.2",
+      "wiki/verification/v002",
+      "wiki/workflows/system/orchestratore"
+    ],
+    "wiki/workflows/system/orchestratore": [
+      "index",
+      "wiki/implementation/wiki-access",
+      "wiki/workflows/catalog",
+      "wiki/workflows/system/inizializza-identita",
+      "wiki/workflows/system/orchestratore-v002"
     ],
     "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato": [
       "index",

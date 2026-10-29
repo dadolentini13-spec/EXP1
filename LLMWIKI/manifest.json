@@ -36,6 +36,7 @@
       "context",
       "decision",
       "identity",
+      "implementation",
       "index",
       "log",
       "policy",
@@ -56,7 +57,7 @@
       "workflow"
     ]
   },
-  "document_count": 51,
+  "document_count": 52,
   "documents": [
     {
       "path": "README.md",
@@ -76,6 +77,7 @@
         "wiki/skills/catalog",
         "wiki/implementation/wiki-access",
         "wiki/sources/karpathy-llm-wiki",
+        "wiki/implementation/wiki-integration",
         "wiki/verification/v002",
         "wiki/releases/v0.0.1",
         "wiki/releases/v0.0.2",
@@ -164,7 +166,8 @@
         "wiki/records/3239-contratto-proposto-classificatore-ai-di-pertinenza-email-a-q",
         "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
         "wiki/records/3833-summary",
-        "wiki/records/3866-summary"
+        "wiki/records/3866-summary",
+        "wiki/implementation/wiki-integration"
       ]
     },
     {
@@ -193,7 +196,8 @@
         "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
         "wiki/records/3833-summary",
         "wiki/records/3866-summary",
-        "wiki/components/situation-router"
+        "wiki/components/situation-router",
+        "wiki/implementation/wiki-integration"
       ]
     },
     {
@@ -265,7 +269,7 @@
       "kind": "component",
       "status": "proposed",
       "domain": "project",
-      "summary": " # Interpretare situazioni e scegliere workflow Il componente resta una proposta: nessun nodo decisionale o workflow specialistico è stato realizzato. La squadra ESPERIMENTO può ora consultare Wiki e Skill come tool e documentare il lavoro;",
+      "summary": "Il componente resta una proposta: nessun nodo decisionale o workflow specialistico è stato realizzato. La squadra ESPERIMENTO può ora consultare Wiki e Skill come tool e documentare il lavoro; questo non equivale all'implementazione del router. Input: messaggio, contesto autorizzato, catalogo e vers",
       "tags": [
         "component",
         "project",
@@ -304,16 +308,35 @@
       "kind": "component",
       "status": "configured",
       "domain": "project",
-      "summary": "La v0.0.2 approvata è integrata nell'orchestratore originale **H9035WWxnJqodZFq — ESPERIMENTO | Sistema** (27 nodi). La copia parallela y6GPjnFOVuronj0z è archiviata. Le due utility Wiki/Skill e scrittura restano tool interni richiamabili dall'orchestratore; non sono altre squadre ufficiali. Il read",
+      "summary": "Il collaudo reale **3866** ha completato sette contributi. Il writer ha salvato una sola sintesi wiki/records/3866-summary.md e integrato wiki/components/situation-router.md nel commit c8f5e371daed4d710759e7c61438ed25f4c6fd3f. Il retry identico ha restituito already_registered senza altro commit. La",
       "tags": [
         "component",
         "project"
       ],
       "links": [
+        "wiki/implementation/wiki-integration",
         "wiki/verification/v002",
         "wiki/workflows/system/orchestratore-v002",
         "wiki/skills/catalog",
         "wiki/workflows/system/orchestratore"
+      ]
+    },
+    {
+      "path": "wiki/implementation/wiki-integration.md",
+      "title": "Registrazione unica e integrazione tematica",
+      "kind": "implementation",
+      "status": "configured",
+      "domain": "project",
+      "summary": "Registra wiki resta un tool di Architetto nel solo orchestratore ufficiale H9035WWxnJqodZFq. Non è un passaggio obbligatorio per leggere documenti o proseguire il confronto. Il chiamante fissa ruolo, job_id, phase e richiesta originale. Soltanto la fase finale può pubblicare. Un compito ha una sola ",
+      "tags": [
+        "implementation",
+        "project"
+      ],
+      "links": [
+        "wiki/verification/v002",
+        "wiki/operations/ingest",
+        "wiki/skills/wiki-maintenance",
+        "wiki/implementation/wiki-access"
       ]
     },
     {
@@ -332,7 +355,7 @@
         "index",
         "log",
         "wiki/operations/lint",
-        "wiki/project/access-options"
+        "wiki/implementation/wiki-integration"
       ]
     },
     {
@@ -472,6 +495,37 @@
       ]
     },
     {
+      "path": "wiki/records/3833-summary.md",
+      "title": "Verifica documentale della proposta situation-router nel collaudo 3833",
+      "kind": "verification",
+      "status": "proposed",
+      "domain": "project",
+      "summary": "Stato: proposta documentale; non è un’approvazione né una verifica runtime. La pagina [[wiki/components/situation-router]] è stata letta nello snapshot del job 3833: versione 0.0.2, stato `proposed`; contiene il testo precedente esatto «Nessun nodo o workflow runtime creato per questo componente.». ",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "wiki/components/situation-router",
+        "wiki/skills/wiki-maintenance"
+      ]
+    },
+    {
+      "path": "wiki/records/3866-summary.md",
+      "title": "Collaudo integrazione documentale",
+      "kind": "verification",
+      "status": "proposed",
+      "domain": "project",
+      "summary": "Proposta di integrazione documentale; non è un’esecuzione né una verifica runtime del router. La pagina resta nello status `proposed`. - [[wiki/components/situation-router]] (versione 0.0.2, SHA `8341f81b16ec5ce19707cd3610baf3ff132b9fb3`): riporta che nessun nodo o workflow runtime è stato creato e ",
+      "tags": [
+        "verification",
+        "project"
+      ],
+      "links": [
+        "wiki/components/situation-router"
+      ]
+    },
+    {
       "path": "wiki/records/v002-accesso-token-aggiornato-verifica-accesso-wiki-con-token-aggiornato.md",
       "title": "Verifica accesso wiki con token aggiornato",
       "kind": "verification",
@@ -517,6 +571,7 @@
       ],
       "links": [
         "wiki/releases/v0.0.1",
+        "wiki/implementation/wiki-integration",
         "wiki/implementation/wiki-access",
         "wiki/verification/v002",
         "wiki/workflows/system/orchestratore-v002",
@@ -872,12 +927,13 @@
       "kind": "verification",
       "status": "configured",
       "domain": "project",
-      "summary": "La v0.0.2 approvata è integrata nell'orchestratore originale **H9035WWxnJqodZFq — ESPERIMENTO | Sistema** (27 nodi). La copia parallela y6GPjnFOVuronj0z è archiviata. Le due utility Wiki/Skill e scrittura restano tool interni richiamabili dall'orchestratore; non sono altre squadre ufficiali. Il read",
+      "summary": "Il collaudo reale **3866** ha completato sette contributi. Il writer ha salvato una sola sintesi wiki/records/3866-summary.md e integrato wiki/components/situation-router.md nel commit c8f5e371daed4d710759e7c61438ed25f4c6fd3f. Il retry identico ha restituito already_registered senza altro commit. La",
       "tags": [
         "verification",
         "project"
       ],
       "links": [
+        "wiki/implementation/wiki-integration",
         "wiki/verification/v002",
         "wiki/project/memory-deferred",
         "wiki/implementation/wiki-access",
@@ -925,11 +981,12 @@
       "kind": "workflow",
       "status": "configured",
       "domain": "workflow",
-      "summary": "La v0.0.2 approvata è integrata nell'orchestratore originale **H9035WWxnJqodZFq — ESPERIMENTO | Sistema** (27 nodi). La copia parallela y6GPjnFOVuronj0z è archiviata. Le due utility Wiki/Skill e scrittura restano tool interni richiamabili dall'orchestratore; non sono altre squadre ufficiali. Il read",
+      "summary": "Il collaudo reale **3866** ha completato sette contributi. Il writer ha salvato una sola sintesi wiki/records/3866-summary.md e integrato wiki/components/situation-router.md nel commit c8f5e371daed4d710759e7c61438ed25f4c6fd3f. Il retry identico ha restituito already_registered senza altro commit. La",
       "tags": [
         "workflow"
       ],
       "links": [
+        "wiki/implementation/wiki-integration",
         "wiki/verification/v002",
         "wiki/common/soul",
         "wiki/agents/architetto/soul",
@@ -950,41 +1007,11 @@
         "workflow"
       ],
       "links": [
+        "wiki/implementation/wiki-integration",
         "wiki/workflows/system/orchestratore-v002",
         "wiki/implementation/wiki-access",
         "wiki/verification/v002",
         "wiki/releases/v0.0.1"
-      ]
-    },
-    {
-      "path": "wiki/records/3833-summary.md",
-      "title": "Verifica documentale della proposta situation-router nel collaudo 3833",
-      "kind": "verification",
-      "domain": "project",
-      "status": "proposed",
-      "summary": "# Verifica documentale: proposta situation-router Stato: proposta documentale; non è un’approvazione né una verifica runtime. ## Evidenze La pagina [[wiki/components/situation-router]] è stata letta nello snapshot del job 3833: versione 0.0",
-      "tags": [
-        "verification",
-        "project"
-      ],
-      "links": [
-        "wiki/components/situation-router",
-        "wiki/skills/wiki-maintenance"
-      ]
-    },
-    {
-      "path": "wiki/records/3866-summary.md",
-      "title": "Collaudo integrazione documentale",
-      "kind": "verification",
-      "domain": "project",
-      "status": "proposed",
-      "summary": "## Stato Proposta di integrazione documentale; non è un’esecuzione né una verifica runtime del router. La pagina resta nello status `proposed`. ## Fonti lette ed evidenze - [[wiki/components/situation-router]] (versione 0.0.2, SHA `8341f81b",
-      "tags": [
-        "verification",
-        "project"
-      ],
-      "links": [
-        "wiki/components/situation-router"
       ]
     }
   ],

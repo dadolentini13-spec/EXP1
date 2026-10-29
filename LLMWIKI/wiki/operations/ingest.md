@@ -16,4 +16,4 @@ updated: "2026-10-28"
 5. Aggiornare collegamenti, indice e indici derivati; registrare fonti e pagine toccate in [[log]].
 6. Eseguire [[wiki/operations/lint]] e creare un commit descrittivo. Le proposte di nuove regole o azioni restano soggette all'approvazione prevista.
 
-Risultato: fonte conservata e conoscenza integrata; non una nuova pagina isolata per ogni fonte. L'autorizzazione a documentare non concede permesso di agire su altri sistemi. Il manutentore può operare quando ha accesso ai file; i bot n8n richiedono ancora il collegamento di [[wiki/project/access-options]].
+Risultato: fonte conservata e conoscenza integrata; non una nuova pagina isolata per ogni fonte. L'autorizzazione a documentare non concede permesso di agire su altri sistemi. Architetto usa Registra wiki nella sintesi finale per conservare la fonte, registrare la sintesi e integrare passaggi delle pagine tematiche già lette; contratto e limiti in [[wiki/implementation/wiki-integration]]. L'accesso Wiki è collegato tramite tool e non richiede il caricamento obbligatorio di documenti.

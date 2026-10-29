@@ -17,6 +17,6 @@ La copia parallela y6GPjnFOVuronj0z è archiviata e marcata STORICO. Le utility 
 
 L'ingresso Telegram del workflow principale resta inattivo durante il collaudo. Il limite per ruolo è20iterazioni: il collaudo ha mostrato che12letture pertinenti esaurivano il vecchio limite senza consentire la risposta. Le credenziali di modelli e Telegram sono preservate.
 
-Scopo: aiutare Davide a progettare e consegnare componenti decisionali, prompt, codice e workflow pertinenti pronti da revisionare/incollare. Non occorre preimplementare quei componenti per collaudare la squadra. La modifica diretta di n8n da parte degli agenti non è disponibile. La registrazione nella wiki è append-only; l'integrazione semantica automatica nelle pagine esistenti resta un'estensione da completare.
+Scopo: aiutare Davide a progettare e consegnare componenti decisionali, prompt, codice e workflow pertinenti pronti da revisionare/incollare. Non occorre preimplementare quei componenti per collaudare la squadra. La modifica diretta di n8n da parte degli agenti non è disponibile. La registrazione finale è unica per compito e supporta integrazioni proposte tramite patch mirate nelle pagine tematiche esistenti; dettagli e prove in [[wiki/implementation/wiki-integration]]. Il collegamento live agli schemi n8n è preparato ma richiede credenziale MCP.
 
 Riferimenti: [[wiki/workflows/system/orchestratore-v002]], [[wiki/implementation/wiki-access]], [[wiki/verification/v002]], [[wiki/releases/v0.0.1]].

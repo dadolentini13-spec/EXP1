@@ -25,3 +25,4 @@ Nessun nodo o workflow è stato creato o attivato; nessun test del router è sta
 Fonti: [[wiki/components/situation-router]], [[wiki/skills/wiki-maintenance]].
 
 Fonte originale: raw/ingest/3833.md. Registrato da Architetto; esecuzione 3833. Stato proposto: la registrazione non autorizza azioni esterne.
+

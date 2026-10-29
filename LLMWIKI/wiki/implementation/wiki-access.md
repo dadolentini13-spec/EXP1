@@ -9,6 +9,18 @@ updated: "2026-10-29"
 
 # Accesso wiki tramite tool
 
+## Stato corrente — integrazione e registrazione verificate
+
+Il collaudo reale **3866** ha completato sette contributi. Il writer ha salvato una sola sintesi wiki/records/3866-summary.md e integrato wiki/components/situation-router.md nel commit c8f5e371daed4d710759e7c61438ed25f4c6fd3f. Il retry identico ha restituito already_registered senza altro commit. La rilettura **3893**, da un nuovo compito, conferma la pagina aggiornata HTTP200 allo stesso SHA. La proposta di router resta proposta: non è un'implementazione del componente.
+
+Superati **29 test JavaScript**. Prove n8n3828: commit atomico di fonte, record, pagina e quattro indici con HTTP simulato;3830: retry senza creazione/pubblicazione Git;3831: fase anticipata rifiutata senza arresto. Il primo collaudo3833 salvava un record ma ometteva la patch: corretti istruzione finale, descrizione del retry e parametro integrations_json esplicito. Nel3866 cinque chiamate premature del modello sono state respinte prima di GitHub: il controllo esterno è necessario anche quando il prompt vieta già l'azione. Unicità e integrazione finale sono state poi rispettate.
+
+Il writer non è più solo append-only: supporta sintesi proposte e patch esatte fino a tre pagine tematiche esistenti, con fonte originale, metadati preservati e indici/grafo nello stesso commit. Scopo e confini: [[wiki/implementation/wiki-integration]]. Non è deduplicazione semantica universale e non cambia pagine approvate, regole o identità.
+
+**Parte ancora necessaria:** il tool live di schemi/validazione n8n per Costruttore. Configurazione MCP preparata e validata staticamente, non collegata: manca una credenziale MCP n8n e l'endpoint deve essere confermato. Servono soli strumenti di lettura e validazione; non sono concessi modifica o pubblicazione n8n. Il principale H9035WWxnJqodZFq resta unico e inattivo; utility pubblicate su chiamata. Nessun Python degli agenti o invio Telegram durante le prove. Le descrizioni sotto conservano lo storico e sono superate dove differiscono.
+
+
+
 ## Stato verificato il 29/10/2026 — workflow unico
 
 La v0.0.2 approvata è integrata nell'orchestratore originale **H9035WWxnJqodZFq — ESPERIMENTO | Sistema** (27 nodi). La copia parallela y6GPjnFOVuronj0z è archiviata. Le due utility Wiki/Skill e scrittura restano tool interni richiamabili dall'orchestratore; non sono altre squadre ufficiali. Il reader ammette anche la diagnostica POr7YW1yIRXYseLZ. Il principale è inattivo; solo le utility con trigger di chiamata sono pubblicate. Nessun invio Telegram o Python eseguito.

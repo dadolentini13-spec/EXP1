@@ -24,3 +24,4 @@ La patch documenta che la consultazione Wiki/Skill non equivale all’implementa
 Fonti canoniche: [[wiki/components/situation-router]].
 
 Fonte originale: raw/ingest/3866.md. Registrato da Architetto; esecuzione 3866. Stato proposto: la registrazione non autorizza azioni esterne.
+
