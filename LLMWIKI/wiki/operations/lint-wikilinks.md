@@ -1,13 +1,13 @@
 ---
 id: "wiki/operations/lint-wikilinks"
-title: "Lint strutturale, semantico e wikilink"
+title: "Revisione strutturale, semantica e dei wikilink"
 kind: "verification"
 status: "prepared"
-version: "0.0.2"
+version: "0.0.3"
 updated: "2026-10-29"
 ---
 
-# Lint della wiki
+# Revisione della wiki
 
 Metodo [[wiki/sources/karpathy-llm-wiki]], operazione Lint. Separare sempre i **controlli meccanici** dalla **revisione semantica dell'LLM**.
 

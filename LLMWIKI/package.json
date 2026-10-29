@@ -1,1 +1,1 @@
-{"name":"esperimento-llmwiki","version":"0.0.2","private":true,"type":"module","scripts":{"test":"node --test runtime/tests/*.test.mjs","lint":"node runtime/reindex-wiki.mjs --check","build":"node runtime/build-workflows.mjs"}}
+{"name":"esperimento-llmwiki","version":"0.0.3","private":true,"type":"module","scripts":{"test":"node --test runtime/tests/*.test.mjs","lint":"node runtime/reindex-wiki.mjs --check","build":"node runtime/build-workflows.mjs"}}

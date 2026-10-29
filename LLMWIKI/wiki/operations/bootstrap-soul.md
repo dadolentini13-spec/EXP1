@@ -3,7 +3,7 @@ id: "wiki/operations/bootstrap-soul"
 title: "Bootstrap leggero delle identità"
 kind: "context"
 status: "configured"
-version: "0.0.2"
+version: "0.0.3"
 updated: "2026-10-29"
 ---
 

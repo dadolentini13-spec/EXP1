@@ -1,13 +1,13 @@
 ---
 id: "wiki/operations/query-accumulativa"
-title: "Query che accumula nuova conoscenza"
+title: "Consultazione che accumula nuova conoscenza"
 kind: "context"
 status: "prepared"
-version: "0.0.2"
+version: "0.0.3"
 updated: "2026-10-29"
 ---
 
-# Query che accumula conoscenza
+# Consultazione che accumula conoscenza
 
 Metodo [[wiki/sources/karpathy-llm-wiki]], operazione Query. Non ridurre la risposta a retrieval di frammenti, né salvare ogni chat indiscriminatamente.
 

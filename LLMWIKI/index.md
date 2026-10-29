@@ -3,8 +3,8 @@ id: "index"
 title: "Indice della LLMWIKI"
 kind: "index"
 status: "configured"
-version: "0.0.2"
-updated: "2026-10-28"
+version: "0.0.3"
+updated: "2026-10-29"
 ---
 
 # Indice della LLMWIKI
@@ -56,6 +56,7 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 
 - [[wiki/releases/v0.0.1|v0.0.1 — baseline conservata]]
 - [[wiki/releases/v0.0.2|Release v0.0.2]]
+- [[wiki/releases/v0.0.3|Release v0.0.3]]
 
 ## schema
 
@@ -79,7 +80,7 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 - [[wiki/skills/n8n-workflow-lifecycle-official|Ciclo di vita workflow]]
 - [[wiki/skills/prompt-design|Skill prompt: contratti, esempi e valutazione]]
 - [[wiki/skills/python-engineering|Skill Python: progettazione e consegna del codice]]
-- [[wiki/skills/wiki-maintenance|Skill LLM Wiki: ingest, query e lint]]
+- [[wiki/skills/wiki-maintenance|Skill LLM Wiki: ingestione, consultazione e revisione]]
 
 ## source
 
@@ -116,6 +117,6 @@ Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.
 
 ## Operazioni Karpathy — ampliamento
 - [[wiki/operations/bootstrap-soul|Avvio: identità canoniche]]
-- [[wiki/operations/ingest-intelligente|Ingest intelligente]]
-- [[wiki/operations/query-accumulativa|Query cumulativa]]
-- [[wiki/operations/lint-wikilinks|Lint e wikilink]]
+- [[wiki/operations/ingest-intelligente|Ingestione intelligente]]
+- [[wiki/operations/query-accumulativa|Consultazione cumulativa]]
+- [[wiki/operations/lint-wikilinks|Revisione e wikilink]]

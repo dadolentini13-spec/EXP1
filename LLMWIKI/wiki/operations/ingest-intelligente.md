@@ -1,13 +1,13 @@
 ---
 id: "wiki/operations/ingest-intelligente"
-title: "Ingest intelligente e integrazione della conoscenza"
+title: "Ingestione intelligente e integrazione della conoscenza"
 kind: "context"
 status: "prepared"
-version: "0.0.2"
+version: "0.0.3"
 updated: "2026-10-29"
 ---
 
-# Ingest intelligente
+# Ingestione intelligente
 
 Applicazione del metodo originale di [[wiki/sources/karpathy-llm-wiki]], operazione Ingest. L'LLM mantiene la wiki; Davide decide quali fonti esplorare e le decisioni che hanno effetti operativi.
 

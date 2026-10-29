@@ -4,7 +4,7 @@ title: "Cronologia"
 kind: "log"
 status: "prepared"
 version: "0.0.2"
-updated: "2026-10-28"
+updated: "2026-10-29"
 ---
 
 # Cronologia
@@ -42,3 +42,6 @@ Unico orchestratore H9035WWxnJqodZFq; copia parallela archiviata; tool interni r
 ## 29/10/2026 — correzioni del collaudo e manutenzione wiki
 
 Registrazione unica per compito, solo fase finale, fonte originale e patch tematiche atomiche. Collaudo3866 con modelli/tool reali: sette contributi, una scrittura e retry senza effetti. Rilettura3893 riuscita.29testJS e review indipendente; artefatti riallineati dopo correzione dei prefissi job. MCP schemi preparato ma non collegato per credenziale assente. Vedi [[wiki/implementation/wiki-integration]] e [[wiki/verification/v002]].
+
+## 2026-10-29 | release | v0.0.3
+Registrate le modifiche successive alla v0.0.2: prompt iniziali che rimandano alle identità canoniche, nuove procedure Ingestione/Consultazione/Revisione e catalogazione nella wiki. Nessuna modifica al ciclo degli agenti o ai tool esistenti durante il passaggio di versione; nessun nuovo test. [[wiki/releases/v0.0.3]].

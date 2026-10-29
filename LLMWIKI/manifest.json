@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "release": "0.0.2",
+  "release": "0.0.3",
   "runtime_connected": true,
   "agent_tools_configured": true,
   "private_wiki_access_verified": true,
@@ -57,7 +57,7 @@
       "workflow"
     ]
   },
-  "document_count": 56,
+  "document_count": 57,
   "documents": [
     {
       "path": "README.md",
@@ -65,7 +65,7 @@
       "kind": "index",
       "status": "configured",
       "domain": "project",
-      "summary": "Base condivisa dell'ecosistema di Davide nel repository privato EXP1. La v0.0.2 configura i tre agenti n8n con tool Wiki e Skill. Nessuna lettura obbligatoria e nessun blocco se un documento manca. Consulta [[index]], [[SCHEMA]], [[wiki/project/context]], [[wiki/skills/catalog]] e [[wiki/implementat",
+      "summary": "LLMWIKI — ingresso",
       "tags": [
         "index",
         "project"
@@ -80,9 +80,15 @@
         "wiki/implementation/wiki-integration",
         "wiki/verification/v002",
         "wiki/releases/v0.0.1",
+        "wiki/releases/v0.0.3",
         "wiki/releases/v0.0.2",
-        "wiki/project/memory-deferred"
-      ]
+        "wiki/project/memory-deferred",
+        "wiki/operations/ingest-intelligente",
+        "wiki/operations/query-accumulativa",
+        "wiki/operations/lint-wikilinks",
+        "wiki/operations/bootstrap-soul"
+      ],
+      "version": "0.0.3"
     },
     {
       "path": "SCHEMA.md",
@@ -111,7 +117,7 @@
       "kind": "index",
       "status": "configured",
       "domain": "project",
-      "summary": "Navigazione per argomento e tipo. La classificazione dettagliata è in manifest.json. Usa i tool per leggere soltanto ciò che serve; nessun documento è obbligatorio. - [[wiki/components/situation-router|Interpretare situazioni e scegliere workflow]] - [[wiki/implementation/wiki-access|Accesso wiki tr",
+      "summary": "Indice della LLMWIKI",
       "tags": [
         "index",
         "project"
@@ -136,6 +142,7 @@
         "wiki/recommendations/shared-foundation",
         "wiki/releases/v0.0.1",
         "wiki/releases/v0.0.2",
+        "wiki/releases/v0.0.3",
         "SCHEMA",
         "wiki/skills/n8n-agents-official",
         "wiki/skills/n8n-ai-nodes-official",
@@ -167,8 +174,13 @@
         "wiki/records/3239-contratto-proposto-per-classificatore-ai-di-pertinenza-email",
         "wiki/records/3833-summary",
         "wiki/records/3866-summary",
-        "wiki/implementation/wiki-integration"
-      ]
+        "wiki/implementation/wiki-integration",
+        "wiki/operations/bootstrap-soul",
+        "wiki/operations/ingest-intelligente",
+        "wiki/operations/query-accumulativa",
+        "wiki/operations/lint-wikilinks"
+      ],
+      "version": "0.0.3"
     },
     {
       "path": "log.md",
@@ -1021,34 +1033,69 @@
       "domain": "project",
       "status": "prepared",
       "summary": "Bootstrap leggero delle identità",
-      "version": "0.0.2"
+      "version": "0.0.3",
+      "links": [
+        "wiki/common/soul",
+        "wiki/operations/ingest",
+        "wiki/operations/query",
+        "wiki/operations/lint"
+      ]
     },
     {
       "path": "wiki/operations/ingest-intelligente.md",
-      "title": "Ingest intelligente e integrazione della conoscenza",
+      "title": "Ingestione intelligente e integrazione della conoscenza",
       "kind": "context",
       "domain": "project",
       "status": "prepared",
-      "summary": "Ingest intelligente e integrazione della conoscenza",
-      "version": "0.0.2"
+      "summary": "Ingestione intelligente e integrazione della conoscenza",
+      "version": "0.0.3",
+      "links": [
+        "wiki/sources/karpathy-llm-wiki",
+        "index",
+        "wiki/operations/lint"
+      ]
     },
     {
       "path": "wiki/operations/query-accumulativa.md",
-      "title": "Query che accumula nuova conoscenza",
+      "title": "Consultazione che accumula nuova conoscenza",
       "kind": "context",
       "domain": "project",
       "status": "prepared",
-      "summary": "Query che accumula nuova conoscenza",
-      "version": "0.0.2"
+      "summary": "Consultazione che accumula nuova conoscenza",
+      "version": "0.0.3",
+      "links": [
+        "wiki/sources/karpathy-llm-wiki",
+        "index",
+        "wiki/operations/ingest-intelligente"
+      ]
     },
     {
       "path": "wiki/operations/lint-wikilinks.md",
-      "title": "Lint strutturale, semantico e wikilink",
+      "title": "Revisione strutturale, semantica e dei wikilink",
       "kind": "verification",
       "domain": "project",
       "status": "prepared",
-      "summary": "Lint strutturale, semantico e wikilink",
-      "version": "0.0.2"
+      "summary": "Revisione strutturale, semantica e dei wikilink",
+      "version": "0.0.3",
+      "links": [
+        "wiki/sources/karpathy-llm-wiki"
+      ]
+    },
+    {
+      "path": "wiki/releases/v0.0.3.md",
+      "title": "Release v0.0.3 — Procedure e identità centralizzate",
+      "kind": "release",
+      "status": "configured",
+      "domain": "project",
+      "version": "0.0.3",
+      "summary": "Rilascio incrementale v0.0.3: denominazioni italiane e procedure LLM Wiki; nessun nuovo collaudo.",
+      "links": [
+        "wiki/releases/v0.0.2",
+        "wiki/operations/bootstrap-soul",
+        "wiki/operations/ingest-intelligente",
+        "wiki/operations/query-accumulativa",
+        "wiki/operations/lint-wikilinks"
+      ]
     }
   ],
   "operations": {
